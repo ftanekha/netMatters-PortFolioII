@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap");
+nav {
+  width: 200px;
+  height: 100vh;
+  border: solid black 5px;
+  padding: 0;
+}
+nav div {
+  margin: 0 0 70px 0;
+}
+nav div.initials-icon img {
+  width: 100%;
+}
+nav ul.main-nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+nav ul.main-nav li {
+  height: 70px;
+}
+nav ul.main-nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+nav ul.main-nav li:hover {
+  transform: scale(1.2);
+}
+nav ul.main-nav li:hover a {
+  color: rgb(180, 15, 15);
+}
+nav div.sm-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+nav div.sm-links a {
+  text-decoration: none;
+  color: black;
+}
+nav div.sm-links a:hover {
+  font-size: 1.5rem;
+  color: rgb(180, 15, 15);
+}
+
+body {
+  padding: 0px;
+  font-family: "Madinmi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=application.css.map */

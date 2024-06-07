@@ -1,0 +1,48 @@
+nav{
+    width: 200px;
+    height: 100vh;
+    border: solid black 5px;
+    padding: 0;
+    div{
+        margin: 0 0 70px 0;
+        &.initials-icon{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    ul.main-nav{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        li{
+            height: 70px;
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+            }
+            &:hover{
+                transform: scale(1.2);
+                a{
+                    color: rgb(180, 15, 15);
+                }
+            }
+        }
+    }
+    div.sm-links{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                font-size: 1.5rem;
+                color: rgb(180, 15, 15)
+            }
+        }
+    }
+}
