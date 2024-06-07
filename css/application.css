@@ -23,17 +23,16 @@ nav ul.main-nav {
 }
 nav ul.main-nav li {
   height: 70px;
+  flex-grow: 1;
 }
 nav ul.main-nav li a {
   text-decoration: none;
   color: black;
   font-weight: 600;
 }
-nav ul.main-nav li:hover {
-  transform: scale(1.2);
-}
 nav ul.main-nav li:hover a {
   color: rgb(180, 15, 15);
+  font-size: 2rem;
 }
 nav div.sm-links {
   display: flex;
@@ -70,11 +69,12 @@ div.banner p a {
   text-decoration: none;
 }
 div.banner p a span.icon-arrow-down {
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
 }
 div.banner p a span.icon-arrow-down:hover {
   color: rgb(180, 15, 15);
+  font-size: 3rem;
 }
 
 @media (min-width: 576px) {

@@ -18,10 +18,11 @@ div.banner{
             display: inline-block;
             text-decoration: none;
             span.icon-arrow-down{
-                font-size: 3rem;
+                font-size: 2rem;
                 color: black;
                 &:hover{
                     color: $default-red;
+                    font-size: 3rem;
                 }
             }
         }
