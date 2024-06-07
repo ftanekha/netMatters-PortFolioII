@@ -3,13 +3,16 @@ nav{
     height: 100vh;
     border: solid black 5px;
     padding: 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     div{
         margin: 0 0 70px 0;
         &.initials-icon{
-            img{
-                width: 100%;
+            a{
+                display: block;
+                img{
+                    width: 100%;
+                }
             }
         }
     }
@@ -30,7 +33,7 @@ nav{
             &:hover{
                 a{
                     color: $default-red;
-                    font-size: 2rem;
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -43,7 +46,7 @@ nav{
             text-decoration: none;
             color: black;
             &:hover{
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 color: $default-red;
             }
         }

@@ -5,13 +5,16 @@ nav {
   height: 100vh;
   border: solid black 5px;
   padding: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 nav div {
   margin: 0 0 70px 0;
 }
-nav div.initials-icon img {
+nav div.initials-icon a {
+  display: block;
+}
+nav div.initials-icon a img {
   width: 100%;
 }
 nav ul.main-nav {
@@ -32,7 +35,7 @@ nav ul.main-nav li a {
 }
 nav ul.main-nav li:hover a {
   color: rgb(180, 15, 15);
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 nav div.sm-links {
   display: flex;
@@ -44,7 +47,7 @@ nav div.sm-links a {
   color: black;
 }
 nav div.sm-links a:hover {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: rgb(180, 15, 15);
 }
 
@@ -82,7 +85,7 @@ div.banner p a span.icon-arrow-down:hover {
     display: flex;
   }
   div.homepage nav {
-    display: block;
+    display: flex;
     flex: 0.5;
   }
   div.homepage div.banner {
@@ -90,12 +93,217 @@ div.banner p a span.icon-arrow-down:hover {
   }
 }
 
+div#about-me div {
+  display: flex;
+}
+div#about-me div nav {
+  width: 324px;
+  height: 100vh;
+  border: solid black 5px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+div#about-me div nav div {
+  margin: 0 0 70px 0;
+}
+div#about-me div nav div.initials-icon a {
+  display: block;
+}
+div#about-me div nav div.initials-icon a img {
+  width: 100%;
+}
+div#about-me div nav ul.main-nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+div#about-me div nav ul.main-nav li {
+  height: 70px;
+  flex-grow: 1;
+}
+div#about-me div nav ul.main-nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+div#about-me div nav ul.main-nav li:hover a {
+  color: rgb(180, 15, 15);
+  font-size: 1.2rem;
+}
+div#about-me div nav div.sm-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+div#about-me div nav div.sm-links a {
+  text-decoration: none;
+  color: black;
+}
+div#about-me div nav div.sm-links a:hover {
+  font-size: 1.2rem;
+  color: rgb(180, 15, 15);
+}
+div#about-me div div.about-me.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+div#about-me div div.about-me.container h2 {
+  display: block;
+  width: 100%;
+  margin: 1rem auto 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+div#about-me div div.about-me.container article.about-me {
+  flex: 1;
+}
+div#about-me div div.about-me.container article.about-me * {
+  text-align: center;
+}
+div#about-me div div.about-me.container article.about-me strong {
+  display: block;
+  margin: 2rem auto;
+  padding-bottom: 1rem;
+  font-size: 100%;
+}
+div#about-me div div.about-me.container article.about-me span.waving-hand {
+  display: inline-block;
+  animation: wave 5s;
+}
+div#about-me div div.about-me.container article.about-me p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: justify;
+}
+@media screen and (min-width: 922px) {
+  div#about-me div div.about-me.container article.about-me p {
+    text-align: center;
+  }
+}
+div#about-me div div.about-me.container article.about-me big {
+  display: block;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 2rem;
+}
+div#about-me div div.about-me.container article.about-me footer {
+  margin: 2rem auto 0;
+  padding: 0.5rem;
+}
+div#about-me div div.about-me.container article.about-me footer small {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  div#about-me div div.about-me.container article.about-me big, div#about-me div div.about-me.container article.about-me strong {
+    font-size: 150%;
+  }
+  div#about-me div div.about-me.container article.about-me p {
+    font-size: 100%;
+  }
+  div#about-me div div.about-me.container article.about-me footer {
+    padding-top: 3rem;
+  }
+  div#about-me div div.about-me.container article.about-me footer small {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5e6480;
+  }
+}
+div#about-me div div.about-me.container article#certification-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div#about-me div div.about-me.container article#certification-links p {
+  font-size: 0.9rem;
+}
+div#about-me div div.about-me.container article#certification-links div.sm-icons-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+div#about-me div div.about-me.container article#certification-links div.sm-icons-container a {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem;
+}
+div#about-me div div.about-me.container article#certification-links div.sm-icons-container a img {
+  width: 2rem;
+  height: 2rem;
+}
+
 body {
   padding: 0px;
-  font-family: "Madinmi One", sans-serif;
+  font-family: "Madimi One", sans-serif;
   font-weight: 400;
   font-style: normal;
   overflow-x: hidden;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(100deg);
+  }
+  10% {
+    transform: scale(2);
+  }
+  30% {
+    transform: rotate(60deg);
+  }
+  45% {
+    transform: scale(1);
+  }
+  55% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(40deg);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes arrow-pulse {
+  10% {
+    font-size: 10rem;
+    text-shadow: rgb(229, 54, 54) 0px 2px 3px, black 0px -1px 5px;
+    color: lightgray;
+  }
+  30% {
+    font-size: 7.5rem;
+    text-shadow: black 1px 1px 5px;
+    color: rgb(115, 4, 4);
+  }
+  50% {
+    font-size: 10rem;
+    text-shadow: rgb(229, 54, 54) 0px 2px 3px, black 0px -1px 5px;
+    color: lightgray;
+  }
+  70% {
+    font-size: 7.5rem;
+    text-shadow: black 1px 1px 5px;
+    color: rgb(115, 4, 4);
+  }
+  85% {
+    font-size: 10rem;
+    text-shadow: rgb(229, 54, 54) 0px 2px 3px, black 0px -1px 5px;
+    color: lightgray;
+  }
+  100% {
+    font-size: 7.5rem;
+    text-shadow: black 1px 1px 5px;
+    color: rgb(115, 4, 4);
+  }
 }
 
 /*# sourceMappingURL=application.css.map */

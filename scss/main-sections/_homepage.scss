@@ -2,7 +2,7 @@ div.homepage{
     @media (min-width: 576px){
         display: flex;
         nav{
-            display: block;
+            display: flex;
             flex: .5;
         }
         div.banner{
