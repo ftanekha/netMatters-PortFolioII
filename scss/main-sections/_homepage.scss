@@ -1,0 +1,12 @@
+div.homepage{
+    @media (min-width: 576px){
+        display: flex;
+        nav{
+            display: block;
+            flex: .5;
+        }
+        div.banner{
+            flex: 2.5;
+        }
+    }
+}

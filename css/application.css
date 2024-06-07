@@ -5,6 +5,8 @@ nav {
   height: 100vh;
   border: solid black 5px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 nav div {
   margin: 0 0 70px 0;
@@ -45,6 +47,47 @@ nav div.sm-links a {
 nav div.sm-links a:hover {
   font-size: 1.5rem;
   color: rgb(180, 15, 15);
+}
+
+div.banner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+div.banner p:first-child {
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: black 2px 2px 3px, white -2px -2px 3px, rgb(180, 15, 15) 5px 5px 6px;
+}
+div.banner p span.emoji-smile {
+  font-size: 3rem;
+}
+div.banner p a {
+  display: inline-block;
+  text-decoration: none;
+}
+div.banner p a span.icon-arrow-down {
+  font-size: 3rem;
+  color: black;
+}
+div.banner p a span.icon-arrow-down:hover {
+  color: rgb(180, 15, 15);
+}
+
+@media (min-width: 576px) {
+  div.homepage {
+    display: flex;
+  }
+  div.homepage nav {
+    display: block;
+    flex: 0.5;
+  }
+  div.homepage div.banner {
+    flex: 2.5;
+  }
 }
 
 body {
