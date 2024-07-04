@@ -1,30 +1,73 @@
-div.banner{
+//BANNER
+div#banner{
+    position: relative;
+    // right: - calc(270px/2);
     height: 100vh;
+    width: 100%;
+    background-color: azure;
+    color: $main-red;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 100px;
-    p{
-        &:first-child{
-            font-size: 2rem;
-            font-weight: 600;
-            text-shadow: black 2px 2px 3px, white -2px -2px 3px, $default-red 5px 5px 6px; 
-        }
-        span.emoji-smile{
-            font-size: 3rem;
+    @media (min-width: 768px){
+        right: - calc(270px/2);
+    }
+    & > * {
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        font-weight: 600;
+    }
+    b{
+        height: 40vh;
+        font-size: 2rem;
+    }
+    strong{
+        height: 30vh;
+        font-size: 1rem;
+    }
+    div{
+        position: relative;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            small.scroll-info{
+                transition: .3s;
+                font-size: 1rem;
+                font-weight: 400;
+                color: darken($main-red, 30%);
+                visibility: hidden;
+            }
         }
         a{
             display: inline-block;
             text-decoration: none;
-            span.icon-arrow-down{
-                font-size: 2rem;
-                color: black;
+            color: $main-red;
+            span.glyphicon{
+                display: block;
+                cursor: pointer;
+                border-radius: 50%;
+                border: none;
+                outline: none;
+                font-size: 4rem;
+                font-weight: 400;
+                &::before{
+                    margin-left: -2px;
+                }
                 &:hover{
-                    color: $default-red;
-                    font-size: 3rem;
+                    color: $main-red;
+                    background-color: azure;
+                    transition: 1s;
+                    transform: scale(2);
                 }
             }
         }
+    }
+    @media (min-width: 576px){
+        min-width: 345px;
+        b{font-size: 5rem;}
+        strong{font-size: 3rem;}
     }
 }

@@ -1,0 +1,105 @@
+div#my-portfolio{
+    display: flex;
+    flex-direction: column;
+    @include section-heading;
+    p.lead{
+        text-align: center;
+    }
+    a.clickable-tech-link{
+        background-color: antiquewhite;
+        padding: .2rem;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+    p, dt, dl{
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: left;
+        margin-left: 0;
+        color: black;
+    }
+    dl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        @media screen and (width > 576px) {
+            padding: 2rem;
+        }
+        dt{
+            margin-top: 30px;
+            padding: .5rem 0;
+            font-size: 2rem;
+            font-weight: 900;
+            color: $main-red;
+        }
+        dd{
+            margin-left: 0;
+            margin-bottom: 15px;
+        }
+        p{
+            border: none;
+            margin: 1rem 0;
+            @media screen and (width > 576px) {
+                padding-left: 3rem;
+            }
+            span{
+                color: black;
+            }
+        }
+    }
+    p{
+        line-height: 1.5rem; 
+    }
+    div#portfolio-list-of-projects{
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 992px){
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 2%;
+            a{
+                width: 49%;
+                // figure{
+                //     width: 50%;
+                // }
+            }
+        }
+        a{
+            display: block;
+            opacity: .85;
+            transform: scale(.75);
+            figure{
+                width: 100%;
+                margin: auto;
+                outline: solid 10px $main-red;
+                margin-bottom: 30px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    max-width: 100%;
+                    padding-bottom: 20px;
+                }
+                figcaption{
+                    border-top: solid 5px $main-red;
+                    font-family: "Spline Sans", sans-serif;
+                    padding: 10px;
+                    font-size: .75rem;
+                    font-weight: 400;
+                    letter-spacing: .03rem;
+                    line-height: 1.25;
+                    color: darken($main-red, 90%);
+                    background-color: lighten($main-red, 45%);
+                }
+            }
+            &:hover{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+}   

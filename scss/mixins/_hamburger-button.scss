@@ -1,0 +1,51 @@
+@mixin hamburger-button{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: $hamburger-menu-z-index;
+    width: 45px;
+    height: 45px;
+    padding: 5px 15px;
+    border: double 5px $main-red;
+    outline: none;
+    color: $main-red;
+    line-height: 46px;
+    user-select: none;
+    appearance: button;
+    *{transition: .5s;}
+    display: block;
+    @media (min-width: 768px){
+        display: none;
+    }
+    span.hamburger-box{
+        display: block;
+        width: 23px;
+        height: 7px;
+        position: relative;
+        font-size: 1.438rem;
+        line-height: 45px;
+        //transform from cross to hamburger & vise versa
+        span.hamburger-inner{
+            width: 23px;
+            height: 3.8px;
+            position: absolute;
+            top: 50%;
+            left: -35%;
+            transition-property: transform;
+            background-color: $main-red;
+            border-radius: 0;
+            display: block;
+            margin-top: -1.5px;
+        }
+    }
+    &:hover{
+        background-color: lighten($main-red, 20%);
+        border: solid 5px $main-red;
+        span.hamburger-box{
+            span.hamburger-inner{
+                background-color: azure;
+            }
+        }
+    }
+}

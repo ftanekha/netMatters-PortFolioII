@@ -1,308 +1,389 @@
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap");
-nav {
-  width: 200px;
-  height: 100vh;
-  border: solid black 5px;
-  padding: 0;
-  display: none;
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+div#side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   flex-direction: column;
+  gap: 5vh;
+  width: 270px;
+  height: 100vh;
+  background-color: #b84d50;
+  transition: 1s;
 }
-nav div {
-  margin: 0 0 70px 0;
+@media (min-width: 768px) {
+  div#side-menu {
+    display: flex !important;
+  }
 }
-nav div.initials-icon a {
+div#side-menu a {
   display: block;
 }
-nav div.initials-icon a img {
-  width: 100%;
+div#side-menu a div.my-initials {
+  height: 25vh;
+  display: flex;
 }
-nav ul.main-nav {
-  list-style-type: none;
+div#side-menu a div.my-initials > div.initial-F-Container {
+  height: 100%;
+  width: 33.3333333333%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
 }
-nav ul.main-nav li {
-  height: 70px;
-  flex-grow: 1;
+div#side-menu a div.my-initials > div.initial-F-Container div {
+  height: 50%;
+  border: double 10px;
+  border-top-color: azure;
+  border-right: none;
+  border-left-color: azure;
+  border-bottom-color: azure;
 }
-nav ul.main-nav li a {
+div#side-menu a div.my-initials > div.initial-F-Container div.initial-F-bottom {
+  border-bottom-style: none;
+}
+div#side-menu a div.my-initials > div.initial-T-Container {
+  height: 100%;
+  width: 66.6666666667%;
+  display: flex;
+}
+div#side-menu a div.my-initials > div.initial-T-Container div {
+  height: 50%;
+  border: double 10px;
+  border-bottom: none;
+  border-top-color: azure;
+}
+div#side-menu a div.my-initials > div.initial-T-Container div.initial-T-left {
+  width: 50%;
+  height: 100%;
+  border-left: none;
+  border-right-color: azure;
+}
+div#side-menu a div.my-initials > div.initial-T-Container div.initial-T-right {
+  width: 50%;
+  height: 100%;
+  border-left-color: azure;
+  border-right: none;
+}
+div#side-menu nav {
+  border-left: double #b84d50 10px;
+  border-right: double #b84d50 10px;
+}
+div#side-menu nav ul {
+  list-style-type: none;
+  list-style-position: outside;
+  background-color: azure;
+  height: 50vh;
+}
+div#side-menu nav ul li {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+div#side-menu nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #b84d50;
+  font-size: 1.15rem;
+  font-weight: 200;
+  transition: 0.3s;
+}
+div#side-menu nav ul li a:hover {
+  transform: scale(1.2);
   font-weight: 600;
 }
-nav ul.main-nav li:hover a {
-  color: rgb(180, 15, 15);
-  font-size: 1.2rem;
-}
-nav div.sm-links {
+div#side-menu div#social-media-links {
+  height: 15vh;
   display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
-}
-nav div.sm-links a {
-  text-decoration: none;
-  color: black;
-}
-nav div.sm-links a:hover {
-  font-size: 1.2rem;
-  color: rgb(180, 15, 15);
-}
-
-div.banner {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 10px;
 }
-div.banner p:first-child {
-  font-size: 2rem;
-  font-weight: 600;
-  text-shadow: black 2px 2px 3px, white -2px -2px 3px, rgb(180, 15, 15) 5px 5px 6px;
-}
-div.banner p span.emoji-smile {
-  font-size: 3rem;
-}
-div.banner p a {
-  display: inline-block;
+div#side-menu div#social-media-links > a {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: azure;
+  padding: 10px;
   text-decoration: none;
+  transition: 0.3s;
 }
-div.banner p a span.icon-arrow-down {
-  font-size: 2rem;
-  color: black;
+div#side-menu div#social-media-links > a:hover {
+  transform: scale(1.5);
 }
-div.banner p a span.icon-arrow-down:hover {
-  color: rgb(180, 15, 15);
-  font-size: 3rem;
+div#side-menu div#social-media-links > a:nth-child(2) {
+  margin: 0 20px;
+}
+div#side-menu div#social-media-links > a span {
+  color: #b84d50;
 }
 
+div#banner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: azure;
+  color: #b84d50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  div#banner {
+    right: -135px;
+  }
+}
+div#banner > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+div#banner b {
+  height: 40vh;
+  font-size: 2rem;
+}
+div#banner strong {
+  height: 30vh;
+  font-size: 1rem;
+}
+div#banner div {
+  position: relative;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div#banner div p small.scroll-info {
+  transition: 0.3s;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4d1f20;
+  visibility: hidden;
+}
+div#banner div a {
+  display: inline-block;
+  text-decoration: none;
+  color: #b84d50;
+}
+div#banner div a span.glyphicon {
+  display: block;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  font-size: 4rem;
+  font-weight: 400;
+}
+div#banner div a span.glyphicon::before {
+  margin-left: -2px;
+}
+div#banner div a span.glyphicon:hover {
+  color: #b84d50;
+  background-color: azure;
+  transition: 1s;
+  transform: scale(2);
+}
 @media (min-width: 576px) {
-  div.homepage {
-    display: flex;
+  div#banner {
+    min-width: 345px;
   }
-  div.homepage nav {
-    display: flex;
-    flex: 0.5;
+  div#banner b {
+    font-size: 5rem;
   }
-  div.homepage div.banner {
-    flex: 2.5;
+  div#banner strong {
+    font-size: 3rem;
   }
 }
 
-div#about-me div {
-  display: flex;
-}
-div#about-me div nav {
-  width: 324px;
-  height: 100vh;
-  border: solid black 5px;
-  padding: 0;
+div#my-portfolio {
   display: flex;
   flex-direction: column;
 }
-div#about-me div nav div {
-  margin: 0 0 70px 0;
-}
-div#about-me div nav div.initials-icon a {
+div#my-portfolio h2 {
   display: block;
-}
-div#about-me div nav div.initials-icon a img {
   width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #b84d50;
+  font-weight: 600;
+  font-size: 4rem;
 }
-div#about-me div nav ul.main-nav {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
+div#my-portfolio p.lead {
+  text-align: center;
 }
-div#about-me div nav ul.main-nav li {
-  height: 70px;
-  flex-grow: 1;
-}
-div#about-me div nav ul.main-nav li a {
+div#my-portfolio a.clickable-tech-link {
+  background-color: antiquewhite;
+  padding: 0.2rem;
   text-decoration: none;
   color: black;
   font-weight: 600;
 }
-div#about-me div nav ul.main-nav li:hover a {
-  color: rgb(180, 15, 15);
-  font-size: 1.2rem;
-}
-div#about-me div nav div.sm-links {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
-}
-div#about-me div nav div.sm-links a {
-  text-decoration: none;
+div#my-portfolio p, div#my-portfolio dt, div#my-portfolio dl {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
+  margin-left: 0;
   color: black;
 }
-div#about-me div nav div.sm-links a:hover {
-  font-size: 1.2rem;
-  color: rgb(180, 15, 15);
+div#my-portfolio dl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
-div#about-me div div.about-me.container {
-  min-height: 100vh;
+@media screen and (width > 576px) {
+  div#my-portfolio dl {
+    padding: 2rem;
+  }
+}
+div#my-portfolio dl dt {
+  margin-top: 30px;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #b84d50;
+}
+div#my-portfolio dl dd {
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+div#my-portfolio dl p {
+  border: none;
+  margin: 1rem 0;
+}
+@media screen and (width > 576px) {
+  div#my-portfolio dl p {
+    padding-left: 3rem;
+  }
+}
+div#my-portfolio dl p span {
+  color: black;
+}
+div#my-portfolio p {
+  line-height: 1.5rem;
+}
+div#my-portfolio div#portfolio-list-of-projects {
   display: flex;
   flex-direction: column;
 }
-div#about-me div div.about-me.container h2 {
+@media (min-width: 992px) {
+  div#my-portfolio div#portfolio-list-of-projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2%;
+  }
+  div#my-portfolio div#portfolio-list-of-projects a {
+    width: 49%;
+  }
+}
+div#my-portfolio div#portfolio-list-of-projects a {
   display: block;
+  opacity: 0.85;
+  transform: scale(0.75);
+}
+div#my-portfolio div#portfolio-list-of-projects a figure {
   width: 100%;
-  margin: 1rem auto 2rem;
-  padding: 0.5rem;
-  text-align: center;
-  font-family: "Madimi One", sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-}
-div#about-me div div.about-me.container article.about-me {
-  flex: 1;
-}
-div#about-me div div.about-me.container article.about-me * {
-  text-align: center;
-}
-div#about-me div div.about-me.container article.about-me strong {
-  display: block;
-  margin: 2rem auto;
-  padding-bottom: 1rem;
-  font-size: 100%;
-}
-div#about-me div div.about-me.container article.about-me span.waving-hand {
-  display: inline-block;
-  animation: wave 5s;
-}
-div#about-me div div.about-me.container article.about-me p {
-  font-size: 0.8rem;
-  font-weight: 400;
-  text-align: justify;
-}
-@media screen and (min-width: 922px) {
-  div#about-me div div.about-me.container article.about-me p {
-    text-align: center;
-  }
-}
-div#about-me div div.about-me.container article.about-me big {
-  display: block;
-  font-size: 0.9rem;
-  text-align: center;
-  padding: 2rem;
-}
-div#about-me div div.about-me.container article.about-me footer {
-  margin: 2rem auto 0;
-  padding: 0.5rem;
-}
-div#about-me div div.about-me.container article.about-me footer small {
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-@media screen and (min-width: 768px) {
-  div#about-me div div.about-me.container article.about-me big, div#about-me div div.about-me.container article.about-me strong {
-    font-size: 150%;
-  }
-  div#about-me div div.about-me.container article.about-me p {
-    font-size: 100%;
-  }
-  div#about-me div div.about-me.container article.about-me footer {
-    padding-top: 3rem;
-  }
-  div#about-me div div.about-me.container article.about-me footer small {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #5e6480;
-  }
-}
-div#about-me div div.about-me.container article#certification-links {
+  margin: auto;
+  outline: solid 10px #b84d50;
+  margin-bottom: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-div#about-me div div.about-me.container article#certification-links p {
-  font-size: 0.9rem;
+div#my-portfolio div#portfolio-list-of-projects a figure img {
+  max-width: 100%;
+  padding-bottom: 20px;
 }
-div#about-me div div.about-me.container article#certification-links div.sm-icons-container {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 30px;
+div#my-portfolio div#portfolio-list-of-projects a figure figcaption {
+  border-top: solid 5px #b84d50;
+  font-family: "Spline Sans", sans-serif;
+  padding: 10px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+  line-height: 1.25;
+  color: black;
+  background-color: #f9f1f1;
 }
-div#about-me div div.about-me.container article#certification-links div.sm-icons-container a {
-  display: inline-block;
-  text-align: center;
-  padding: 0.5rem;
-}
-div#about-me div div.about-me.container article#certification-links div.sm-icons-container a img {
-  width: 2rem;
-  height: 2rem;
+div#my-portfolio div#portfolio-list-of-projects a:hover {
+  opacity: 1;
+  transform: scale(1);
 }
 
 body {
-  padding: 0px;
-  font-family: "Madimi One", sans-serif;
-  font-weight: 400;
+  position: relative;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
   overflow-x: hidden;
+  color: azure;
 }
-@keyframes wave {
-  0% {
-    transform: rotate(100deg);
-  }
-  10% {
-    transform: scale(2);
-  }
-  30% {
-    transform: rotate(60deg);
-  }
-  45% {
-    transform: scale(1);
-  }
-  55% {
-    transform: rotate(0deg);
-  }
-  80% {
-    transform: rotate(40deg);
-  }
-  90% {
-    transform: scale(1);
-  }
-  100% {
-    transform: rotate(0deg);
+body button#hamburger-button {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 600;
+  width: 45px;
+  height: 45px;
+  padding: 5px 15px;
+  border: double 5px #b84d50;
+  outline: none;
+  color: #b84d50;
+  line-height: 46px;
+  user-select: none;
+  appearance: button;
+  display: block;
+}
+body button#hamburger-button * {
+  transition: 0.5s;
+}
+@media (min-width: 768px) {
+  body button#hamburger-button {
+    display: none;
   }
 }
-@keyframes arrow-pulse {
-  10% {
-    font-size: 10rem;
-    text-shadow: rgb(229, 54, 54) 0px 2px 3px, black 0px -1px 5px;
-    color: lightgray;
-  }
-  30% {
-    font-size: 7.5rem;
-    text-shadow: black 1px 1px 5px;
-    color: rgb(115, 4, 4);
-  }
-  50% {
-    font-size: 10rem;
-    text-shadow: rgb(229, 54, 54) 0px 2px 3px, black 0px -1px 5px;
-    color: lightgray;
-  }
-  70% {
-    font-size: 7.5rem;
-    text-shadow: black 1px 1px 5px;
-    color: rgb(115, 4, 4);
-  }
-  85% {
-    font-size: 10rem;
-    text-shadow: rgb(229, 54, 54) 0px 2px 3px, black 0px -1px 5px;
-    color: lightgray;
-  }
-  100% {
-    font-size: 7.5rem;
-    text-shadow: black 1px 1px 5px;
-    color: rgb(115, 4, 4);
+body button#hamburger-button span.hamburger-box {
+  display: block;
+  width: 23px;
+  height: 7px;
+  position: relative;
+  font-size: 1.438rem;
+  line-height: 45px;
+}
+body button#hamburger-button span.hamburger-box span.hamburger-inner {
+  width: 23px;
+  height: 3.8px;
+  position: absolute;
+  top: 50%;
+  left: -35%;
+  transition-property: transform;
+  background-color: #b84d50;
+  border-radius: 0;
+  display: block;
+  margin-top: -1.5px;
+}
+body button#hamburger-button:hover {
+  background-color: #d59698;
+  border: solid 5px #b84d50;
+}
+body button#hamburger-button:hover span.hamburger-box span.hamburger-inner {
+  background-color: azure;
+}
+body .container {
+  padding: 0 50px;
+}
+@media (min-width: 768px) {
+  body .container {
+    margin-left: 270px;
   }
 }
 

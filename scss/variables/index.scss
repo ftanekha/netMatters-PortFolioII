@@ -1,12 +1,5 @@
-$default-red: rgb(180, 15, 15);
+$main-red: lighten(rgb(77, 31, 32), 30%);
 
-$netmatters-black: rgb(51, 54, 69);
-$box-shadow: rgb(210, 198, 198) 0px 0px 1rem;
-
-//Base declarations
-$base-typeface: "Spline Sans Mono", monospace;
-$bold-sans-serif: "Madimi One", sans-serif;
-$base-text-color: $netmatters-black;
-$light-base-text: lighten($base-text-color, 20%);
-$dark-base-text: darken($base-text-color, 80%);
-$base-fontsize: 16px;
+// z-indexes
+$side-menu-z-index: 1000;
+$hamburger-menu-z-index: 600;

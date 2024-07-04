@@ -14,7 +14,7 @@
   }
   /* apply border-box in all css rules */
   /* selon CSS3 specification,only double colon notation should be used for pseudo-elements */
-  *, *::before, *::after { box-sizing: border-box; text-decoration: none;}
+  *, *::before, *::after { box-sizing: border-box; text-decoration: none; transition: .1s}
   div{
     margin: 0;
     padding: 0;

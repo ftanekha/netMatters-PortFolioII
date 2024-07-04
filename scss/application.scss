@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import 
     "variables/index",
@@ -8,16 +9,27 @@
 ;
 
 body{
-    padding: 0px;
-    font-family: "Madimi One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    position: relative;
+    font: {
+        family: "PT Sans", sans-serif;
+        style: normal;
+        size: 16px;
+        weight: 400;
+    }
+    padding: 0;
     overflow-x: hidden;
+    color: azure;
+    button#hamburger-button{
+        @include hamburger-button;
+    }
     .container{
-        // background: green;
-        // @media (min-width: 768px){
-        //     width: 750px;
+        padding: 0 50px;
+        // @media (min-width: 576px){
+        //     
         // }
+        @media (min-width: 768px){
+            margin-left: 270px;
+        }
         // @media (min-width: 992px){
         //     width: 970px;
         // }
@@ -25,50 +37,5 @@ body{
         //     width: 1200px;
         // }
     }
-    @keyframes wave {
-        0%   {transform: rotate(100deg)}
-        10%  {transform: scale(2)}
-        30%  {transform: rotate(60deg)}
-        45%  {transform: scale(1)}
-        55%  {transform: rotate(0deg)}
-        80%  {transform: rotate(40deg)}
-        90%  {transform: scale(1)}
-        100% {transform: rotate(0deg)}
-    }
-    
-    @keyframes arrow-pulse{
-        10%{
-            font-size: 10rem;
-            text-shadow: rgb(229, 54, 54) 0px 2px 3px, 
-            black 0px -1px 5px;
-            color: lightgray;
-        }
-        30%{
-            font-size: 7.5rem; 
-            text-shadow: black 1px 1px 5px;
-            color: rgb(115, 4, 4);
-        }
-        50%{
-            font-size: 10rem;
-            text-shadow: rgb(229, 54, 54) 0px 2px 3px, 
-            black 0px -1px 5px;
-            color: lightgray;
-        }
-        70% {
-            font-size: 7.5rem; 
-            text-shadow: black 1px 1px 5px;
-            color: rgb(115, 4, 4);
-        }
-        85%{
-            font-size: 10rem;
-            text-shadow: rgb(229, 54, 54) 0px 2px 3px, 
-            black 0px -1px 5px;
-            color: lightgray;
-        }
-        100% {
-            font-size: 7.5rem; 
-            text-shadow: black 1px 1px 5px;
-            color: rgb(115, 4, 4);
-        }
-    }
+
 }

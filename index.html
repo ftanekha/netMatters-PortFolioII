@@ -12,129 +12,154 @@
     <title>Farai Tanekha's Portfolio</title>
 </head>
 <body>
-    <div class="homepage">
-        <nav>
-            <div class="main-nav-item initials-icon">
-                <a href="/">
-                    <img id="initials-image" src="assets/images/favicons/favicon-rb-period.jpeg" 
-                        alt="FT. My initials 😉" title="FT. My initials 😉" style="mix-blend-mode: plus-lighter;"4
-                    >
-                </a>
+    <!-- hamburger menu button-->
+    <button id="hamburger-button" type="button" role="button" data-toggle="sidebar" title="main navigation menu button">
+        <span class="hamburger-box left">
+            <span class="hamburger-inner"></span>
+        </span>
+        <span class="hamburger-box middle">
+            <span class="hamburger-inner"></span>
+        </span>
+        <span class="hamburger-box right">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <!--  -->
+    <div id="side-menu">
+        <a href="">
+            <div class="my-initials" title="Go to Homepage">
+                <div class="initial-F-Container">
+                    <div class="initial-F-top"></div>
+                    <div class="initial-F-bottom"></div>
+                </div>
+                <div class="initial-T-Container">
+                    <div class="initial-T-left"></div>
+                    <div class="initial-T-right"></div>
+                </div>
             </div>
-            <ul class='main-nav'>
-                <li class="main-nav-item">
+        </a>
+        <nav>
+            <ul>
+                <li>
                     <a href="#about-me">About me</a>
                 </li>
-                <li class="main-nav-item">
+                <li>
                     <a href="#my-portfolio">My Portfolio</a>
                 </li>
-                <li class="main-nav-item">
-                    <a href="#code-examples">Code Examples</a>
+                <li>
+                    <a href="#coding-examples">Coding Examples</a>
                 </li>
-                <li class="main-nav-item">
-                    <a href="#scs-scheme">SCS Scheme</a>
+                <li>
+                    <a href="#scs">SCS Scheme</a>
                 </li>
-                <li class="main-nav-item">
-                    <a href="#contact">Contact me</a>
+                <li>
+                    <a href="#contact-me">Contact me</a>
                 </li>
             </ul>
-            <div class="sm-links">
-                <a href="https://www.twitter.com/ftanekha" rel="noopener noreferrer">
-                    <span class="icon-twitter" title="See my Twitter account"></span>
-                </a>
-                <a href="https://www.linkedin.com/in/faraitanekha" rel="noopener noreferrer">
-                    <span class="icon-linkedin2" title="See my LinkedIn account"></span>
-                </a>
-                <a href="https://github.com/ftanekha" rel="noopener noreferrer">
-                    <span class="icon-github" title="See my GitHub account"></span>
-                </a>
-            </div>
         </nav>
-        <div class="banner">
-           <p>FARAI TANEKHA</p>
-           <p><span class='emoji-smile'>👋😃</span></p>
-           <p>
-                <a href="#about-me">
-                    <span class='icon-arrow-down'></span>
-                </a>
-            </p>
+        <div id="social-media-links">
+            <a href="https://www.twitter.com/ftanekha" target="_blank">
+                <span class="icon-twitter" title="My Twitter account"></span>
+            </a>
+            <a href="https://www.linkedin.com/in/faraitanekha"  target="_blank">
+                <span class="icon-linkedin2" title="My LinkedIn account"></span>
+            </a>
+            <a href="https://github.com/ftanekha"  target="_blank">
+                <span class="icon-github" title="My GitHub account"></span>
+            </a>
         </div>
     </div>
-    <div id="about-me">
-        <div>
-            <nav>
-                <div class="main-nav-item initials-icon">
-                    <a href="/">
-                        <img id="initials-image" src="assets/images/favicons/favicon-rb-period.jpeg" 
-                            alt="FT. My initials 😉" title="FT. My initials 😉" style="mix-blend-mode: plus-lighter;"4
-                        >
-                    </a>
-                </div>
-                <ul class='main-nav'>
-                    <li class="main-nav-item">
-                        <a href="#about-me">About me</a>
+    <div id="main-content">
+        <div id="banner">
+            <b>Farai Tanekha</b>
+            <strong>Software Developer</strong>
+            <div>
+                <p> 
+                    <small class="scroll-info">Scroll</small>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#my-portfolio">
+                            <span class="glyphicon glyphicon-circle-arrow-down"></span>
+                        </a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <small class="scroll-info">Down</small>
+                </p>
+            </div>
+        </div>
+        <div id="my-portfolio" class="container">
+            <h2>My Portfolio</h2>
+            <p class="lead">The projects listed below utilise a mix of technologies categorised as following:</p>
+            <!-- teck stack -->
+            <dl>
+                <!-- front-end -->
+                <dt>Front-end</dt>
+                <dd>HTML, SCSS, Tailwind, JavaScript, TypeScript</dd>
+                <p class="js-libraries">
+                    JS libraries include jQuery, Handlebars, React and D3.<br/>
+                    <li type="square">These are used for DOM manipulation, creating custom UIs and interactive data visualization.</li>
+                </p>
+                <!-- back-end -->
+                <dt>Back-end</dt>
+                <dd>Scion Coalition Scheme tech</dd>
+                <p>These will include C#, PHP, and SQL.</p>
+                <dd>Node.js</dd>
+                <p>
+                    <a class="clickable-tech-link" href="https://nodejs.org/api/modules.html#core-modules" target="_blank">Node.js</a> is a server-side JS runtime.<br/>
+                    <li type="square">Some of my favourite modules are the Node.js core modules and
+                        <a class="clickable-tech-link" href="https://expressjs.com/" target="_blank">Express.js</a>.
                     </li>
-                    <li class="main-nav-item">
-                        <a href="#my-portfolio">My Portfolio</a>
+                </p>
+                <!-- fullstack -->
+                <dt>Full-stack</dt>
+                <dd>
+                    <a class="clickable-tech-link" href="https://nextjs.org/docs" target="_blank">Next.js</a>, 
+                    <a class="clickable-tech-link" href="https://www.prisma.io/" target="_blank">Prisma</a>,
+                    <a class="clickable-tech-link" href="https://railway.app/" target="_blank">Railway</a>
+                </dd>
+                <p>
+                    Next.js is a React framework for building full-stack web applications.<br/>
+                    <li type="square">With the aid of page & API routing, Next.js can be used to build interactive, dynamic, and fast React applications.</li><br/>
+                    <li type="square">
+                        Prisma is a great tool for interacting with a 
+                        <span title="Database Management System">DBM</span> such as 
+                        <a class="clickable-tech-link" href="https://docs.railway.app/guides/postgresql" target="_blank">the Railway PostgreSQL database service</a>.
                     </li>
-                    <li class="main-nav-item">
-                        <a href="#code-examples">Code Examples</a>
-                    </li>
-                    <li class="main-nav-item">
-                        <a href="#scs-scheme">SCS Scheme</a>
-                    </li>
-                    <li class="main-nav-item">
-                        <a href="#contact">Contact me</a>
-                    </li>
-                </ul>
-                <div class="sm-links">
-                    <a href="https://www.twitter.com/ftanekha" rel="noopener noreferrer">
-                        <span class="icon-twitter" title="See my Twitter account"></span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/faraitanekha" rel="noopener noreferrer">
-                        <span class="icon-linkedin2" title="See my LinkedIn account"></span>
-                    </a>
-                    <a href="https://github.com/ftanekha" rel="noopener noreferrer">
-                        <span class="icon-github" title="See my GitHub account"></span>
-                    </a>
-                </div>
-            </nav>
-        <div class="about-me container">
-            <h2>About Me</h2>
-        <article class="about-me">
-            <strong>Greetings!<span class="waving-hand" title="Hi World!!&nbsp;&#x1F44B;&#128515;">&nbsp;&#x1F44B;</span></strong>
-            <p>My name is Farai Tanekha. I am a Software Developer with a keen vision to be one of the best.</p>
-            <br/>
-            <big>Welcome to my Portfolio.</big>
-            <p>I intend for this site to showcase my abilities as a Software Developer.</p>
-            <p>
-                The site is still under construction. I hope to display a wonderful range of technologies,
-                great use of quality User Interfaces, and to bridge the gap between simple front-end 
-                and more involved, complex fullstack web apps.
-            </p>
-            <footer>
-                <small>
-                    I'd appreciate it immensely if you'd check out my social media or 
-                    leave me your contact info and a message with any queries.
-                </small>
-            </footer>
-        </article>
-        <article id="certification-links">
-            <p>Certification</p>
-            <div class="sm-icons-container">
-                <a href="https://teamtreehouse.com/profiles/faraitanekha2"  rel="noopener noreferrer">
-                    <img src="assets/images/icons/treehouse.png" alt="treehouse icon" title="TreeHouse Certification">
+                </p>
+            </dl>
+            <div id="portfolio-list-of-projects">
+                <a href="https://ftanekha.github.io/netMatters-HomePage-v2/" target="_blank">
+                    <figure>
+                        <img src="assets/images/netmatters-homepage-replica.jpeg" alt="Netmatters homepage replica" title="Netmatters homepage replica">
+                        <figcaption>
+                            My first <em title="Scion coalition Scheme">SCS</em> project, a work in progress
+                            <span class="construction-cone">🚧</span>.
+                            Showcases intuitive use of Syntactically Awesomess Style Sheets!, the Grid system, Flexbox and HTML.
+                        </figcaption>
+                    </figure>
                 </a>
-                <a href="https://www.codecademy.com/profiles/faraiTanekha2143757604"  rel="noopener noreferrer">
-                    <img src="assets/images/icons/codecademy.png" alt="codecademy icon" title="CodeCademy Certification">
+                <a href="https://all4uhealthcare.co.uk/" target="_blank">
+                    <figure>
+                        <img src="assets/images/all4u-homepage.jpeg" alt="All4U Healthcare Solutions website" title="All4U Healthcare Solutions website">
+                        <figcaption>
+                            Designed for a start-up Healthcare agency. 
+                            This application was made using <code>jQuery, Handlebars.js, Bootstrap & HTML</code> 
+                            to produce a simple app with a streamlined look and easy navigation.
+                        </figcaption>
+                    </figure>
                 </a>
-                <a href="https://www.freecodecamp.org/ftanekha"  rel="noopener noreferrer">
-                    <img src="assets/images/icons/fcc.png" alt="freecodecamp icon" title="FreeCodeCamp Certification">
+                <a href="https://ftanekha.github.io/netMatters-JS-Array-Assessment/?#" target="_blank">
+                    <figure>
+                        <img src="assets/images/js-array-assessment.jpeg" alt="JavaScript array assessement" title="JavaScript array assessement">
+                        <figcaption>
+                            A lightweight application that uses vanilla JavaScript to fetch and display random images. 
+                            The app uses the fetch API to fetch images, and implements email validation using <code>regex</code>.
+                            The Browser localStorage API allows validated users to create, store, retrieve and view one or more collections of images.
+                        </figcaption>
+                    </figure>
                 </a>
             </div>
-        </article>
         </div>
-        </div>
+        <div id="contact-me" class="container"></div>
     </div>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
