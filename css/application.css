@@ -286,6 +286,7 @@ div#about-me article#certification-links {
 div#about-me article#certification-links p {
   font-size: 0.9rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 div#about-me article#certification-links a {
   display: inline-block;
@@ -534,6 +535,11 @@ div#scs {
   margin: 0 auto;
   padding-top: 0;
 }
+@media (min-width: 768px) {
+  div#scs {
+    margin-left: 270px;
+  }
+}
 div#scs h2 {
   display: block;
   width: 100%;
@@ -558,9 +564,10 @@ div#scs article p {
 }
 div#scs article p:first-letter {
   font-size: 200%;
+  font-weight: 600;
   padding: 0;
   height: 5rem;
-  color: #a40606;
+  color: #b84d50;
 }
 div#scs article ul {
   margin: 10px 0 0 0;
@@ -575,6 +582,7 @@ div#scs article footer {
   padding: 1rem 0;
 }
 div#scs article footer a {
+  text-decoration: none;
   padding: 0.5rem;
   display: inline-flex;
   gap: 1rem;

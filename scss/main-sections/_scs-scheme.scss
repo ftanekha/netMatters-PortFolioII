@@ -4,6 +4,9 @@ div#scs{
         height: 100vh;
         margin: 0 auto;
         padding-top: 0;
+        @media (min-width: 768px){
+            margin-left: 270px;
+        }
         @include section-heading;
         article{
             flex: 1;
