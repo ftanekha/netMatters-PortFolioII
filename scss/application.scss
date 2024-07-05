@@ -18,24 +18,13 @@ body{
     }
     padding: 0;
     overflow-x: hidden;
-    color: azure;
     button#hamburger-button{
         @include hamburger-button;
     }
     .container{
         padding: 0 50px;
-        // @media (min-width: 576px){
-        //     
-        // }
         @media (min-width: 768px){
             margin-left: 270px;
         }
-        // @media (min-width: 992px){
-        //     width: 970px;
-        // }
-        // @media (min-width: 1260px){
-        //     width: 1200px;
-        // }
     }
-
 }

@@ -1,0 +1,12 @@
+div#scs{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0 auto;
+        padding-top: 0;
+        @include section-heading;
+        article{
+            flex: 1;
+            @include scs-article;
+        }
+}

@@ -1,10 +1,9 @@
 $main-red: lighten(rgb(77, 31, 32), 30%);
-
 // z-indexes
 $side-menu-z-index: 1000;
 $hamburger-menu-z-index: 600;
-
 //contact-me
 $netmatters-black: rgb(51, 54, 69);
+$light-base-text: lighten($netmatters-black, 20%);
 $dark-base-text: darken($netmatters-black, 80%);
 $box-shadow: rgb(210, 198, 198) 0px 0px 1rem;

@@ -198,6 +198,106 @@ div#banner div a span.glyphicon:hover {
   }
 }
 
+div#about-me {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  div#about-me {
+    margin-left: 270px;
+  }
+}
+div#about-me h2 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #b84d50;
+  font-weight: 600;
+  font-size: 4rem;
+}
+div#about-me article.about-me {
+  flex: 1;
+}
+div#about-me article.about-me * {
+  text-align: center;
+  color: black;
+}
+div#about-me article.about-me strong {
+  display: block;
+  margin: 2rem auto;
+  padding-bottom: 1rem;
+  font-weight: 500;
+  font-size: 100%;
+}
+div#about-me article.about-me span.waving-hand {
+  display: inline-block;
+  animation: wave 5s;
+}
+div#about-me article.about-me p {
+  font-size: 0.8rem;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 922px) {
+  div#about-me article.about-me p {
+    text-align: center;
+  }
+}
+div#about-me article.about-me big {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 2rem;
+}
+div#about-me article.about-me footer {
+  margin: 2rem auto 0;
+  padding: 0.5rem;
+}
+div#about-me article.about-me footer small {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  div#about-me article.about-me big, div#about-me article.about-me strong {
+    font-size: 150%;
+  }
+  div#about-me article.about-me p {
+    font-size: 100%;
+  }
+  div#about-me article.about-me footer {
+    padding-top: 3rem;
+  }
+  div#about-me article.about-me footer small {
+    font-size: 1rem;
+    color: #5e6480;
+  }
+}
+div#about-me article#certification-links {
+  margin: 1rem auto 1rem;
+  display: flex;
+  flex-direction: column;
+}
+div#about-me article#certification-links p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+div#about-me article#certification-links a {
+  display: inline-block;
+  text-align: center;
+  margin: 0 1rem;
+  padding: 0.1rem;
+}
+div#about-me article#certification-links a img {
+  width: 2rem;
+  height: 2rem;
+}
+
 div#my-portfolio {
   display: flex;
   flex-direction: column;
@@ -314,6 +414,187 @@ div#my-portfolio div#portfolio-list-of-projects a figure figcaption {
 div#my-portfolio div#portfolio-list-of-projects a:hover {
   opacity: 1;
   transform: scale(1);
+}
+
+div#code-examples {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+div#code-examples h2 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #b84d50;
+  font-weight: 600;
+  font-size: 4rem;
+}
+div#code-examples h2 {
+  margin-bottom: 3rem;
+  padding: 0;
+}
+div#code-examples div#code-examples-main-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  div#code-examples div#code-examples-main-container {
+    padding: 0 20px;
+  }
+}
+div#code-examples div#code-examples-main-container *:not(span) {
+  width: 100%;
+}
+div#code-examples div#code-examples-main-container > div {
+  flex-grow: 1;
+}
+div#code-examples div#code-examples-main-container div#problem-solution-selector * {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+div#code-examples div#code-examples-main-container div#problem-solution-selector p {
+  font-size: 1rem;
+  text-align: justify;
+  width: 80%;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+  margin: auto;
+  color: black;
+  line-height: 1.5rem;
+}
+div#code-examples div#code-examples-main-container div#problem-solution-selector div#solutions-tags-container {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+div#code-examples div#code-examples-main-container div#problem-solution-selector div#solutions-tags-container span.tag {
+  display: inline-block;
+  width: 4rem;
+  padding: 0.25rem;
+  text-align: center;
+  background-color: rgb(210, 198, 198);
+  box-shadow: inset #554949 0px 0px 0.1rem;
+  border-radius: 0.2rem;
+  color: black;
+  font-weight: 700;
+}
+div#code-examples div#code-examples-main-container div#problem-solution-selector div#solutions-tags-container span.tag:hover {
+  background-color: rgb(30, 26, 26);
+  color: white;
+}
+div#code-examples div#code-examples-main-container div#coming-soon-playlist-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div#code-examples div#code-examples-main-container div#coming-soon-playlist-container img, div#code-examples div#code-examples-main-container div#coming-soon-playlist-container audio {
+  max-width: 100%;
+}
+div#code-examples div#code-examples-main-container div#coming-soon-playlist-container img {
+  margin: 1rem auto;
+}
+div#code-examples div#code-examples-main-container div#coming-soon-playlist-container audio {
+  height: 1rem;
+}
+div#code-examples div#code-examples-main-container div#coming-soon-playlist-container span.construction-cone {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0.1rem;
+  width: calc(100% - 3rem);
+  height: 3rem;
+  font-size: 2rem;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  div#code-examples {
+    margin-left: 185px;
+    width: calc(100% - 270px);
+    margin-left: 0;
+  }
+  div#code-examples h2, div#code-examples div#code-examples-main-container {
+    margin-left: 185px;
+  }
+}
+
+div#scs {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 0;
+}
+div#scs h2 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #b84d50;
+  font-weight: 600;
+  font-size: 4rem;
+}
+div#scs article {
+  flex: 1;
+  margin: 1rem;
+  text-align: justify;
+  padding: 0.5rem;
+  font-font-weight: 300;
+  font-size: 0.8rem;
+}
+div#scs article p {
+  color: black;
+  line-height: 1.5rem;
+}
+div#scs article p:first-letter {
+  font-size: 200%;
+  padding: 0;
+  height: 5rem;
+  color: #a40606;
+}
+div#scs article ul {
+  margin: 10px 0 0 0;
+  list-style-type: square;
+  list-style-position: inside;
+}
+div#scs article ul li {
+  color: black;
+  line-height: 1.5rem;
+}
+div#scs article footer {
+  padding: 1rem 0;
+}
+div#scs article footer a {
+  padding: 0.5rem;
+  display: inline-flex;
+  gap: 1rem;
+  box-shadow: inset rgb(210, 198, 198) 0px 0px 3rem;
+  font-weight: 700;
+}
+div#scs article footer a:hover {
+  box-shadow: inset rgb(72, 67, 67) 0px 0px 1.5rem;
+}
+div#scs article footer a:hover span {
+  color: #d60707;
+}
+div#scs article footer a span {
+  flex-grow: 1;
+  color: rgb(115, 4, 4);
+}
+div#scs article footer a img {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
 }
 
 div#contact-me {
@@ -459,7 +740,6 @@ body {
   font-weight: 400;
   padding: 0;
   overflow-x: hidden;
-  color: azure;
 }
 body button#hamburger-button {
   display: block;

@@ -1,0 +1,81 @@
+div#code-examples{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    @include section-heading;
+    h2{
+        margin-bottom: 3rem;
+        padding: 0;
+    }
+    div#code-examples-main-container{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 768px){
+            padding: 0 20px;
+        }
+        & *:not(span){
+            width: 100%;
+        }
+        & > div{
+            flex-grow: 1;
+        }
+        div#problem-solution-selector{
+            *{
+                font-size: .6rem;
+                font-weight: 400;
+            }
+            p{
+                font-size: 1rem;
+                text-align: justify;
+                width: 80%;
+                margin-top: -3rem;
+                margin-bottom: 2rem;
+                margin: auto;
+                color: black;
+                line-height: 1.5rem;
+            }
+            div#solutions-tags-container{
+                width: 80%;
+                margin:auto;
+                padding: 2rem 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: .25rem;
+                span.tag{
+                    @include tag;
+                }
+            }
+        }
+        div#coming-soon-playlist-container{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img, audio{
+                max-width: 100%;
+            }
+            img{
+                margin: 1rem auto;
+            }
+            audio{
+                height: 1rem;
+            }
+            span.construction-cone{
+                @include construction-cone;
+            }
+        }
+    }
+    @media (min-width: 768px){
+        margin-left: 185px;
+        width: calc(100% - 270px);
+        margin-left: 0;
+        h2, div#code-examples-main-container{
+            margin-left: 185px;
+        }
+    }
+    
+}
