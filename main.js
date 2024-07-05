@@ -1,4 +1,4 @@
-import {animateScrollDownButtonInfo} from './js/utilities.js'
+import {animateScrollDownButtonInfo, isUserEmailAddressValid, isUserTelephoneValid} from './js/utilities.js'
 
 document.addEventListener(
     'DOMContentLoaded', ()=>{
@@ -8,6 +8,7 @@ document.addEventListener(
             animateScrollDownButtonInfo()
             localStorage.setItem('hasScrollDownButtonBeenAnimated', true)
         }
+
         //toggle side menu on small screen devices
         // const mainContent = document.querySelector('div#main-content')
         const hamburgerMenuButton = document.querySelector('button#hamburger-button')
@@ -27,6 +28,36 @@ document.addEventListener(
                         // if(mQuery.matches) mainContent.style.right = `-${sideMenuWidth/2}px`
                     }
                }
+            }
+        )
+
+        //validate contact-me form data
+        const contactMeForm = document.querySelector('form#contact-me-form')
+        contactMeForm.addEventListener(
+            'submit', 
+            (ev)=>{
+                ev.preventDefault()
+                
+                const userData = {
+                    'First Name': document.querySelector('#first-name').value,
+                    'Last Name': document.querySelector('#last-name').value,
+                    'Full Name': '',
+                    'Telephone': document.querySelector('#telephone').value,
+                    'Email': document.querySelector('#email').value,
+                    'Message': document.querySelector('#message').value
+                }
+                userData['Full Name'] = userData['First Name'] + ' ' + userData['Last Name']
+
+                if(
+                    isUserEmailAddressValid(userData['Email']) 
+                                    &&
+                    isUserTelephoneValid(userData['Telephone']) 
+                ){
+                    console.table(userData)
+                    alert(`Thank you for leaving a message! I'll be in touch very soon.`)
+                }else{
+                    alert('Your message has not been sent due to an invalid email and/or telephone number.')
+                }
             }
         )
     }
