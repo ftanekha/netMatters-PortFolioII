@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 div#side-menu {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -304,6 +305,32 @@ div#about-me article#certification-links a img {
   height: 2rem;
 }
 
+@keyframes wave {
+  0% {
+    transform: rotate(100deg);
+  }
+  10% {
+    transform: scale(2);
+  }
+  30% {
+    transform: rotate(60deg);
+  }
+  45% {
+    transform: scale(1);
+  }
+  55% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(40deg);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 div#my-portfolio {
   display: flex;
   flex-direction: column;
@@ -318,32 +345,44 @@ div#my-portfolio h2 {
   font-weight: 600;
   font-size: 4rem;
 }
-div#my-portfolio p.lead {
-  text-align: center;
-}
 div#my-portfolio a.clickable-tech-link {
-  background-color: antiquewhite;
   padding: 0.2rem;
-  text-decoration: none;
   color: black;
   font-weight: 600;
 }
+@media (min-width: 992px) {
+  div#my-portfolio a.clickable-tech-link {
+    background-color: antiquewhite;
+    line-height: 1.5rem;
+  }
+}
 div#my-portfolio p, div#my-portfolio dt, div#my-portfolio dl {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 300;
   text-align: left;
   margin-left: 0;
   color: black;
 }
+@media (min-width: 768px) {
+  div#my-portfolio p.lead, div#my-portfolio dt.lead, div#my-portfolio dl.lead {
+    text-align: center;
+  }
+}
 div#my-portfolio dl {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 1rem;
 }
-@media screen and (width > 576px) {
+@media screen and (min-width: 576px) {
   div#my-portfolio dl {
     padding: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  div#my-portfolio dl {
+    width: 80%;
+    margin: auto;
+    align-items: center;
   }
 }
 div#my-portfolio dl dt {
@@ -355,7 +394,12 @@ div#my-portfolio dl dt {
 }
 div#my-portfolio dl dd {
   margin-left: 0;
-  margin-bottom: 15px;
+}
+div#my-portfolio dl dd a.clickable-tech-link {
+  padding: 0.2rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
 }
 div#my-portfolio dl p {
   border: none;
@@ -619,8 +663,11 @@ div#contact-me h2 {
 div#contact-me div#enquiry-form {
   min-width: 250px;
   flex: 1;
-  margin: 0;
+  margin: 0 auto;
   padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 div#contact-me div#enquiry-form form {
   width: 80%;

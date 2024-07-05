@@ -8,8 +8,11 @@ div#contact-me{
     div#enquiry-form{
         min-width: 250px;
         flex: 1;
-        margin: 0;
+        margin: 0 auto;
         padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         form{
             width: 80%;
             display: flex;

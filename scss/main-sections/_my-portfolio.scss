@@ -2,30 +2,38 @@ div#my-portfolio{
     display: flex;
     flex-direction: column;
     @include section-heading;
-    p.lead{
-        text-align: center;
-    }
     a.clickable-tech-link{
-        background-color: antiquewhite;
         padding: .2rem;
-        text-decoration: none;
         color: black;
         font-weight: 600;
+        @media (min-width: 992px){
+            background-color: antiquewhite;
+            line-height: 1.5rem;
+        }
     }
     p, dt, dl{
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 300;
         text-align: left;
         margin-left: 0;
         color: black;
+        &.lead{
+            @media (min-width: 768px){
+                text-align: center;
+            }
+        }
     }
     dl{
         display: flex;
         flex-direction: column;
-        align-items: center;
         padding: 1rem;
-        @media screen and (width > 576px) {
+        @media screen and (min-width: 576px) {
             padding: 2rem;
+        }
+        @media (min-width: 768px){
+            width: 80%;
+            margin: auto;
+            align-items: center;
         }
         dt{
             margin-top: 30px;
@@ -36,7 +44,12 @@ div#my-portfolio{
         }
         dd{
             margin-left: 0;
-            margin-bottom: 15px;
+            a.clickable-tech-link{
+                padding: .2rem;
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+            }
         }
         p{
             border: none;

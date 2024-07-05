@@ -13,7 +13,7 @@ document.addEventListener(
         // const mainContent = document.querySelector('div#main-content')
         const hamburgerMenuButton = document.querySelector('button#hamburger-button')
         const sideMenu = document.querySelector('div#side-menu')
-        sideMenu.style.display = 'flex'
+        // sideMenu.style.display = 'flex'
         // const sideMenuWidth = 270
         const mQuery = window.matchMedia('(max-width: 768px)')
         hamburgerMenuButton.addEventListener(
