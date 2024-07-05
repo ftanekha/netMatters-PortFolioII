@@ -64,9 +64,6 @@ div#code-examples{
             audio{
                 height: 1rem;
             }
-            span.construction-cone{
-                @include construction-cone;
-            }
         }
     }
     @media (min-width: 768px){

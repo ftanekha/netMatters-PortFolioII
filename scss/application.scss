@@ -22,7 +22,7 @@ body{
         @include hamburger-button;
     }
     .container{
-        padding: 0 50px;
+        // padding: 0 50px;
         @media (min-width: 768px){
             margin-left: 270px;
         }
