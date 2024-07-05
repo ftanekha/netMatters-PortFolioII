@@ -24,9 +24,9 @@
             <span class="hamburger-inner"></span>
         </span>
     </button>
-    <!--  -->
+    <!-- side menu/ main navigation-->
     <div id="side-menu">
-        <a href="">
+        <a href="#">
             <div class="my-initials" title="Go to Homepage">
                 <div class="initial-F-Container">
                     <div class="initial-F-top"></div>
@@ -69,7 +69,9 @@
             </a>
         </div>
     </div>
+    <!-- main page content -->
     <div id="main-content">
+        <!-- section#banner -->
         <div id="banner">
             <b>Farai Tanekha</b>
             <strong>Software Developer</strong>
@@ -85,6 +87,7 @@
                 </p>
             </div>
         </div>
+        <!-- section#my-portfolio -->
         <div id="my-portfolio" class="container">
             <h2>My Portfolio</h2>
             <p class="lead">The projects listed below utilise a mix of technologies categorised as following:</p>
@@ -158,7 +161,49 @@
                 </a>
             </div>
         </div>
-        <div id="contact-me" class="container"></div>
+        <!-- section#contact-me -->
+        <div id="contact-me" class="container">
+            <h2>Contact Me</h2>
+            <div id="enquiry-form">
+                <form action="" method="post">
+                    <div class="full-name">
+                        <div class="contact-info-detail">
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" name="fname" required/>
+                        </div>
+                        <div class="contact-info-detail">
+                            <label for="last-name">Last name&nbsp;</label>
+                            <input type="text" id="last-name" name="lname" required/>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-info-detail">
+                            <label for="telephone">Telephone&nbsp;</label>
+                            <input type="tel" id="telephone" name="telephone" required/>
+                        </div>
+                        <div class="contact-info-detail">
+                            <label for="email">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="email" id="email" name="email"/>
+                        </div>
+                    </div>                       
+                    <div class="enquiry-message">
+                        <textarea name="message" id="message" cols="36" rows="10" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+            <div id="scroll-up">
+                <p> 
+                    <small class="scroll-info">Scroll</small>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#">
+                            <span class="glyphicon glyphicon-circle-arrow-up"></span>
+                        </a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <small class="scroll-info">Back Up</small>
+                </p>
+            </div>
+        </div>
     </div>
     <script type="module" src="main.js"></script>
 </body>

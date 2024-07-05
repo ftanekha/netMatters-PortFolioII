@@ -1,7 +1,5 @@
-//BANNER
 div#banner{
     position: relative;
-    // right: - calc(270px/2);
     height: 100vh;
     width: 100%;
     background-color: azure;
@@ -60,7 +58,7 @@ div#banner{
                     color: $main-red;
                     background-color: azure;
                     transition: 1s;
-                    transform: scale(2);
+                    transform: scale(1.75);
                 }
             }
         }
