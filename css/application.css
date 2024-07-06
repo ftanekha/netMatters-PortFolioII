@@ -563,7 +563,7 @@ div#scs h2 {
   font-weight: 600;
   font-size: 4rem;
 }
-div#scs article {
+div#scs div.article {
   flex: 1;
   width: 80%;
   margin: 1rem auto;
@@ -573,34 +573,34 @@ div#scs article {
   font-size: 0.8rem;
 }
 @media (min-width: 768px) {
-  div#scs article {
+  div#scs div.article {
     font-size: 1rem;
   }
 }
-div#scs article p {
+div#scs div.article p {
   color: black;
   line-height: 1.5rem;
 }
-div#scs article p:first-letter {
+div#scs div.article p:first-letter {
   font-size: 200%;
   font-weight: 600;
   padding: 0;
   height: 5rem;
   color: #b84d50;
 }
-div#scs article ul {
+div#scs div.article ul {
   margin: 10px 0 0 0;
   list-style-type: square;
-  list-style-position: inside;
+  list-style-position: outside;
 }
-div#scs article ul li {
+div#scs div.article ul li {
   color: black;
   line-height: 1.5rem;
 }
-div#scs article footer {
+div#scs div.article footer {
   padding: 1rem 0;
 }
-div#scs article footer a {
+div#scs div.article footer a {
   text-decoration: none;
   padding: 0.5rem;
   display: inline-flex;
@@ -608,17 +608,17 @@ div#scs article footer a {
   box-shadow: inset rgb(210, 198, 198) 0px 0px 3rem;
   font-weight: 700;
 }
-div#scs article footer a:hover {
+div#scs div.article footer a:hover {
   box-shadow: inset rgb(72, 67, 67) 0px 0px 1.5rem;
 }
-div#scs article footer a:hover span {
+div#scs div.article footer a:hover span {
   color: #d60707;
 }
-div#scs article footer a span {
+div#scs div.article footer a span {
   flex-grow: 1;
   color: rgb(115, 4, 4);
 }
-div#scs article footer a img {
+div#scs div.article footer a img {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;

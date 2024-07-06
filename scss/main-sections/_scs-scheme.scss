@@ -8,7 +8,7 @@ div#scs{
             margin-left: 270px;
         }
         @include section-heading;
-        article{
+        div.article{
             flex: 1;
             @include scs-article;
         }
