@@ -7,14 +7,14 @@ div#about-me{
     flex-direction: column;
     @media (min-width: 768px){
         margin-left: 270px;
-        article.about-me{
+        div.about-me{
             width: 80%;
             margin: 0 auto;
             padding: 0 30px;
         }
     }
     @include section-heading;
-    article.about-me{
+    div.about-me{
         padding: 0 30px;
         // flex: 1;
         *{
@@ -76,8 +76,9 @@ div#about-me{
         margin: 4rem auto 1rem;
         display: flex;
         flex-direction: column;
-        p{
-            font-size: .9rem;
+        h6{
+            font-size: 1.2rem;
+            font-weight: 400;
             margin-bottom: 1rem;
             text-align: center;
         }
