@@ -1,14 +1,19 @@
-import {animateScrollDownButtonInfo, isUserEmailAddressValid, isUserTelephoneValid} from './js/utilities.js'
+import {animateScrollDownButtonInfo, animateScrollUpButtonInfo, isUserEmailAddressValid, isUserTelephoneValid} from './js/utilities.js'
 
 document.addEventListener(
     'DOMContentLoaded', ()=>{
-        //animate banner/ homapage scroll button only once on first page load
+        //animate banner/ homapage scroll-up&down buttons only once on first page load
         const hasScrollDownButtonBeenAnimated = localStorage.getItem('hasScrollDownButtonBeenAnimated')
         if(!hasScrollDownButtonBeenAnimated){
             animateScrollDownButtonInfo()
             localStorage.setItem('hasScrollDownButtonBeenAnimated', true)
         }
 
+        const hasScrollUpButtonBeenAnimated = localStorage.getItem('hasScrollUpButtonBeenAnimated')
+        if(!hasScrollUpButtonBeenAnimated){
+            animateScrollUpButtonInfo()
+            localStorage.setItem('hasScrollUpButtonBeenAnimated', true)
+        }
         //toggle side menu on small screen devices
         // const mainContent = document.querySelector('div#main-content')
         const hamburgerMenuButton = document.querySelector('button#hamburger-button')

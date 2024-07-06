@@ -149,26 +149,26 @@ div#banner strong {
   height: 30vh;
   font-size: 1rem;
 }
-div#banner div {
+div#banner div#scroll-down {
   position: relative;
   height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-div#banner div p small.scroll-info {
+div#banner div#scroll-down p small.scroll-info {
   transition: 0.3s;
   font-size: 1rem;
   font-weight: 400;
   color: #4d1f20;
   visibility: hidden;
 }
-div#banner div a {
+div#banner div#scroll-down a {
   display: inline-block;
   text-decoration: none;
   color: #b84d50;
 }
-div#banner div a span.glyphicon {
+div#banner div#scroll-down a span.glyphicon {
   display: block;
   cursor: pointer;
   border-radius: 50%;
@@ -177,10 +177,10 @@ div#banner div a span.glyphicon {
   font-size: 4rem;
   font-weight: 400;
 }
-div#banner div a span.glyphicon::before {
+div#banner div#scroll-down a span.glyphicon::before {
   margin-left: -2px;
 }
-div#banner div a span.glyphicon:hover {
+div#banner div#scroll-down a span.glyphicon:hover {
   color: #b84d50;
   background-color: azure;
   transition: 1s;
@@ -207,9 +207,6 @@ div#about-me {
   flex-direction: column;
 }
 @media (min-width: 768px) {
-  div#about-me {
-    margin-left: 270px;
-  }
   div#about-me div.about-me {
     width: 80%;
     margin: 0 auto;
@@ -535,11 +532,6 @@ div#code-examples div#code-examples-main-container div#coming-soon-playlist-cont
 div#code-examples div#code-examples-main-container div#coming-soon-playlist-container audio {
   height: 1rem;
 }
-@media (min-width: 768px) {
-  div#code-examples {
-    margin-left: 270px;
-  }
-}
 
 div#scs {
   display: flex;
@@ -547,11 +539,6 @@ div#scs {
   height: 100vh;
   margin: 0 auto;
   padding-top: 0;
-}
-@media (min-width: 768px) {
-  div#scs {
-    margin-left: 270px;
-  }
 }
 div#scs h2 {
   display: block;
@@ -824,8 +811,14 @@ body button#hamburger-button:hover {
 body button#hamburger-button:hover span.hamburger-box span.hamburger-inner {
   background-color: azure;
 }
+body div#main-content {
+  background-color: azure;
+}
+body div#main-content div.container {
+  background-color: white;
+}
 @media (min-width: 768px) {
-  body .container {
+  body div#main-content div.container {
     margin-left: 270px;
   }
 }

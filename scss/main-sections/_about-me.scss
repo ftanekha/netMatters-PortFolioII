@@ -6,7 +6,6 @@ div#about-me{
     display: flex;
     flex-direction: column;
     @media (min-width: 768px){
-        margin-left: 270px;
         div.about-me{
             width: 80%;
             margin: 0 auto;

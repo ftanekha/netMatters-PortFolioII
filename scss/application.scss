@@ -19,9 +19,13 @@ body{
     button#hamburger-button{
         @include hamburger-button;
     }
-    .container{
-        @media (min-width: 768px){
-            margin-left: 270px;
+    div#main-content{
+        background-color: azure;
+        div.container{
+            background-color: white;
+            @media (min-width: 768px){
+                margin-left: 270px;
+            }
         }
     }
 }
