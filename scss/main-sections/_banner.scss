@@ -30,15 +30,6 @@ div#banner{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        p{
-            small.scroll-info{
-                transition: .3s;
-                font-size: 1rem;
-                font-weight: 400;
-                color: darken($main-red, 30%);
-                visibility: hidden;
-            }
-        }
         a{
             display: inline-block;
             text-decoration: none;
@@ -58,7 +49,7 @@ div#banner{
                     color: $main-red;
                     background-color: azure;
                     transition: 1s;
-                    transform: scale(1.75);
+                    transform: scale(1.5);
                 }
             }
         }

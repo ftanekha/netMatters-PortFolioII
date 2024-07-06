@@ -1,16 +1,17 @@
 div#contact-me{
-    background-color: azure;
-    height: 100vh;
+    background-color: azure !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     @include section-heading;
+    h2{margin-bottom: 5rem;}
     // ENQUIRY FORM
     div#enquiry-form{
         min-width: 250px;
         flex: 1;
         margin: 0 auto;
-        padding: 3rem 0;
+        padding: 0;
+        padding-bottom: 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -95,18 +96,10 @@ div#contact-me{
         }
     }
     div#scroll-up{
+        margin-bottom: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        p{
-            small.scroll-info{
-                transition: .3s;
-                font-size: 1rem;
-                font-weight: 400;
-                color: darken($main-red, 30%);
-                visibility: hidden;
-            }
-        }
         a{
             display: inline-block;
             text-decoration: none;
@@ -126,7 +119,7 @@ div#contact-me{
                     color: $main-red;
                     background-color: azure;
                     transition: 1s;
-                    transform: scale(1.75);
+                    transform: scale(1.5);
                 }
             }
         }

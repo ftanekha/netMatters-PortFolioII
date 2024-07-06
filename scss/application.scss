@@ -20,7 +20,6 @@ body{
         @include hamburger-button;
     }
     div#main-content{
-        background-color: azure;
         div.container{
             background-color: white;
             @media (min-width: 768px){

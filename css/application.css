@@ -156,13 +156,6 @@ div#banner div#scroll-down {
   flex-direction: column;
   justify-content: center;
 }
-div#banner div#scroll-down p small.scroll-info {
-  transition: 0.3s;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #4d1f20;
-  visibility: hidden;
-}
 div#banner div#scroll-down a {
   display: inline-block;
   text-decoration: none;
@@ -184,7 +177,7 @@ div#banner div#scroll-down a span.glyphicon:hover {
   color: #b84d50;
   background-color: azure;
   transition: 1s;
-  transform: scale(1.75);
+  transform: scale(1.5);
 }
 @media (min-width: 576px) {
   div#banner {
@@ -199,7 +192,6 @@ div#banner div#scroll-down a span.glyphicon:hover {
 }
 
 div#about-me {
-  width: 70%;
   margin: 0 auto;
   padding: 0;
   min-height: 100vh;
@@ -208,7 +200,6 @@ div#about-me {
 }
 @media (min-width: 768px) {
   div#about-me div.about-me {
-    width: 80%;
     margin: 0 auto;
     padding: 0 30px;
   }
@@ -224,6 +215,8 @@ div#about-me h2 {
   font-size: 4rem;
 }
 div#about-me div.about-me {
+  width: 70%;
+  margin: auto;
   padding: 0 30px;
 }
 div#about-me div.about-me * {
@@ -534,6 +527,7 @@ div#code-examples div#code-examples-main-container div#coming-soon-playlist-cont
 }
 
 div#scs {
+  background-color: white;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -591,6 +585,7 @@ div#scs div.article footer a {
   text-decoration: none;
   padding: 0.5rem;
   display: inline-flex;
+  align-items: center;
   gap: 1rem;
   box-shadow: inset rgb(210, 198, 198) 0px 0px 3rem;
   font-weight: 700;
@@ -612,8 +607,7 @@ div#scs div.article footer a img {
 }
 
 div#contact-me {
-  background-color: azure;
-  height: 100vh;
+  background-color: azure !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -628,11 +622,15 @@ div#contact-me h2 {
   font-weight: 600;
   font-size: 4rem;
 }
+div#contact-me h2 {
+  margin-bottom: 5rem;
+}
 div#contact-me div#enquiry-form {
   min-width: 250px;
   flex: 1;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 0;
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -715,16 +713,10 @@ div#contact-me div#enquiry-form form button:hover {
   }
 }
 div#contact-me div#scroll-up {
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-div#contact-me div#scroll-up p small.scroll-info {
-  transition: 0.3s;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #4d1f20;
-  visibility: hidden;
 }
 div#contact-me div#scroll-up a {
   display: inline-block;
@@ -747,7 +739,7 @@ div#contact-me div#scroll-up a span.glyphicon:hover {
   color: #b84d50;
   background-color: azure;
   transition: 1s;
-  transform: scale(1.75);
+  transform: scale(1.5);
 }
 
 body {
@@ -809,9 +801,6 @@ body button#hamburger-button:hover {
   border: solid 5px #b84d50;
 }
 body button#hamburger-button:hover span.hamburger-box span.hamburger-inner {
-  background-color: azure;
-}
-body div#main-content {
   background-color: azure;
 }
 body div#main-content div.container {
