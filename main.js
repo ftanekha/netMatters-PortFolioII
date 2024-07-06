@@ -45,6 +45,7 @@ document.addEventListener(
                 }else{
                     alert('Your message has not been sent due to an invalid email and/or telephone number.')
                 }
+                contactMeForm.reset()
             }
         )
     }
