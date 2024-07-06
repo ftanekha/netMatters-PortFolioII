@@ -65,6 +65,7 @@ div#side-menu a div.my-initials > div.initial-T-Container div.initial-T-right {
   border-right: none;
 }
 div#side-menu nav {
+  background-color: azure;
   border-left: double #b84d50 10px;
   border-right: double #b84d50 10px;
 }
@@ -344,7 +345,7 @@ div#my-portfolio h2 {
   font-size: 4rem;
 }
 div#my-portfolio a.clickable-tech-link {
-  padding: 0.2rem;
+  padding: 0.2rem 0.4rem;
   color: black;
   font-weight: 600;
 }
@@ -357,7 +358,7 @@ div#my-portfolio a.clickable-tech-link {
 div#my-portfolio p, div#my-portfolio dt, div#my-portfolio dl {
   font-size: 0.8rem;
   font-weight: 300;
-  text-align: left;
+  text-align: center;
   margin-left: 0;
   color: black;
 }
@@ -384,7 +385,8 @@ div#my-portfolio dl {
   }
 }
 div#my-portfolio dl dt {
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   padding: 0.5rem 0;
   font-size: 2rem;
   font-weight: 900;
@@ -392,24 +394,13 @@ div#my-portfolio dl dt {
 }
 div#my-portfolio dl dd {
   margin-left: 0;
+  margin-bottom: 0.5rem;
 }
 div#my-portfolio dl dd a.clickable-tech-link {
   padding: 0.2rem;
   text-decoration: none;
   color: black;
   font-weight: 600;
-}
-div#my-portfolio dl p {
-  border: none;
-  margin: 1rem 0;
-}
-@media screen and (width > 576px) {
-  div#my-portfolio dl p {
-    padding-left: 3rem;
-  }
-}
-div#my-portfolio dl p span {
-  color: black;
 }
 div#my-portfolio p {
   line-height: 1.5rem;
@@ -640,6 +631,7 @@ div#scs article footer a img {
 }
 
 div#contact-me {
+  background-color: azure;
   height: 100vh;
   display: flex;
   flex-direction: column;
