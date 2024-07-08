@@ -65,7 +65,6 @@ div#side-menu a div.my-initials > div.initial-T-Container div.initial-T-right {
   border-right: none;
 }
 div#side-menu nav {
-  background-color: azure;
   border-left: double #b84d50 10px;
   border-right: double #b84d50 10px;
 }
@@ -392,16 +391,17 @@ div#my-portfolio p {
 div#my-portfolio div#portfolio-list-of-projects {
   display: flex;
   flex-direction: column;
+  margin-bottom: 6rem;
 }
 @media (min-width: 992px) {
   div#my-portfolio div#portfolio-list-of-projects {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 2%;
+    gap: 5%;
   }
   div#my-portfolio div#portfolio-list-of-projects a {
-    width: 49%;
+    width: 700px;
+    height: 300px;
   }
 }
 div#my-portfolio div#portfolio-list-of-projects a {
