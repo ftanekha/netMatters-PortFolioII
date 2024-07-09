@@ -1,5 +1,5 @@
 div#contact-me{
-    background-color: azure !important;
+    background-color: darken(azure, 5%) !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,6 +130,7 @@ div#contact-me{
                     background-color: azure;
                     transition: 1s;
                     transform: scale(1.5);
+                    background-color: darken(azure, 20%);
                 }
             }
         }

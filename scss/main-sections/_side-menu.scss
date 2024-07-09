@@ -29,10 +29,10 @@ div#side-menu{
                     div{
                         height: 50%;
                         border: double 10px;
-                        border-top-color: azure;
+                        border-top-color: darken(azure, 5%);
                         border-right: none;
-                        border-left-color: azure;
-                        border-bottom-color: azure;
+                        border-left-color: darken(azure, 5%);
+                        border-bottom-color: darken(azure, 5%);
                         &.initial-F-bottom{
                             border-bottom-style: none;
                         }
@@ -46,17 +46,17 @@ div#side-menu{
                         height: 50%;
                         border: double 10px;
                         border-bottom: none;
-                        border-top-color: azure;
+                        border-top-color: darken(azure, 5%);
                         &.initial-T-left{
                             width: 50%;
                             height: 100%;
                             border-left: none;
-                            border-right-color: azure;
+                            border-right-color: darken(azure, 5%);
                         }
                         &.initial-T-right{
                             width: 50%;
                             height: 100%;
-                            border-left-color: azure;
+                            border-left-color: darken(azure, 5%);
                             border-right: none;
                         }
                     }
@@ -70,7 +70,7 @@ div#side-menu{
         ul{
             list-style-type: none;
             list-style-position: outside;
-            background-color: azure;
+            background-color: darken(azure, 5%);
             height: 50vh;
             li{
                 height: 10vh;
@@ -103,7 +103,7 @@ div#side-menu{
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            background-color: azure;
+            background-color: darken(azure, 5%);
             padding: 10px;
             text-decoration: none;
             transition: .3s;

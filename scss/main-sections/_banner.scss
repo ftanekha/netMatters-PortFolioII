@@ -10,6 +10,7 @@ div#banner{
     background-repeat: no-repeat;  
     filter: sepia(25%);    
     filter: hue-rotate(10deg);
+    border-bottom: solid 3rem darken(azure, 5%);
     color: $main-red;
     display: flex;
     flex-direction: column;
@@ -55,7 +56,7 @@ div#banner{
                 outline: none;
                 font-size: 4rem;
                 font-weight: 400;
-                background-color: white;
+                background-color: darken(azure, 10%);
                 text-shadow: -1px -1px 2px white,
                             1px 1px 2px darken($main-red, 30%);
                 &::before{
@@ -66,7 +67,7 @@ div#banner{
                     background-color: azure;
                     transition: 1s;
                     transform: scale(1.5);
-                    background-color: darken(white, 30%);
+                    background-color: darken(azure, 20%);
                 }
             }
         }
