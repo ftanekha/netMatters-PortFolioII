@@ -41,11 +41,13 @@ document.addEventListener(
                                     &&
                     isUserTelephoneValid(userData['Telephone']) 
                 ){
-                    alert(`Thank you ${userData['Full Name']} for leaving a message!\nI'll be in touch very soon.😄`)
-                }else{
-                    alert('Your message has not been sent due to an invalid email and/or telephone number.')
+                    alert(`Thank you ${userData['Full Name']} for leaving a message!\nI'll be in touch very soon.😎`)
+                    contactMeForm.reset()
+                }else if(!isUserEmailAddressValid(userData['Email'])){
+                    alert('Your message has not been sent due to an invalid email address!!😬')
+                }else if(!isUserTelephoneValid(userData['Telephone'])){
+                    alert('Your message has not been sent due to an invalid telephone number!!😬')
                 }
-                contactMeForm.reset()
             }
         )
     }

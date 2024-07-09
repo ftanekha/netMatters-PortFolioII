@@ -19,10 +19,12 @@ div#banner{
     b{
         height: 40vh;
         font-size: 2rem;
+        transition: .3s;
     }
     strong{
         height: 30vh;
         font-size: 1rem;
+        transition: .3s;
     }
     div#scroll-down{
         position: relative;
