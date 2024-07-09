@@ -3,6 +3,13 @@ div#banner{
     height: 100vh;
     width: 100%;
     background-color: azure;
+    min-height: 100vh;
+    background-image: url("../../assets/images/helloIphone.jpg"), url("../assets/images/helloIphone.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    filter: sepia(25%);    
+    filter: hue-rotate(10deg);
     color: $main-red;
     display: flex;
     flex-direction: column;
@@ -20,11 +27,15 @@ div#banner{
         height: 40vh;
         font-size: 2rem;
         transition: .3s;
+        text-shadow: -1px -1px 2px white,
+                    3px 3px 2px darken($main-red, 30%);
     }
     strong{
         height: 30vh;
         font-size: 1rem;
         transition: .3s;
+        text-shadow: -1px -1px 2px white,
+                    1px 1px 2px darken($main-red, 80%);
     }
     div#scroll-down{
         position: relative;
@@ -44,6 +55,9 @@ div#banner{
                 outline: none;
                 font-size: 4rem;
                 font-weight: 400;
+                background-color: white;
+                text-shadow: -1px -1px 2px white,
+                            1px 1px 2px darken($main-red, 30%);
                 &::before{
                     margin-left: -2px;
                 }
@@ -52,6 +66,7 @@ div#banner{
                     background-color: azure;
                     transition: 1s;
                     transform: scale(1.5);
+                    background-color: darken(white, 30%);
                 }
             }
         }

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 div#side-menu {
   display: none;
+  filter: sepia(25%);
+  filter: hue-rotate(10deg);
   position: fixed;
   top: 0;
   left: 0;
@@ -124,6 +126,13 @@ div#banner {
   height: 100vh;
   width: 100%;
   background-color: azure;
+  min-height: 100vh;
+  background-image: url("../../assets/images/helloIphone.jpg"), url("../assets/images/helloIphone.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: sepia(25%);
+  filter: hue-rotate(10deg);
   color: #b84d50;
   display: flex;
   flex-direction: column;
@@ -143,10 +152,14 @@ div#banner > * {
 div#banner b {
   height: 40vh;
   font-size: 2rem;
+  transition: 0.3s;
+  text-shadow: -1px -1px 2px white, 3px 3px 2px #4d1f20;
 }
 div#banner strong {
   height: 30vh;
   font-size: 1rem;
+  transition: 0.3s;
+  text-shadow: -1px -1px 2px white, 1px 1px 2px black;
 }
 div#banner div#scroll-down {
   position: relative;
@@ -168,6 +181,8 @@ div#banner div#scroll-down a span.glyphicon {
   outline: none;
   font-size: 4rem;
   font-weight: 400;
+  background-color: white;
+  text-shadow: -1px -1px 2px white, 1px 1px 2px #4d1f20;
 }
 div#banner div#scroll-down a span.glyphicon::before {
   margin-left: -2px;
@@ -177,6 +192,7 @@ div#banner div#scroll-down a span.glyphicon:hover {
   background-color: azure;
   transition: 1s;
   transform: scale(1.5);
+  background-color: #b3b3b3;
 }
 @media (min-width: 576px) {
   div#banner {
@@ -764,6 +780,8 @@ body {
   overflow-x: hidden;
 }
 body button#hamburger-button {
+  filter: sepia(25%);
+  filter: hue-rotate(10deg);
   display: block;
   position: fixed;
   top: 0;

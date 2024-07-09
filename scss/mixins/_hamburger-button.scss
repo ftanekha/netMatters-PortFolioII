@@ -1,4 +1,6 @@
 @mixin hamburger-button{
+    filter: sepia(25%); 
+    filter: hue-rotate(10deg);
     display: block;
     position: fixed;
     top: 0;
