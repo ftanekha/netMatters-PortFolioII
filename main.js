@@ -35,18 +35,30 @@ document.addEventListener(
                     'Message': document.querySelector('#message').value
                 }
                 userData['Full Name'] = userData['First Name'] + ' ' + userData['Last Name']
-                //validate data
+                
+                //validate user data
+                if(!isUserTelephoneValid(userData['Telephone'])){
+                    if(!isUserEmailAddressValid(userData['Email'])){
+                        return alert('Your message has not been sent due to an invalid telephone number and email address!!😬')
+                    }
+                    if(isUserEmailAddressValid(userData['Email'])){
+                        return alert('Your message has not been sent due to an invalid telephone number!!😬')
+                    }
+                }
+                
+                if(isUserTelephoneValid(userData['Telephone'])){
+                    if(!isUserEmailAddressValid(userData['Email'])){
+                       return alert('Your message has not been sent due to an invalid email address!!😬')
+                    }
+                }
+                
                 if(
-                    isUserEmailAddressValid(userData['Email']) 
-                                    &&
                     isUserTelephoneValid(userData['Telephone']) 
+                                        &&
+                    isUserEmailAddressValid(userData['Email']) 
                 ){
                     alert(`Thank you ${userData['Full Name']} for leaving a message!\nI'll be in touch very soon.😎`)
                     contactMeForm.reset()
-                }else if(!isUserEmailAddressValid(userData['Email'])){
-                    alert('Your message has not been sent due to an invalid email address!!😬')
-                }else if(!isUserTelephoneValid(userData['Telephone'])){
-                    alert('Your message has not been sent due to an invalid telephone number!!😬')
                 }
             }
         )
