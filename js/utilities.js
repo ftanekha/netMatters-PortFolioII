@@ -15,4 +15,60 @@ function isUserTelephoneValid(userTelephone){
     return result
 }
 /////////////////////////////////////////////////////////////////////////////////////
-export {isUserEmailAddressValid, isUserTelephoneValid}
+function clearInfoMessageDisplay(){
+    const warningMessages = document.querySelectorAll('div.warning-message')
+    warningMessages.forEach(
+        msg => msg.style.display = 'none'
+    )
+}
+/////////////////////////////////////////////////////////////////////////////////////
+function removeInfoMessage(el){
+    const timer = setTimeout(
+        (el)=> {
+            const formValidationMessagesContainer = document.querySelector('div#form-validation-messages-container')
+            formValidationMessagesContainer.style.display = 'none'
+            el['style'].display = 'none'
+            return clearTimeout(timer)
+        }, 10000
+    )
+}
+/////////////////////////////////////////////////////////////////////////////////////
+function displayInfoMessage(reasonForMessage){
+    const formValidationMessagesContainer = document.querySelector('div#form-validation-messages-container')
+
+    const successMessage = document.querySelector('div#success-message')
+    const invalidTelephoneNumberWarning = document.querySelector('div#invalid-telephone-number-warning')
+    const invalidEmailAddressWarning = document.querySelector('div#invalid-email-address-warning')
+
+    formValidationMessagesContainer.style.display = 'flex'
+
+    switch(reasonForMessage){
+        case 'invalid telephone number and email address': 
+            clearInfoMessageDisplay()
+            invalidTelephoneNumberWarning.style.display = 'block'
+            invalidEmailAddressWarning.style.display = 'block'
+
+            removeInfoMessage(invalidTelephoneNumberWarning)
+            removeInfoMessage(invalidEmailAddressWarning)
+        break;
+        case 'invalid telephone number': 
+            clearInfoMessageDisplay()
+            invalidTelephoneNumberWarning.style.display = 'block'
+            removeInfoMessage(invalidTelephoneNumberWarning)
+        break;
+        case 'invalid email address': 
+            clearInfoMessageDisplay()
+            invalidEmailAddressWarning.style.display = 'block'
+            removeInfoMessage(invalidEmailAddressWarning)
+        break;
+        default:
+            clearInfoMessageDisplay()
+            successMessage.style.display = 'block'
+            document.querySelector('div#success-message p .lead-sentence').textContent = reasonForMessage
+
+            removeInfoMessage(successMessage)
+        break;
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////
+export {isUserEmailAddressValid, isUserTelephoneValid, displayInfoMessage}

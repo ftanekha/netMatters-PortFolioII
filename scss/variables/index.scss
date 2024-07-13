@@ -1,7 +1,12 @@
+
+$bulma-danger: hsl(348, 100%, 61%);
 $main-red: lighten(rgb(77, 31, 32), 30%);
+$azure-dark: darken(azure, 5%);
+
 // z-indexes
-$side-menu-z-index: 1000;
-$hamburger-menu-z-index: 600;
+$form-validation-messages-container_z-index: 15;
+$side-menu_z-index: 10;
+$hamburger-menu_z-index: 5;
 //contact-me
 $netmatters-black: rgb(51, 54, 69);
 $light-base-text: lighten($netmatters-black, 20%);

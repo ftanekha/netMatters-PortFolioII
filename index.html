@@ -11,6 +11,30 @@
     <title>Farai Tanekha's Portfolio</title>
 </head>
 <body>
+    <!-- form data validation message -->
+    <div id="form-validation-messages-container">
+        <div id="success-message" class="warning-message">
+            <p>
+                <span class="lead-sentence"></span>
+            </p>
+        </div>
+        <div id="invalid-telephone-number-warning" class="warning-message">
+            <p>
+                <span class="lead-sentence">Your message has not been sent due to an invalid telephone number!!😬</span>
+            </p>
+        </div>
+        <div id="invalid-email-address-warning" class="warning-message">
+            <p>
+                <span class="lead-sentence">The email address provided is invalid!😬</span>
+            </p>
+            <ul>
+                <li>A valid email address consists of an email prefix and an email domain, both in acceptable formats.</li>
+                <li>The prefix appears to the left of the @ symbol.</li>
+                <li>The domain appears to the right of the @ symbol.</li>
+                <li>For example, in the address example@mail.com, "example" is the email prefix, and "mail.com" is the email domain.</li>
+            </ul>
+        </div>
+    </div>
     <!-- hamburger menu button-->
     <button id="hamburger-button" type="button" data-toggle="sidebar" title="main navigation menu button">
         <span class="hamburger-box left">

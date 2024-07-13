@@ -1,4 +1,4 @@
-import {isUserEmailAddressValid, isUserTelephoneValid} from './js/utilities.js'
+import {isUserEmailAddressValid, isUserTelephoneValid, displayInfoMessage} from './js/utilities.js'
 
 document.addEventListener(
     'DOMContentLoaded', ()=>{
@@ -39,16 +39,16 @@ document.addEventListener(
                 //validate user data
                 if(!isUserTelephoneValid(userData['Telephone'])){
                     if(!isUserEmailAddressValid(userData['Email'])){
-                        return alert('Your message has not been sent due to an invalid telephone number and email address!!😬')
+                        return displayInfoMessage('invalid telephone number and email address')
                     }
                     if(isUserEmailAddressValid(userData['Email'])){
-                        return alert('Your message has not been sent due to an invalid telephone number!!😬')
+                        return displayInfoMessage('invalid telephone number')
                     }
                 }
                 
                 if(isUserTelephoneValid(userData['Telephone'])){
                     if(!isUserEmailAddressValid(userData['Email'])){
-                       return alert('Your message has not been sent due to an invalid email address!!😬')
+                        return displayInfoMessage('invalid email address')
                     }
                 }
                 
@@ -57,8 +57,8 @@ document.addEventListener(
                                         &&
                     isUserEmailAddressValid(userData['Email']) 
                 ){
-                    alert(`Thank you ${userData['Full Name']} for leaving a message!\nI'll be in touch very soon.😎`)
-                    contactMeForm.reset()
+                    displayInfoMessage(`Thank you ${userData['Full Name']} for leaving a message!\nI'll be in touch very soon.😎`)
+                    return contactMeForm.reset()
                 }
             }
         )

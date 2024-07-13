@@ -5,7 +5,7 @@ div#side-menu{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: $side-menu-z-index;
+    z-index: $side-menu_z-index;
     flex-direction: column;
     gap: 5vh;
     width: 270px;
@@ -29,10 +29,10 @@ div#side-menu{
                     div{
                         height: 50%;
                         border: double 10px;
-                        border-top-color: darken(azure, 5%);
+                        border-top-color: $azure-dark;
                         border-right: none;
-                        border-left-color: darken(azure, 5%);
-                        border-bottom-color: darken(azure, 5%);
+                        border-left-color: $azure-dark;
+                        border-bottom-color: $azure-dark;
                         &.initial-F-bottom{
                             border-bottom-style: none;
                         }
@@ -46,17 +46,17 @@ div#side-menu{
                         height: 50%;
                         border: double 10px;
                         border-bottom: none;
-                        border-top-color: darken(azure, 5%);
+                        border-top-color: $azure-dark;
                         &.initial-T-left{
                             width: 50%;
                             height: 100%;
                             border-left: none;
-                            border-right-color: darken(azure, 5%);
+                            border-right-color: $azure-dark;
                         }
                         &.initial-T-right{
                             width: 50%;
                             height: 100%;
-                            border-left-color: darken(azure, 5%);
+                            border-left-color: $azure-dark;
                             border-right: none;
                         }
                     }
@@ -70,7 +70,7 @@ div#side-menu{
         ul{
             list-style-type: none;
             list-style-position: outside;
-            background-color: darken(azure, 5%);
+            background-color: $azure-dark;
             height: 50vh;
             li{
                 height: 10vh;
@@ -103,7 +103,7 @@ div#side-menu{
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            background-color: darken(azure, 5%);
+            background-color: $azure-dark;
             padding: 10px;
             text-decoration: none;
             transition: .3s;

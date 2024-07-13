@@ -1,4 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+div.warning-message {
+  display: none;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: hsl(348, 100%, 61%);
+  transition: 1s;
+}
+div.warning-message#success-message {
+  background-color: #00f0f0;
+}
+@media (min-width: 768px) {
+  div.warning-message {
+    width: 600px;
+    margin-left: calc((100% - 870px) / 2);
+  }
+}
+div.warning-message p {
+  color: azure;
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 1.2;
+  line-height: 1.25rem;
+}
+div.warning-message p span.lead-sentence {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  background-color: azure;
+  color: hsl(348, 100%, 61%);
+  font-weight: 600;
+}
+div.warning-message ul {
+  list-style-type: square;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+div.warning-message ul li {
+  color: azure;
+}
+
 div#side-menu {
   display: none;
   filter: sepia(25%);
@@ -6,7 +48,7 @@ div#side-menu {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 10;
   flex-direction: column;
   gap: 5vh;
   width: 270px;
@@ -785,6 +827,14 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+body div#form-validation-messages-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  width: 100%;
+  flex-direction: column;
+}
 body button#hamburger-button {
   filter: sepia(25%);
   filter: hue-rotate(10deg);
@@ -792,7 +842,7 @@ body button#hamburger-button {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 600;
+  z-index: 5;
   width: 45px;
   height: 45px;
   padding: 5px 15px;
@@ -843,7 +893,7 @@ body div#main-content div.container {
   background-color: white;
 }
 @media (min-width: 768px) {
-  body div#main-content div.container {
+  body div#form-validation-messages-container, body #main-content {
     margin-left: 270px;
   }
 }

@@ -100,13 +100,13 @@ div#my-portfolio{
                     background-color: lighten($main-red, 45%);
                 }
                 &:hover{
-                    background-color: darken(azure, 5%);
+                    background-color: $azure-dark;
                 }
             }
             &:hover{
                 opacity: 1;
                 transform: scale(1);
-                background-color: darken(azure, 5%);
+                background-color: $azure-dark;
             }
         }
     }
