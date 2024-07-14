@@ -893,7 +893,7 @@ body div#main-content div.container {
   background-color: white;
 }
 @media (min-width: 768px) {
-  body div#form-validation-messages-container, body #main-content {
+  body div#form-validation-messages-container, body div#main-content div.container {
     margin-left: 270px;
   }
 }
