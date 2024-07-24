@@ -8,12 +8,7 @@ div.warning-message {
 }
 div.warning-message#success-message {
   background-color: #00f0f0;
-}
-@media (min-width: 768px) {
-  div.warning-message {
-    width: 600px;
-    margin-left: calc((100% - 870px) / 2);
-  }
+  justify-content: center;
 }
 div.warning-message p {
   color: azure;
@@ -39,6 +34,16 @@ div.warning-message ul {
 }
 div.warning-message ul li {
   color: azure;
+}
+@media (min-width: 768px) {
+  div.warning-message p {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+  }
+  div.warning-message p span.lead-sentence {
+    width: 100%;
+  }
 }
 
 div#side-menu {

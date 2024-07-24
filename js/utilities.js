@@ -29,7 +29,7 @@ function removeInfoMessage(el){
             formValidationMessagesContainer.style.display = 'none'
             el['style'].display = 'none'
             return clearTimeout(timer)
-        }, 10000
+        }, 100000
     )
 }
 /////////////////////////////////////////////////////////////////////////////////////
@@ -63,7 +63,7 @@ function displayInfoMessage(reasonForMessage){
         break;
         default:
             clearInfoMessageDisplay()
-            successMessage.style.display = 'block'
+            successMessage.style.display = 'flex'
             document.querySelector('div#success-message p .lead-sentence').textContent = reasonForMessage
 
             removeInfoMessage(successMessage)
