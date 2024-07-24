@@ -180,7 +180,6 @@ div#banner {
   background-repeat: no-repeat;
   filter: sepia(25%);
   filter: hue-rotate(10deg);
-  border-bottom: solid 3rem #d7ffff;
   color: #b84d50;
   display: flex;
   flex-direction: column;
@@ -254,7 +253,27 @@ div#banner div#scroll-down a span.glyphicon:hover {
   }
 }
 
-div#about-me {
+h2 {
+  background-color: #d7ffff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto 30px 0;
+  padding: 30px 0;
+  text-align: center;
+  color: #b84d50;
+  font-weight: 600;
+  font-size: 4rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    margin-left: 135px;
+  }
+}
+
+div.about-me {
   margin: 0 auto;
   padding: 0;
   min-height: 100vh;
@@ -262,91 +281,81 @@ div#about-me {
   flex-direction: column;
 }
 @media (min-width: 768px) {
-  div#about-me div.about-me {
+  div.about-me div.about-me {
     margin: 0 auto;
     padding: 0 30px;
   }
 }
-div#about-me h2 {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 30px;
-  text-align: center;
-  color: #b84d50;
-  font-weight: 600;
-  font-size: 4rem;
-}
-div#about-me div.about-me {
+div.about-me div.about-me {
   width: 70%;
   margin: auto;
   padding: 0 30px;
 }
-div#about-me div.about-me * {
+div.about-me div.about-me * {
   text-align: center;
   color: black;
 }
-div#about-me div.about-me strong {
+div.about-me div.about-me strong {
   display: block;
   margin: 2rem auto;
   padding-bottom: 1rem;
   font-weight: 500;
   font-size: 100%;
 }
-div#about-me div.about-me span.waving-hand {
+div.about-me div.about-me span.waving-hand {
   display: inline-block;
   animation: wave 5s;
 }
-div#about-me div.about-me p {
+div.about-me div.about-me p {
   font-size: 0.8rem;
   text-align: justify;
   line-height: 1.5rem;
 }
 @media screen and (min-width: 922px) {
-  div#about-me div.about-me p {
+  div.about-me div.about-me p {
     text-align: center;
   }
 }
-div#about-me div.about-me footer {
+div.about-me div.about-me footer {
   margin: 2rem auto 0;
   padding: 0.5rem;
 }
-div#about-me div.about-me footer small {
+div.about-me div.about-me footer small {
   font-size: 0.8rem;
 }
 @media screen and (min-width: 768px) {
-  div#about-me div.about-me strong {
+  div.about-me div.about-me strong {
     font-size: 150%;
   }
-  div#about-me div.about-me p {
+  div.about-me div.about-me p {
     font-size: 100%;
   }
-  div#about-me div.about-me footer {
+  div.about-me div.about-me footer {
     padding-top: 3rem;
   }
-  div#about-me div.about-me footer small {
+  div.about-me div.about-me footer small {
     font-size: 1rem;
     color: #5e6480;
   }
 }
-div#about-me article#certification-links {
+div.about-me article#certification-links {
   margin: 4rem auto 1rem;
   display: flex;
   flex-direction: column;
 }
-div#about-me article#certification-links h6 {
+div.about-me article#certification-links h6 {
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 1rem;
   text-align: center;
 }
-div#about-me article#certification-links a {
+div.about-me article#certification-links a {
   display: inline-block;
   text-align: center;
   margin: 0 1rem;
   padding: 0.1rem;
 }
-div#about-me article#certification-links a img {
+div.about-me article#certification-links a img {
   width: 2rem;
   height: 2rem;
 }
@@ -377,19 +386,29 @@ div#about-me article#certification-links a img {
     transform: rotate(0deg);
   }
 }
-div#my-portfolio {
+h2 {
+  background-color: #d7ffff !important;
   display: flex;
-  flex-direction: column;
-}
-div#my-portfolio h2 {
-  display: block;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  margin: 0 auto;
-  padding-bottom: 30px;
+  height: 100px;
+  margin: 0 auto 30px 0;
+  padding: 30px 0;
   text-align: center;
   color: #b84d50;
   font-weight: 600;
   font-size: 4rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    margin-left: 135px;
+  }
+}
+
+div#my-portfolio {
+  display: flex;
+  flex-direction: column;
 }
 div#my-portfolio a.clickable-tech-link {
   padding: 0.2rem 0.4rem;
@@ -507,20 +526,30 @@ div#my-portfolio div#portfolio-list-of-projects a:hover {
   background-color: #d7ffff;
 }
 
-div#code-examples {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-div#code-examples h2 {
-  display: block;
+h2 {
+  background-color: #d7ffff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  margin: 0 auto;
-  padding-bottom: 30px;
+  height: 100px;
+  margin: 0 auto 30px 0;
+  padding: 30px 0;
   text-align: center;
   color: #b84d50;
   font-weight: 600;
   font-size: 4rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    margin-left: 135px;
+  }
+}
+
+div#code-examples {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
 }
 div#code-examples h2 {
   margin-bottom: 3rem;
@@ -594,6 +623,26 @@ div#code-examples div#code-examples-main-container div#coming-soon-playlist-cont
   height: 1rem;
 }
 
+h2 {
+  background-color: #d7ffff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto 30px 0;
+  padding: 30px 0;
+  text-align: center;
+  color: #b84d50;
+  font-weight: 600;
+  font-size: 4rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    margin-left: 135px;
+  }
+}
+
 div#scs {
   background-color: white;
   display: flex;
@@ -601,16 +650,6 @@ div#scs {
   height: 100vh;
   margin: 0 auto;
   padding-top: 0;
-}
-div#scs h2 {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 30px;
-  text-align: center;
-  color: #b84d50;
-  font-weight: 600;
-  font-size: 4rem;
 }
 div#scs div.article {
   flex: 1;
@@ -674,21 +713,30 @@ div#scs div.article footer a img {
   border-radius: 50%;
 }
 
-div#contact-me {
+h2 {
   background-color: #d7ffff !important;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-div#contact-me h2 {
-  display: block;
   width: 100%;
-  margin: 0 auto;
-  padding-bottom: 30px;
+  height: 100px;
+  margin: 0 auto 30px 0;
+  padding: 30px 0;
   text-align: center;
   color: #b84d50;
   font-weight: 600;
   font-size: 4rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    margin-left: 135px;
+  }
+}
+
+div#contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 div#contact-me h2 {
   margin-bottom: 5rem;

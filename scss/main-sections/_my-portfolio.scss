@@ -1,7 +1,7 @@
+@include section-heading;
 div#my-portfolio{
     display: flex;
     flex-direction: column;
-    @include section-heading;
     a.clickable-tech-link{
         padding: .2rem .4rem;
         color: black;

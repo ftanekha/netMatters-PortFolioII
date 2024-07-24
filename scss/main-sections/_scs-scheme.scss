@@ -1,3 +1,4 @@
+@include section-heading;
 div#scs{
         background-color: white;
         display: flex;
@@ -5,7 +6,7 @@ div#scs{
         height: 100vh;
         margin: 0 auto;
         padding-top: 0;
-        @include section-heading;
+        // @include section-heading;
         div.article{
             flex: 1;
             @include scs-article;
