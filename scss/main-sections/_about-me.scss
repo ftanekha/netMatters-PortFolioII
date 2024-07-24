@@ -1,5 +1,5 @@
 @include section-heading;
-div.about-me{
+div#about-me{
     margin: 0 auto;
     padding: 0;
     min-height: 100vh;
@@ -11,12 +11,13 @@ div.about-me{
             padding: 0 30px;
         }
     }
+    // @include section-heading;
     div.about-me{
         width: 70%;
         margin: auto;
         padding: 0 30px;
         *{
-            text-align: center;
+            // text-align: center;
             color: black;
         }
         strong{
