@@ -1,4 +1,8 @@
 @include section-heading;
+h2{
+    margin-bottom: 5rem;
+    padding: 90px;
+}
 div#my-portfolio{
     display: flex;
     flex-direction: column;

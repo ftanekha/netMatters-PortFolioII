@@ -405,6 +405,11 @@ h2 {
   }
 }
 
+h2 {
+  margin-bottom: 5rem;
+  padding: 90px;
+}
+
 div#my-portfolio {
   display: flex;
   flex-direction: column;
@@ -732,13 +737,15 @@ h2 {
   }
 }
 
+h2 {
+  margin-bottom: 5rem;
+  padding: 90px;
+}
+
 div#contact-me {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-div#contact-me h2 {
-  margin-bottom: 5rem;
 }
 div#contact-me div#enquiry-form {
   width: 100%;

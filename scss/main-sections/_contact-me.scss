@@ -1,11 +1,18 @@
 @include section-heading;
+h2{
+        margin-bottom: 5rem;
+        padding: 90px;
+}
 div#contact-me{
     display: flex;
     flex-direction: column;
     align-items: center;
     // @include section-heading;
-    h2{margin-bottom: 5rem;}
-    // ENQUIRY FORM
+    // h2{
+    //     margin-bottom: 5rem;
+    //     padding: 60px;
+    // }
+    // // ENQUIRY FORM
     div#enquiry-form{
         width: 100%;
         flex: 1;
