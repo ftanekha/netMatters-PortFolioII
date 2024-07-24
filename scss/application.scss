@@ -25,14 +25,24 @@ body{
     button#hamburger-button{
         @include hamburger-button;
     }
+    // h2.homepage-heading{
+    //     @media (min-width: 768px){
+    //         margin-left: calc(270px);
+    //     }
+    // }
     div#main-content{
         div.container{
             background-color: white;
+            width: 80%;
+            margin: 0 auto;
         }
     }
     div#form-validation-messages-container, div#main-content div.container{
         @media (min-width: 768px){
-            margin-left: 270px;
+            margin-left: 22.5vw;
+        }
+        @media (min-width: 1220px){
+            margin-left: 17.5vw;
         }
     }
 }

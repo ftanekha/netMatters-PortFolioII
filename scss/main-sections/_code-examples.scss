@@ -1,7 +1,7 @@
 @include section-heading;
 div#code-examples{
-    width: 80%;
-    margin: 0 auto;
+    // width: 80%;
+    // margin: 0 auto;
     position: relative;
     // @include section-heading;
     h2{
@@ -34,6 +34,9 @@ div#code-examples{
                 margin: auto;
                 color: black;
                 line-height: 1.5rem;
+                @media (min-width: 992px){
+                    text-align: center;
+                }
             }
             div#solutions-tags-container{
                 width: 80%;

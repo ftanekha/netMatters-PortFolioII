@@ -261,15 +261,24 @@ h2 {
   width: 100%;
   height: 100px;
   margin: 0 auto 30px 0;
-  padding: 30px 0;
   text-align: center;
   color: #b84d50;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 2.5rem;
+}
+h2.homepage-heading {
+  margin-bottom: 5rem;
+  padding: 35px 0;
 }
 @media (min-width: 768px) {
   h2 {
+    font-size: 4rem;
     margin-left: 135px;
+    padding: 30px 0;
+  }
+  h2.homepage-heading {
+    margin-bottom: 5rem;
+    padding: 90px 0;
   }
 }
 
@@ -288,10 +297,10 @@ div#about-me {
 }
 div#about-me div.about-me {
   width: 70%;
-  margin: auto;
   padding: 0 30px;
 }
 div#about-me div.about-me * {
+  text-align: center;
   color: black;
 }
 div#about-me div.about-me strong {
@@ -393,21 +402,25 @@ h2 {
   width: 100%;
   height: 100px;
   margin: 0 auto 30px 0;
-  padding: 30px 0;
   text-align: center;
   color: #b84d50;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 2.5rem;
+}
+h2.homepage-heading {
+  margin-bottom: 5rem;
+  padding: 35px 0;
 }
 @media (min-width: 768px) {
   h2 {
+    font-size: 4rem;
     margin-left: 135px;
+    padding: 30px 0;
   }
-}
-
-h2 {
-  margin-bottom: 5rem;
-  padding: 90px;
+  h2.homepage-heading {
+    margin-bottom: 5rem;
+    padding: 90px 0;
+  }
 }
 
 div#my-portfolio {
@@ -538,21 +551,28 @@ h2 {
   width: 100%;
   height: 100px;
   margin: 0 auto 30px 0;
-  padding: 30px 0;
   text-align: center;
   color: #b84d50;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 2.5rem;
+}
+h2.homepage-heading {
+  margin-bottom: 5rem;
+  padding: 35px 0;
 }
 @media (min-width: 768px) {
   h2 {
+    font-size: 4rem;
     margin-left: 135px;
+    padding: 30px 0;
+  }
+  h2.homepage-heading {
+    margin-bottom: 5rem;
+    padding: 90px 0;
   }
 }
 
 div#code-examples {
-  width: 80%;
-  margin: 0 auto;
   position: relative;
 }
 div#code-examples h2 {
@@ -585,6 +605,11 @@ div#code-examples div#code-examples-main-container div#problem-solution-selector
   margin: auto;
   color: black;
   line-height: 1.5rem;
+}
+@media (min-width: 992px) {
+  div#code-examples div#code-examples-main-container div#problem-solution-selector p {
+    text-align: center;
+  }
 }
 div#code-examples div#code-examples-main-container div#problem-solution-selector div#solutions-tags-container {
   width: 80%;
@@ -635,15 +660,24 @@ h2 {
   width: 100%;
   height: 100px;
   margin: 0 auto 30px 0;
-  padding: 30px 0;
   text-align: center;
   color: #b84d50;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 2.5rem;
+}
+h2.homepage-heading {
+  margin-bottom: 5rem;
+  padding: 35px 0;
 }
 @media (min-width: 768px) {
   h2 {
+    font-size: 4rem;
     margin-left: 135px;
+    padding: 30px 0;
+  }
+  h2.homepage-heading {
+    margin-bottom: 5rem;
+    padding: 90px 0;
   }
 }
 
@@ -725,21 +759,25 @@ h2 {
   width: 100%;
   height: 100px;
   margin: 0 auto 30px 0;
-  padding: 30px 0;
   text-align: center;
   color: #b84d50;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 2.5rem;
+}
+h2.homepage-heading {
+  margin-bottom: 5rem;
+  padding: 35px 0;
 }
 @media (min-width: 768px) {
   h2 {
+    font-size: 4rem;
     margin-left: 135px;
+    padding: 30px 0;
   }
-}
-
-h2 {
-  margin-bottom: 5rem;
-  padding: 90px;
+  h2.homepage-heading {
+    margin-bottom: 5rem;
+    padding: 90px 0;
+  }
 }
 
 div#contact-me {
@@ -950,10 +988,17 @@ body button#hamburger-button:hover span.hamburger-box span.hamburger-inner {
 }
 body div#main-content div.container {
   background-color: white;
+  width: 80%;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   body div#form-validation-messages-container, body div#main-content div.container {
-    margin-left: 270px;
+    margin-left: 22.5vw;
+  }
+}
+@media (min-width: 1220px) {
+  body div#form-validation-messages-container, body div#main-content div.container {
+    margin-left: 17.5vw;
   }
 }
 

@@ -14,10 +14,10 @@ div#about-me{
     // @include section-heading;
     div.about-me{
         width: 70%;
-        margin: auto;
+        // margin: auto;
         padding: 0 30px;
         *{
-            // text-align: center;
+            text-align: center;
             color: black;
         }
         strong{
