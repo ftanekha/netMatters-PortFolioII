@@ -6,7 +6,6 @@ div#scs{
         height: 100vh;
         margin: 0 auto;
         padding-top: 0;
-        // @include section-heading;
         div.article{
             flex: 1;
             @include scs-article;

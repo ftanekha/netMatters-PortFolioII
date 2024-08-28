@@ -95,13 +95,13 @@
                 </dd>
             </dl>
             <div id="portfolio-list-of-projects">
-                <a href="https://ftanekha.github.io/netMatters-HomePageII/" target="_blank">
+                <a href="https://netmatters.farai-tanekha.netmatters-scs.co.uk/" target="_blank">
                     <figure>
                         <img src="assets/images/netmatters-homepage-replica.jpeg" alt="Netmatters homepage replica" title="Netmatters homepage replica">
                         <figcaption>
                             My first <em title="Scion coalition Scheme">SCS</em> project, a work in progress
                             <span class="construction-cone">🚧</span>.
-                            Showcases intuitive use of Syntactically Awesomess Style Sheets!, the Grid system, Flexbox and HTML.
+                            A full stack project that showcases intuitive use of SCSS, the Grid system, Flexbox, HTML, JavaScript & php.
                         </figcaption>
                     </figure>
                 </a>

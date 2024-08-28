@@ -825,6 +825,7 @@ div#contact-me div#enquiry-form form div input:focus, div#contact-me div#enquiry
 div#contact-me div#enquiry-form form div textarea {
   margin: 2rem 0 0 0;
   width: 100%;
+  min-width: 350px;
   min-height: 10rem;
   max-height: 10rem;
   height: 100%;

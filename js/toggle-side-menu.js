@@ -48,10 +48,10 @@ $(
             ()=>{
                 if($sideMenu.css('display') === 'flex'){
                     hamburgerToCross()
-                    $sideMenu.fadeToggle(2000)
+                    $sideMenu.fadeToggle(800)
                 }else{
                     crossToHamburger()
-                    $sideMenu.fadeToggle(2000)
+                    $sideMenu.fadeToggle(800)
                 }
             }
         )
