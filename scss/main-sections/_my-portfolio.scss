@@ -75,6 +75,7 @@ div#my-portfolio{
             display: block;
             opacity: .85;
             transform: scale(.75);
+            transition: .5s;
             figure{
                 width: 100%;
                 margin: auto;

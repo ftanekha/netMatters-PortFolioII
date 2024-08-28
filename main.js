@@ -2,19 +2,6 @@ import {shouldPostData, displayInfoMessage} from './js/utilities.js'
 
 document.addEventListener(
     'DOMContentLoaded', ()=>{
-        //toggle side menu on small screen devices
-        const hamburgerMenuButton = document.querySelector('button#hamburger-button')
-        const sideMenu = document.querySelector('div#side-menu')
-        hamburgerMenuButton.addEventListener(
-            'click',
-            ()=> {
-                if(sideMenu.style.display === 'flex'){
-                    sideMenu.style.display = 'none'
-                }else{
-                    sideMenu.style.display = 'flex'
-                }
-            }
-        )
         //validate contact-me form data
         if(document.URL.includes('contact-me') || document.URL.includes('index.html')){
             const contactMeForm = document.querySelector('form#contact-me-form')
@@ -48,6 +35,7 @@ document.addEventListener(
                         .then(res =>  res.json())
                         .then(
                             data => {
+                                //display error messages from server
                                 if(Array.isArray(data)){
                                     console.error(`${data.length} Error/s detected:`)                                
                                     data.forEach( error => {
@@ -55,6 +43,7 @@ document.addEventListener(
                                     })
                                     displayInfoMessage(data)
                                 }else{
+                                    //display success message from server
                                     console.info(data)
                                     displayInfoMessage(`Thank you ${userData['first_name']} ${userData['last_name']} for leaving a message!\nI'll be in touch very soon.😎`)
                                     contactMeForm.reset()

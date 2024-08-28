@@ -497,6 +497,7 @@ div#my-portfolio div#portfolio-list-of-projects a {
   display: block;
   opacity: 0.85;
   transform: scale(0.75);
+  transition: 0.5s;
 }
 div#my-portfolio div#portfolio-list-of-projects a figure {
   width: 100%;
@@ -932,9 +933,6 @@ body button#hamburger-button {
   line-height: 46px;
   user-select: none;
   appearance: button;
-  display: block;
-}
-body button#hamburger-button * {
   transition: 0.5s;
 }
 body button#hamburger-button span.hamburger-box {
