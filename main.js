@@ -5,17 +5,14 @@ document.addEventListener(
         //toggle side menu on small screen devices
         const hamburgerMenuButton = document.querySelector('button#hamburger-button')
         const sideMenu = document.querySelector('div#side-menu')
-        // const mQuery = window.matchMedia('(max-width: 768px)')
         hamburgerMenuButton.addEventListener(
             'click',
             ()=> {
-            //    if(mQuery.matches){
-                    if(sideMenu.style.display === 'none'){
-                        sideMenu.style.display = 'flex'
-                    }else{
-                        sideMenu.style.display = 'none'
-                    }
-            //    }
+                if(sideMenu.style.display === 'flex'){
+                    sideMenu.style.display = 'none'
+                }else{
+                    sideMenu.style.display = 'flex'
+                }
             }
         )
         //validate contact-me form data

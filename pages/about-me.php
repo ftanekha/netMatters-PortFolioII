@@ -32,9 +32,9 @@
     <!-- main page content -->
     <div id="main-content">
         <h2>About Me</h2>
-        <div id="about-me-heading" class="container">
+        <div id="about-me" class="container">
             <!-- <h2>About Me</h2> -->
-            <div class="about-me">
+            <div class="about-me-container">
                 <strong>Greetings!<span class="waving-hand" title="Hi World!!&nbsp;&#x1F44B;&#128515;">&nbsp;&#x1F44B;</span></strong>
                 <p>My name is Farai Tanekha. I am a Software Developer with a keen vision to be one of the best.</p>
                 <br>

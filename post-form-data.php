@@ -50,12 +50,8 @@ if(isset($data['first_name'])){
 
             if(empty($first_name)) {
                 $http_response_code406[] = "The first name is required.";
-                // echo json_encode([$http_response_code406, "The first name is required"]);
-                // exit;
             }elseif(!preg_match("/^[a-zA-Z-' ]*$/",$first_name)) {
                 $http_response_code406[] = "The first name format is incorrect.";
-                // echo json_encode([$http_response_code406, "The first name format is incorrect."]);
-                // exit;
             }else{
                 $first_name = format_form_data($first_name);
             }
@@ -64,39 +60,28 @@ if(isset($data['first_name'])){
                 $last_name= null;
             }elseif(!preg_match("/^[a-zA-Z-' ]*$/",$last_name)) {
                 $http_response_code406[] = "The last name format is incorrect.";
-                // echo json_encode([$http_response_code406, "The last name format is incorrect."]);
-                // exit;
             }else{
                 $last_name = format_form_data($last_name);
             }
             if(empty($email)){
                 $http_response_code406[] = "The email is required.";
-                // echo json_encode([$http_response_code406, "The email is required."]);
-                // exit;
             }elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $http_response_code406[] = "The email format is incorrect.";
-                // echo json_encode([$http_response_code406, "The email format is incorrect."]);
-                // exit;
             }else{
                 $email = format_form_data($email);
             }
             if(empty($telephone)){
                 $http_response_code406[] = "The telephone is required.";
-                // echo json_encode([$http_response_code406, "The telephone is required"]);
-                // exit;
             }elseif(!preg_match("/^[0-9]{7,15}+$/", $telephone)){
                 $http_response_code406[] = "The telephone format is incorrect.";
-                // echo json_encode([$http_response_code406, "The telephone format is incorrect."]);
                 exit;
             }else{
                 $telephone = format_form_data($telephone);
             }
             if(empty($message)){
-                $http_response_code406[] = "The message is required";
-                // echo json_encode([$http_response_code406, "The message is required"]);
-                // exit;
+                $http_response_code406[] = "The message is required.";
             }elseif(strlen($message) < 3){
-                $http_response_code406[] = "Message too short";
+                $http_response_code406[] = "Message too short.";
             }else{
                 $message = format_form_data($message);
             }
@@ -125,6 +110,6 @@ if(isset($data['first_name'])){
     {
         #JSON decoding failed
         http_response_code(400); #Bad Request
-        echo "Invalid JSON data";
+        echo "Invalid JSON data.";
     }
 }

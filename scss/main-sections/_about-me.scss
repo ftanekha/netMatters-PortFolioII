@@ -1,18 +1,19 @@
 @include section-heading;
 div#about-me{
+    background-color: red;
     margin: 0 auto;
     padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     @media (min-width: 768px){
-        div.about-me{
+        div.about-me-container{
             margin: 0 auto;
             padding: 0 30px;
         }
     }
     // @include section-heading;
-    div.about-me{
+    div.about-me-container{
         width: 70%;
         // margin: auto;
         padding: 0 30px;
@@ -75,16 +76,15 @@ div#about-me{
             text-align: center;
         }
         div.sm-icons-container{
-            width: 100px;
-            display: flex;
-            column-gap: 20px;
             a{
-                width: 20px;
-                height: 20px;
-                // img{
-                //     width: 2rem; 
-                //     height: 2rem;
-                // }
+                display: inline-block;
+                text-align: center;
+                margin: 0 1rem;
+                padding: .1rem;
+                img{
+                    width: 2rem; 
+                    height: 2rem;
+                }
             }
         }
     }

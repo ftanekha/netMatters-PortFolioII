@@ -63,11 +63,6 @@ div#side-menu {
   background-color: #b84d50;
   transition: 1s;
 }
-@media (min-width: 768px) {
-  div#side-menu {
-    display: flex !important;
-  }
-}
 div#side-menu a {
   display: block;
 }
@@ -187,11 +182,6 @@ div#banner {
   flex-direction: column;
   justify-content: center;
 }
-@media (min-width: 768px) {
-  div#banner {
-    right: -135px;
-  }
-}
 div#banner > * {
   display: flex;
   align-items: center;
@@ -283,6 +273,7 @@ h2.homepage-heading {
 }
 
 div#about-me {
+  background-color: red;
   margin: 0 auto;
   padding: 0;
   min-height: 100vh;
@@ -290,58 +281,58 @@ div#about-me {
   flex-direction: column;
 }
 @media (min-width: 768px) {
-  div#about-me div.about-me {
+  div#about-me div.about-me-container {
     margin: 0 auto;
     padding: 0 30px;
   }
 }
-div#about-me div.about-me {
+div#about-me div.about-me-container {
   width: 70%;
   padding: 0 30px;
 }
-div#about-me div.about-me * {
+div#about-me div.about-me-container * {
   text-align: center;
   color: black;
 }
-div#about-me div.about-me strong {
+div#about-me div.about-me-container strong {
   display: block;
   margin: 2rem auto;
   padding-bottom: 1rem;
   font-weight: 500;
   font-size: 100%;
 }
-div#about-me div.about-me span.waving-hand {
+div#about-me div.about-me-container span.waving-hand {
   display: inline-block;
   animation: wave 5s;
 }
-div#about-me div.about-me p {
+div#about-me div.about-me-container p {
   font-size: 0.8rem;
   text-align: justify;
   line-height: 1.5rem;
 }
 @media screen and (min-width: 922px) {
-  div#about-me div.about-me p {
+  div#about-me div.about-me-container p {
     text-align: center;
   }
 }
-div#about-me div.about-me footer {
+div#about-me div.about-me-container footer {
   margin: 2rem auto 0;
   padding: 0.5rem;
 }
-div#about-me div.about-me footer small {
+div#about-me div.about-me-container footer small {
   font-size: 0.8rem;
 }
 @media screen and (min-width: 768px) {
-  div#about-me div.about-me strong {
+  div#about-me div.about-me-container strong {
     font-size: 150%;
   }
-  div#about-me div.about-me p {
+  div#about-me div.about-me-container p {
     font-size: 100%;
   }
-  div#about-me div.about-me footer {
+  div#about-me div.about-me-container footer {
     padding-top: 3rem;
   }
-  div#about-me div.about-me footer small {
+  div#about-me div.about-me-container footer small {
     font-size: 1rem;
     color: #5e6480;
   }
@@ -357,14 +348,15 @@ div#about-me article#certification-links h6 {
   margin-bottom: 1rem;
   text-align: center;
 }
-div#about-me article#certification-links div.sm-icons-container {
-  width: 100px;
-  display: flex;
-  column-gap: 20px;
-}
 div#about-me article#certification-links div.sm-icons-container a {
-  width: 20px;
-  height: 20px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 1rem;
+  padding: 0.1rem;
+}
+div#about-me article#certification-links div.sm-icons-container a img {
+  width: 2rem;
+  height: 2rem;
 }
 
 @keyframes wave {

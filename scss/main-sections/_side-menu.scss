@@ -12,9 +12,6 @@ div#side-menu{
     height: 100vh;
     background-color: $main-red;
     transition: 1s;
-    @media (min-width: 768px){
-        display: flex !important;
-    }
     a{
         display: block;
         div.my-initials{
