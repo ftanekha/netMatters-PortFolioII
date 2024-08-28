@@ -17,9 +17,6 @@
     appearance: button;
     *{transition: .5s;}
     display: block;
-    @media (min-width: 768px){
-        display: none;
-    }
     span.hamburger-box{
         display: block;
         width: 23px;

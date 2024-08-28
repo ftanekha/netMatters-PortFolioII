@@ -18,21 +18,8 @@
                 <span class="lead-sentence"></span>
             </p>
         </div>
-        <div id="invalid-telephone-number-warning" class="warning-message">
-            <p>
-                <span class="lead-sentence">Your message has not been sent due to an invalid telephone number!!😬</span>
-            </p>
-        </div>
-        <div id="invalid-email-address-warning" class="warning-message">
-            <p>
-                <span class="lead-sentence">The email address provided is invalid!😬</span>
-            </p>
-            <ul>
-                <li>A valid email address consists of an email prefix and an email domain, both in acceptable formats.</li>
-                <li>The prefix appears to the left of the @ symbol.</li>
-                <li>The domain appears to the right of the @ symbol.</li>
-                <li>For example, in the address example@mail.com, "example" is the email prefix, and "mail.com" is the email domain.</li>
-            </ul>
+        <div id="invalid-form-data-warning" class="warning-message">
+            <ul id="invalid-form-data-warning-list"></ul>
         </div>
     </div>
     <!-- hamburger menu button-->
@@ -40,16 +27,16 @@
     <!-- side menu/ main navigation-->
     <?php include 'includes/side-menu-top.php' ?>
                 <li>
-                    <a href="pages/about-me.html">About me</a>
+                    <a href="pages/about-me.php">About me</a>
                 </li>
                 <li>
                     <a href="#my-portfolio">My Portfolio</a>
                 </li>
                 <li>
-                    <a href="pages/code-examples.html">Code Examples</a>
+                    <a href="pages/code-examples.php">Code Examples</a>
                 </li>
                 <li>
-                    <a href="pages/scs.html">SCS Scheme</a>
+                    <a href="pages/scs.php">SCS Scheme</a>
                 </li>
                 <li>
                     <a href="#contact-me">Contact me</a>
@@ -148,25 +135,25 @@
                     <div class="full-name">
                         <div class="contact-info-detail">
                             <label for="first-name">First name</label>
-                            <input type="text" id="first-name" name="fname" required>
+                            <input class="form-control" type="text" id="first-name" name="fname" required>
                         </div>
                         <div class="contact-info-detail">
                             <label for="last-name">Last name&nbsp;</label>
-                            <input type="text" id="last-name" name="lname" required>
+                            <input class="form-control" type="text" id="last-name" name="lname" required>
                         </div>
                     </div>
                     <div class="contact-info">
                         <div class="contact-info-detail">
                             <label for="telephone">Telephone&nbsp;</label>
-                            <input type="tel" id="telephone" name="telephone" required>
+                            <input class="form-control" type="tel" id="telephone" name="telephone" required>
                         </div>
                         <div class="contact-info-detail">
                             <label for="email">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                            <input type="email" id="email" name="email">
+                            <input class="form-control" type="email" id="email" name="email">
                         </div>
                     </div>                       
                     <div class="enquiry-message">
-                        <textarea name="message" id="message" cols="36" rows="10" placeholder="Your message..." required></textarea>
+                        <textarea class="form-control" name="message" id="message" cols="36" rows="10" placeholder="Your message..." required></textarea>
                     </div>
                     <button type="submit">submit</button>
                 </form>

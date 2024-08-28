@@ -74,14 +74,17 @@ div#about-me{
             margin-bottom: 1rem;
             text-align: center;
         }
-        a{
-            display: inline-block;
-            text-align: center;
-            margin: 0 1rem;
-            padding: .1rem;
-            img{
-                width: 2rem; 
-                height: 2rem;
+        div.sm-icons-container{
+            width: 100px;
+            display: flex;
+            column-gap: 20px;
+            a{
+                width: 20px;
+                height: 20px;
+                // img{
+                //     width: 2rem; 
+                //     height: 2rem;
+                // }
             }
         }
     }

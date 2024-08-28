@@ -23,7 +23,8 @@ function isUserTelephoneValid(userTelephone){
 }
 /////////////////////////////////////////////////////////////////////////////////////
 function hasEmptyFields(){
-    const name = document.querySelector('#name')
+    const firstName = document.querySelector('#first-name')
+    const lastName = document.querySelector('#last-name')
     const email = document.querySelector('#email')
     const telephone = document.querySelector('#telephone')
     const message = document.querySelector('#message')
@@ -32,9 +33,15 @@ function hasEmptyFields(){
 
     const fields = []
 
-        if(!name.value){
+        if(!firstName.value){
             fields.push('name')
-            name.style.borderColor = '#d64541' 
+            firstName.style.borderColor = '#d64541' 
+            formHasEmptyFields = true
+        }
+        
+        if(!lastName.value){
+            fields.push('name')
+            lastName.style.borderColor = '#d64541' 
             formHasEmptyFields = true
         }
         if(!email.value){
@@ -60,41 +67,37 @@ function hasEmptyFields(){
         return false
 }
 ///////////////////////////////////////////////////////////////////////////
-function shouldPostData(){
-    
+function shouldPostData(){  
     const firstName = document.querySelector('#first-name').value
     const lastName = document.querySelector('#last-name').value
     const telephone = document.querySelector('#telephone').value
     const email = document.querySelector('#email').value
     const message = document.querySelector('#message').value
-    // form data validation
-    if(
-        !hasEmptyFields() && isValidStringInput(firstName)
-        && isValidStringInput(lastName) && isUserEmailAddressValid(email) 
-        && isUserTelephoneValid(telephone) && (message.length > 3)
-    ){
+    //validate user data
+    const errors = []
+    if(!isValidStringInput(firstName)){
+        errors.push('Invalid first name.')
+    }
+    if(!isValidStringInput(lastName)){
+        errors.push('Invalid last name.')
+    }
+    if(!isUserTelephoneValid(telephone)){
+        errors.push('Invalid telephone number.')
+    }
+    if(!isUserEmailAddressValid(email)){
+        errors.push('Invalid email address.')
+    }
+    if(message.length < 3){
+        errors.push('Message too short.')
+    }
+    if(hasEmptyFields()){
+        errors.push('Empty form fields.')
+    }
+
+    if(errors.length === 0){
         return [true, undefined]
     }else{
-        if(!isValidStringInput(name.value)){
-            // name.style.borderColor = '#d64541'
-            return [false, 'firstname']
-        }
-        if(!isValidStringInput(company.value)){
-            // company.style.borderColor = '#d64541'
-            return [false, 'company']
-        }
-        if(!isUserEmailAddressValid(email.value)){
-            // email.style.borderColor = '#d64541'
-            return [false, 'email']
-        }
-        if(!isUserTelephoneValid(telephone.value)){
-            // telephone.style.borderColor = '#d64541'
-            return [false, 'telephone']
-        }
-        if(message.value.length < 3){
-            // message.style.borderColor = '#d64541'
-            return [false, 'message']
-        }
+        return [false, errors]
     }
 }
 /////////////////////////////////////////////////////////////////////////
@@ -105,53 +108,59 @@ function clearInfoMessageDisplay(){
     )
 }
 /////////////////////////////////////////////////////////////////////////////////////
-function removeInfoMessage(el){
+function removeInfoMessage(el, removeInnerHTML){
     const timer = setTimeout(
         ()=> {
             const formValidationMessagesContainer = document.querySelector('div#form-validation-messages-container')
             formValidationMessagesContainer.style.display = 'none'
+            if(removeInnerHTML) {
+                el['innerHTML'] = ''
+            }
             el['style'].display = 'none'
             return clearTimeout(timer)
-        }, 100000
+        }, 7000
     )
 }
 /////////////////////////////////////////////////////////////////////////////////////
-function displayInfoMessage(reasonForMessage){
+function displayInfoMessage(data){
     const formValidationMessagesContainer = document.querySelector('div#form-validation-messages-container')
-
     const successMessage = document.querySelector('div#success-message')
-    const invalidTelephoneNumberWarning = document.querySelector('div#invalid-telephone-number-warning')
-    const invalidEmailAddressWarning = document.querySelector('div#invalid-email-address-warning')
+    const invalidFormDataWarningList = document.querySelector('ul#invalid-form-data-warning-list')
+    const invalidFormDataWarning = document.querySelector('div#invalid-form-data-warning')
+    const formControls = document.querySelectorAll('.form-control')
 
     formValidationMessagesContainer.style.display = 'flex'
+    formValidationMessagesContainer.addEventListener(
+        'click', clearInfoMessageDisplay
+    )
 
-    switch(reasonForMessage){
-        case 'invalid telephone number and email address': 
-            clearInfoMessageDisplay()
-            invalidTelephoneNumberWarning.style.display = 'block'
-            invalidEmailAddressWarning.style.display = 'block'
+    formControls.forEach(
+        formControl => formControl.addEventListener(
+            'click', clearInfoMessageDisplay
+        )
+    )
 
-            removeInfoMessage(invalidTelephoneNumberWarning)
-            removeInfoMessage(invalidEmailAddressWarning)
-        break;
-        case 'invalid telephone number': 
+    switch(Array.isArray(data)){
+        case true: 
             clearInfoMessageDisplay()
-            invalidTelephoneNumberWarning.style.display = 'block'
-            removeInfoMessage(invalidTelephoneNumberWarning)
-        break;
-        case 'invalid email address': 
-            clearInfoMessageDisplay()
-            invalidEmailAddressWarning.style.display = 'block'
-            removeInfoMessage(invalidEmailAddressWarning)
+            const errorMessages = data.map(msg => {
+                const li = document.createElement('li')
+                li.innerText = msg
+                return li
+            }) 
+            invalidFormDataWarning.style.display = 'block'
+            errorMessages.forEach(msg =>  invalidFormDataWarningList.appendChild(msg))
+
+            removeInfoMessage(invalidFormDataWarning, true)
         break;
         default:
             clearInfoMessageDisplay()
             successMessage.style.display = 'flex'
-            document.querySelector('div#success-message p .lead-sentence').textContent = reasonForMessage
+            document.querySelector('div#success-message p .lead-sentence').textContent = data
 
-            removeInfoMessage(successMessage)
+            removeInfoMessage(successMessage, false)
         break;
     }
 }
 /////////////////////////////////////////////////////////////////////////////////////
-export {isValidStringInput, isUserEmailAddressValid, isUserTelephoneValid, displayInfoMessage}
+export {shouldPostData, displayInfoMessage}

@@ -10,25 +10,25 @@
 </head>
 <body>
     <!-- hamburger menu button-->
-    <?php include 'includes/hamburger-button.php' ?>
+    <?php include '../includes/hamburger-button.php' ?>
     <!-- side menu/ main navigation-->
-    <?php include 'includes/side-menu-top.php' ?>
+    <?php include '../includes/side-menu-top.php' ?>
         <li>
-            <a href="about-me.html#about-me-heading">About me</a>
+            <a href="about-me.php#about-me-heading">About me</a>
         </li>
         <li>
-            <a href="../index.html#my-portfolio-heading">My Portfolio</a>
+            <a href="../index.php#my-portfolio-heading">My Portfolio</a>
         </li>
         <li>
             <a href="#">Code Examples</a>
         </li>
         <li>
-            <a href="scs.html">SCS Scheme</a>
+            <a href="scs.php">SCS Scheme</a>
         </li>
         <li>
-            <a href="../index.html#contact-me-heading">Contact me</a>
+            <a href="../index.php#contact-me">Contact me</a>
         </li>
-    <?php include 'includes/side-menu-bottom.php' ?>
+    <?php include '../includes/side-menu-bottom.php' ?>
     <!-- main page content -->
     <div id="main-content">
         <h2 id="code-examples-heading">Code Examples</h2>

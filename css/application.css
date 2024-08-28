@@ -7,13 +7,13 @@ div.warning-message {
   transition: 1s;
 }
 div.warning-message#success-message {
-  background-color: #00f0f0;
+  background-color: #00bdbd;
   justify-content: center;
 }
 div.warning-message p {
   color: azure;
-  font-size: 0.8rem;
-  font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 600;
   letter-spacing: 1.2;
   line-height: 1.25rem;
 }
@@ -23,21 +23,23 @@ div.warning-message p span.lead-sentence {
   margin: 0 auto;
   text-align: center;
   padding: 5px;
-  background-color: azure;
-  color: hsl(348, 100%, 61%);
+  color: azure;
   font-weight: 600;
 }
 div.warning-message ul {
   list-style-type: square;
-  font-size: 0.8rem;
   line-height: 1.5rem;
+  width: 50%;
+  margin: 0 auto;
+  border: solid 5px azure;
+  padding: 30px;
 }
 div.warning-message ul li {
+  font-size: 1.25rem;
   color: azure;
 }
 @media (min-width: 768px) {
   div.warning-message p {
-    background-color: green;
     display: flex;
     justify-content: center;
   }
@@ -272,7 +274,6 @@ h2.homepage-heading {
 @media (min-width: 768px) {
   h2 {
     font-size: 4rem;
-    margin-left: 135px;
     padding: 30px 0;
   }
   h2.homepage-heading {
@@ -356,15 +357,14 @@ div#about-me article#certification-links h6 {
   margin-bottom: 1rem;
   text-align: center;
 }
-div#about-me article#certification-links a {
-  display: inline-block;
-  text-align: center;
-  margin: 0 1rem;
-  padding: 0.1rem;
+div#about-me article#certification-links div.sm-icons-container {
+  width: 100px;
+  display: flex;
+  column-gap: 20px;
 }
-div#about-me article#certification-links a img {
-  width: 2rem;
-  height: 2rem;
+div#about-me article#certification-links div.sm-icons-container a {
+  width: 20px;
+  height: 20px;
 }
 
 @keyframes wave {
@@ -412,7 +412,6 @@ h2.homepage-heading {
 @media (min-width: 768px) {
   h2 {
     font-size: 4rem;
-    margin-left: 135px;
     padding: 30px 0;
   }
   h2.homepage-heading {
@@ -560,7 +559,6 @@ h2.homepage-heading {
 @media (min-width: 768px) {
   h2 {
     font-size: 4rem;
-    margin-left: 135px;
     padding: 30px 0;
   }
   h2.homepage-heading {
@@ -668,7 +666,6 @@ h2.homepage-heading {
 @media (min-width: 768px) {
   h2 {
     font-size: 4rem;
-    margin-left: 135px;
     padding: 30px 0;
   }
   h2.homepage-heading {
@@ -766,7 +763,6 @@ h2.homepage-heading {
 @media (min-width: 768px) {
   h2 {
     font-size: 4rem;
-    margin-left: 135px;
     padding: 30px 0;
   }
   h2.homepage-heading {
@@ -948,11 +944,6 @@ body button#hamburger-button {
 }
 body button#hamburger-button * {
   transition: 0.5s;
-}
-@media (min-width: 768px) {
-  body button#hamburger-button {
-    display: none;
-  }
 }
 body button#hamburger-button span.hamburger-box {
   display: block;
