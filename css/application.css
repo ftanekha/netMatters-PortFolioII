@@ -254,7 +254,6 @@ div#banner div#scroll-down a span.glyphicon:hover {
 }
 
 h2 {
-  background-color: #d7ffff !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -395,7 +394,6 @@ div#about-me article#certification-links a img {
   }
 }
 h2 {
-  background-color: #d7ffff !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -544,7 +542,6 @@ div#my-portfolio div#portfolio-list-of-projects a:hover {
 }
 
 h2 {
-  background-color: #d7ffff !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -625,11 +622,11 @@ div#code-examples div#code-examples-main-container div#problem-solution-selector
   width: 4rem;
   padding: 0.25rem;
   text-align: center;
-  background-color: rgb(210, 198, 198);
+  background-color: #b84d50;
   box-shadow: inset #554949 0px 0px 0.1rem;
   border-radius: 0.2rem;
-  color: black;
-  font-weight: 700;
+  color: white;
+  font-weight: 900;
 }
 div#code-examples div#code-examples-main-container div#problem-solution-selector div#solutions-tags-container span.tag:hover {
   background-color: rgb(30, 26, 26);
@@ -653,7 +650,6 @@ div#code-examples div#code-examples-main-container div#coming-soon-playlist-cont
 }
 
 h2 {
-  background-color: #d7ffff !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -752,7 +748,6 @@ div#scs div.article footer a img {
 }
 
 h2 {
-  background-color: #d7ffff !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -990,16 +985,6 @@ body div#main-content div.container {
   background-color: white;
   width: 80%;
   margin: 0 auto;
-}
-@media (min-width: 768px) {
-  body div#form-validation-messages-container, body div#main-content div.container {
-    margin-left: 22.5vw;
-  }
-}
-@media (min-width: 1220px) {
-  body div#form-validation-messages-container, body div#main-content div.container {
-    margin-left: 17.5vw;
-  }
 }
 
 /*# sourceMappingURL=application.css.map */

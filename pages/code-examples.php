@@ -10,63 +10,25 @@
 </head>
 <body>
     <!-- hamburger menu button-->
-    <button id="hamburger-button" type="button"
-        data-toggle="sidebar" title="main navigation menu button">
-        <span class="hamburger-box left">
-            <span class="hamburger-inner"></span>
-        </span>
-        <span class="hamburger-box middle">
-            <span class="hamburger-inner"></span>
-        </span>
-        <span class="hamburger-box right">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
+    <?php include 'includes/hamburger-button.php' ?>
     <!-- side menu/ main navigation-->
-    <div id="side-menu">
-        <a href="../index.html">
-            <div class="my-initials" title="Go to Homepage">
-                <div class="initial-F-Container">
-                    <div class="initial-F-top"></div>
-                    <div class="initial-F-bottom"></div>
-                </div>
-                <div class="initial-T-Container">
-                    <div class="initial-T-left"></div>
-                    <div class="initial-T-right"></div>
-                </div>
-            </div>
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="about-me.html#about-me-heading">About me</a>
-                </li>
-                <li>
-                    <a href="../index.html#my-portfolio-heading">My Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Code Examples</a>
-                </li>
-                <li>
-                    <a href="scs.html">SCS Scheme</a>
-                </li>
-                <li>
-                    <a href="../index.html#contact-me-heading">Contact me</a>
-                </li>
-            </ul>
-        </nav>
-        <div id="social-media-links">
-            <a href="https://www.twitter.com/ftanekha" target="_blank">
-                <span class="icon-twitter" title="My Twitter account"></span>
-            </a>
-            <a href="https://www.linkedin.com/in/faraitanekha"  target="_blank">
-                <span class="icon-linkedin2" title="My LinkedIn account"></span>
-            </a>
-            <a href="https://github.com/ftanekha"  target="_blank">
-                <span class="icon-github" title="My GitHub account"></span>
-            </a>
-        </div>
-    </div>
+    <?php include 'includes/side-menu-top.php' ?>
+        <li>
+            <a href="about-me.html#about-me-heading">About me</a>
+        </li>
+        <li>
+            <a href="../index.html#my-portfolio-heading">My Portfolio</a>
+        </li>
+        <li>
+            <a href="#">Code Examples</a>
+        </li>
+        <li>
+            <a href="scs.html">SCS Scheme</a>
+        </li>
+        <li>
+            <a href="../index.html#contact-me-heading">Contact me</a>
+        </li>
+    <?php include 'includes/side-menu-bottom.php' ?>
     <!-- main page content -->
     <div id="main-content">
         <h2 id="code-examples-heading">Code Examples</h2>

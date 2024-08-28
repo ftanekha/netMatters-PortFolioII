@@ -36,38 +36,14 @@
         </div>
     </div>
     <!-- hamburger menu button-->
-    <button id="hamburger-button" type="button" data-toggle="sidebar" title="main navigation menu button">
-        <span class="hamburger-box left">
-            <span class="hamburger-inner"></span>
-        </span>
-        <span class="hamburger-box middle">
-            <span class="hamburger-inner"></span>
-        </span>
-        <span class="hamburger-box right">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
+    <?php include 'includes/hamburger-button.php' ?>
     <!-- side menu/ main navigation-->
-    <div id="side-menu">
-        <a href="#">
-            <div class="my-initials" title="Go to Homepage">
-                <div class="initial-F-Container">
-                    <div class="initial-F-top"></div>
-                    <div class="initial-F-bottom"></div>
-                </div>
-                <div class="initial-T-Container">
-                    <div class="initial-T-left"></div>
-                    <div class="initial-T-right"></div>
-                </div>
-            </div>
-        </a>
-        <nav>
-            <ul>
+    <?php include 'includes/side-menu-top.php' ?>
                 <li>
-                    <a href="pages/about-me.html#about-me-heading">About me</a>
+                    <a href="pages/about-me.html">About me</a>
                 </li>
                 <li>
-                    <a href="#my-portfolio-heading">My Portfolio</a>
+                    <a href="#my-portfolio">My Portfolio</a>
                 </li>
                 <li>
                     <a href="pages/code-examples.html">Code Examples</a>
@@ -76,22 +52,9 @@
                     <a href="pages/scs.html">SCS Scheme</a>
                 </li>
                 <li>
-                    <a href="#contact-me-heading">Contact me</a>
+                    <a href="#contact-me">Contact me</a>
                 </li>
-            </ul>
-        </nav>
-        <div id="social-media-links">
-            <a href="https://www.twitter.com/ftanekha" target="_blank">
-                <span class="icon-twitter" title="My Twitter account"></span>
-            </a>
-            <a href="https://www.linkedin.com/in/faraitanekha"  target="_blank">
-                <span class="icon-linkedin2" title="My LinkedIn account"></span>
-            </a>
-            <a href="https://github.com/ftanekha"  target="_blank">
-                <span class="icon-github" title="My GitHub account"></span>
-            </a>
-        </div>
-    </div>
+    <?php include 'includes/side-menu-bottom.php' ?>       
     <!-- main page content -->
     <div id="main-content">
         <!-- section#banner -->
@@ -105,9 +68,8 @@
             </div>
         </div>
         <!-- section#my-portfolio -->
-        <h2 id="my-portfolio-heading" class="homepage-heading">My Portfolio</h2>
         <div id="my-portfolio" class="container">
-            <!-- <h2>My Portfolio</h2> -->
+            <h2>My Portfolio</h2>
             <p class="lead">The projects listed below utilise a mix of technologies categorised as following:</p>
             <!-- teck stack -->
             <dl>
@@ -165,7 +127,7 @@
                         </figcaption>
                     </figure>
                 </a>
-                <a href="http://js-array.farai-tanekha.netmatters-scs.co.uk/" target="_blank">
+                <a href="https://ftanekha.github.io/netMatters-JS-Array-Assessment/?#" target="_blank">
                     <figure>
                         <img src="assets/images/js-array-assessment-resized.jpeg" 
                             alt="JavaScript array assessement" title="JavaScript array assessement"
@@ -179,9 +141,8 @@
             </div>
         </div>
         <!-- section#contact-me -->
-        <h2 id="contact-me-heading" class="homepage-heading">Contact Me</h2>
         <div id="contact-me" class="container">
-            <!-- <h2>Contact Me</h2> -->
+            <h2>Contact Me</h2>
             <div id="enquiry-form">
                 <form id="contact-me-form" action="#" method="post">
                     <div class="full-name">

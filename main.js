@@ -1,4 +1,4 @@
-import {isUserEmailAddressValid, isUserTelephoneValid, displayInfoMessage} from './js/utilities.js'
+import {isValidStringInput, isUserEmailAddressValid, isUserTelephoneValid, displayInfoMessage} from './js/utilities.js'
 
 document.addEventListener(
     'DOMContentLoaded', ()=>{
@@ -28,38 +28,53 @@ document.addEventListener(
                     ev.preventDefault()
                     //collect user data
                     const userData = {
-                        'First Name': document.querySelector('#first-name').value,
-                        'Last Name': document.querySelector('#last-name').value,
-                        'Full Name': '',
-                        'Telephone': document.querySelector('#telephone').value,
-                        'Email': document.querySelector('#email').value,
-                        'Message': document.querySelector('#message').value
+                        'first_name': document.querySelector('#first-name').value,
+                        'last_name': document.querySelector('#last-name').value,
+                        'telephone': document.querySelector('#telephone').value,
+                        'email': document.querySelector('#email').value,
+                        'message': document.querySelector('#message').value
                     }
-                    userData['Full Name'] = userData['First Name'] + ' ' + userData['Last Name']
-                    
                     //validate user data
-                    if(!isUserTelephoneValid(userData['Telephone'])){
-                        if(!isUserEmailAddressValid(userData['Email'])){
-                            return displayInfoMessage('invalid telephone number and email address')
-                        }
-                        if(isUserEmailAddressValid(userData['Email'])){
-                            return displayInfoMessage('invalid telephone number')
-                        }
-                    }
-                    
-                    if(isUserTelephoneValid(userData['Telephone'])){
-                        if(!isUserEmailAddressValid(userData['Email'])){
-                            return displayInfoMessage('invalid email address')
-                        }
-                    }
-                    
-                    if(
-                        isUserTelephoneValid(userData['Telephone']) 
-                                            &&
-                        isUserEmailAddressValid(userData['Email']) 
-                    ){
-                        displayInfoMessage(`Thank you ${userData['Full Name']} for leaving a message!\nI'll be in touch very soon.😎`)
-                        return contactMeForm.reset()
+                    if(!isValidStringInput(userData['first_name'])){
+                        console.error(1)
+                        return displayInfoMessage('invalid first name')
+                   }else if(!isValidStringInput(userData['last_name'])){
+                        console.error(2)
+                        return displayInfoMessage('invalid last name')
+                    }else if(!isUserTelephoneValid(userData['telephone'])){
+                        console.error(3)
+                        return displayInfoMessage('invalid telephone number')
+                    }else if(!isUserEmailAddressValid(userData['email'])){
+                        console.error(4)
+                        return displayInfoMessage('invalid email address')
+                    }else{
+                        //POST data & display success message
+                        fetch(
+                            'post-form-data.php', 
+                            {
+                                method: 'POST',
+                                'Content-Type': 'application/json',
+                                body: JSON.stringify(userData)
+                            }
+                        )
+                        .then(res => {
+                            if(res.ok){
+                                displayInfoMessage(`Thank you ${userData['first_name']} ${userData['last_name']} for leaving a message!\nI'll be in touch very soon.😎`)
+                            }
+                            return res.json()
+                        })
+                        .then(
+                            data => {
+                                if(Array.isArray(data)){
+                                    console.table(data[0])
+                                    console.warn(data[1])
+                                }else{
+                                    console.info(data)
+                                    contactMeForm.reset()
+                                }
+                            }
+                        )
+                        .catch(err => console.error(err))   
                     }
                 }
             )
