@@ -68,7 +68,7 @@
             </article>
         </div>
     </div>
-    <script type="module" src="../main.js"></script>
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/animate-nav-menu-icon.js"></script>
+    <script src="../js/toggle-side-menu.js"></script>
+    <script type="module" src="../main.js"></script>
 </html>
