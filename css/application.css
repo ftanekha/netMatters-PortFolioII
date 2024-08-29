@@ -911,7 +911,10 @@ div#contact-me div#scroll-up a span.glyphicon:hover {
   background-color: #8affff;
 }
 
-body {
+html {
+  overflow-y: hidden;
+}
+html body {
   position: relative;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -920,7 +923,7 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-body div#form-validation-messages-container {
+html body div#form-validation-messages-container {
   display: none;
   position: fixed;
   top: 0;
@@ -928,7 +931,7 @@ body div#form-validation-messages-container {
   width: 100%;
   flex-direction: column;
 }
-body button#hamburger-button {
+html body button#hamburger-button {
   filter: sepia(25%);
   filter: hue-rotate(10deg);
   display: block;
@@ -947,7 +950,7 @@ body button#hamburger-button {
   appearance: button;
   transition: 0.5s;
 }
-body button#hamburger-button span.hamburger-box {
+html body button#hamburger-button span.hamburger-box {
   display: block;
   width: 23px;
   height: 7px;
@@ -955,7 +958,7 @@ body button#hamburger-button span.hamburger-box {
   font-size: 1.438rem;
   line-height: 45px;
 }
-body button#hamburger-button span.hamburger-box span.hamburger-inner {
+html body button#hamburger-button span.hamburger-box span.hamburger-inner {
   width: 23px;
   height: 3.8px;
   position: absolute;
@@ -967,14 +970,14 @@ body button#hamburger-button span.hamburger-box span.hamburger-inner {
   display: block;
   margin-top: -1.5px;
 }
-body button#hamburger-button:hover {
+html body button#hamburger-button:hover {
   background-color: #d59698;
   border: solid 5px #b84d50;
 }
-body button#hamburger-button:hover span.hamburger-box span.hamburger-inner {
+html body button#hamburger-button:hover span.hamburger-box span.hamburger-inner {
   background-color: azure;
 }
-body div#main-content div.container {
+html body div#main-content div.container {
   background-color: white;
   width: 80%;
   margin: 0 auto;
