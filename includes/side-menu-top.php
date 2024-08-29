@@ -1,3 +1,4 @@
+<div id="side-menu-support"></div>
 <div id="side-menu">
     <a href="#">
         <div class="my-initials" title="Go to Homepage">

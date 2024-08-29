@@ -3,6 +3,7 @@ $(
         //////////////////////////////////////////////////
         const $hamburgerMenuIcon = $('#hamburger-button')
         const $sideMenu = $('#side-menu')
+        const $sideMenuSupport = $('#side-menu-support')
         ///////////////////////////////////////////////////
         function hamburgerToCross(){
             $('.hamburger-box.left').css({
@@ -46,13 +47,24 @@ $(
         $hamburgerMenuIcon.on(
             'click',
             ()=>{
-                if($sideMenu.css('display') === 'flex'){
+                if($sideMenu.css('display') === 'none'){
                     hamburgerToCross()
-                    $sideMenu.fadeToggle(800)
+                    $sideMenu.fadeToggle(500)
+                    $sideMenuSupport.css('display', 'block')
                 }else{
+                    $sideMenuSupport.css('display', 'none')
                     crossToHamburger()
-                    $sideMenu.fadeToggle(800)
+                    $sideMenu.fadeToggle(500)  
                 }
+            }
+        )
+
+        $sideMenuSupport.on(
+            'click', 
+            ()=> {
+                $sideMenuSupport.css('display', 'none')
+                crossToHamburger()
+                $sideMenu.fadeToggle(500)    
             }
         )
     }

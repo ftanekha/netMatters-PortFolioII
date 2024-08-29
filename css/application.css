@@ -48,6 +48,17 @@ div.warning-message ul li {
   }
 }
 
+div#side-menu-support {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: calc(100% - 270px);
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 div#side-menu {
   display: none;
   filter: sepia(25%);

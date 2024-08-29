@@ -1,12 +1,25 @@
 <?php
 
-include 'loadenv.php';
+include "loadenv.php";
+#set up PHPMailer
+#Start with PHPMailer class
+use PHPMailer\PHPMailer\PHPMailer;
+//create a new object
+$mail = new PHPMailer();
+//configure an SMTP
+$mail->isSMTP();
+$mail->Host = "sandbox.smtp.mailtrap.io";
+$mail->SMTPAuth = true;
+$mail->Username = "81d23071798981";
+$mail->Password = "c1d16779a221e8";
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = 587;
 
 #get form data
-$host = $_ENV['DB_HOST_NAME'];
-$dbname = $_ENV['DB_NAME'];
-$username = $_ENV['DB_USER_NAME'];
-$password = $_ENV['DB_PASSWORD'];
+$host = $_ENV["DB_HOST_NAME"];
+$dbname = $_ENV["DB_NAME"];
+$username = $_ENV["DB_USER_NAME"];
+$password = $_ENV["DB_PASSWORD"];
 #instantiate connection to database
 try
 {
@@ -21,19 +34,19 @@ catch(PDOException $pe)
 }
 
 #retrieve the raw POST data
-$jsonData = file_get_contents('php://input');
+$jsonData = file_get_contents("php://input");
 #decode the JSON data into a PHP associative array
 $data = json_decode($jsonData, true);
 #check if decoding was successful
-if(isset($data['first_name'])){
+if(isset($data["first_name"])){
     if($data !== null) 
     {
         #access the data and perform operations
-        $first_name = $data['first_name'];
-        $last_name = $data['last_name'];
-        $email = $data['email'];
-        $telephone = $data['telephone'];
-        $message = $data['message'];
+        $first_name = $data["first_name"];
+        $last_name = $data["last_name"];
+        $email = $data["email"];
+        $telephone = $data["telephone"];
+        $message = $data["message"];
         #DATA FORMATTING & VALIDATION
         if($_SERVER["REQUEST_METHOD"] === "POST") 
         {#format the data
@@ -45,7 +58,7 @@ if(isset($data['first_name'])){
                 return $form_input;
             }
             # [1] check for empty fields/ missing form data
-            # [2] ****VALIDATE*****data
+            # [2] ****SANITIZE & VALIDATE*****data
             $http_response_code406 = [];
 
             if(empty($first_name)) {
@@ -98,11 +111,28 @@ if(isset($data['first_name'])){
             try
             {
                 $result = $conn->query($query);
-                echo json_encode("Data added to database successfully.");
+                
+                #configure email
+                $mail->setFrom($email, "Client");
+                $mail->addAddress("farai.tanekha@netmatters-scs.com", "Farai Tanekha");
+                $mail->Subject = "Software Development Portfolio enquiry";
+                #set HTML 
+                $mail->isHTML(TRUE);
+                $mail->Body = "<html>$message</html>";
+                $mail->AltBody = $message;
+                #send the message
+                if(!$mail->send()){
+                    echo json_encode("Message could not be sent.");
+                    echo json_encode("Mailer Error: " . $mail->ErrorInfo);
+                    exit;
+                }
+                
+                echo json_encode("Database updated successfully.\n Email sent!");
             }
             catch(Exception $e)
             {
-                echo "Exception caught: $e";
+                echo json_encode($e);
+                exit;
             }
         }
     } 
@@ -110,6 +140,6 @@ if(isset($data['first_name'])){
     {
         #JSON decoding failed
         http_response_code(400); #Bad Request
-        echo "Invalid JSON data.";
+        echo json_encode("Invalid JSON data.");
     }
 }

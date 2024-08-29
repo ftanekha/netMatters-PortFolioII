@@ -131,7 +131,7 @@
         <div id="contact-me" class="container">
             <h2>Contact Me</h2>
             <div id="enquiry-form">
-                <form id="contact-me-form" action="#" method="post">
+                <form id="contact-me-form">
                     <div class="full-name">
                         <div class="contact-info-detail">
                             <label for="first-name">First name</label>
@@ -165,9 +165,9 @@
             </div>
         </div>
     </div>
-    <script type="module" src="main.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/animate-my-name.js"></script>
     <script src="js/toggle-side-menu.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>

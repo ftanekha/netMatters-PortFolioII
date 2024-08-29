@@ -3,13 +3,13 @@ import {shouldPostData, displayInfoMessage} from './js/utilities.js'
 document.addEventListener(
     'DOMContentLoaded', ()=>{
         //validate contact-me form data
-        if(document.URL.includes('contact-me') || document.URL.includes('index.html')){
+        if(document.querySelector('form#contact-me-form')){
             const contactMeForm = document.querySelector('form#contact-me-form')
             contactMeForm.addEventListener(
                 'submit', 
                 (ev)=>{
                     ev.preventDefault()
-                    //collect user data
+                    // collect user data
                     const userData = {
                         'first_name': document.querySelector('#first-name').value,
                         'last_name': document.querySelector('#last-name').value,
@@ -35,7 +35,7 @@ document.addEventListener(
                         .then(res =>  res.json())
                         .then(
                             data => {
-                                //display error messages from server
+                                // display error messages from server
                                 if(Array.isArray(data)){
                                     console.error(`${data.length} Error/s detected:`)                                
                                     data.forEach( error => {
@@ -43,14 +43,17 @@ document.addEventListener(
                                     })
                                     displayInfoMessage(data)
                                 }else{
-                                    //display success message from server
+                                    // display success message from server
                                     console.info(data)
                                     displayInfoMessage(`Thank you ${userData['first_name']} ${userData['last_name']} for leaving a message!\nI'll be in touch very soon.😎`)
                                     contactMeForm.reset()
                                 }
                             }
                         )
-                        .catch(err => console.error(err))   
+                        .catch(err => {
+                            if(typeof err === 'string') console.error(err)
+                            if(typeof err === 'object') console.table(err)
+                        })   
                     }
                 }
             )

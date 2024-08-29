@@ -108,17 +108,16 @@ function clearInfoMessageDisplay(){
     )
 }
 /////////////////////////////////////////////////////////////////////////////////////
-function removeInfoMessage(el, removeInnerHTML){
+function removeInfoMessage(el){
     const timer = setTimeout(
         ()=> {
             const formValidationMessagesContainer = document.querySelector('div#form-validation-messages-container')
-            formValidationMessagesContainer.style.display = 'none'
-            if(removeInnerHTML) {
-                el['innerHTML'] = ''
-            }
+
             el['style'].display = 'none'
+            formValidationMessagesContainer.style.display = 'none'
+
             return clearTimeout(timer)
-        }, 7000
+        }, 5000
     )
 }
 /////////////////////////////////////////////////////////////////////////////////////
@@ -149,9 +148,8 @@ function displayInfoMessage(data){
                 return li
             }) 
             invalidFormDataWarning.style.display = 'block'
+            invalidFormDataWarningList.innerHTML = ''
             errorMessages.forEach(msg =>  invalidFormDataWarningList.appendChild(msg))
-
-            removeInfoMessage(invalidFormDataWarning, true)
         break;
         default:
             clearInfoMessageDisplay()
