@@ -35,7 +35,7 @@
         <div id="about-me" class="container">
             <!-- <h2>About Me</h2> -->
             <div class="about-me-container">
-                <strong>Greetings!<span class="waving-hand" title="Hi World!!&nbsp;&#x1F44B;&#128515;">&nbsp;&#x1F44B;</span></strong>
+                <strong>Greetings!<span class="waving-hand" title="Hi World!!&nbsp;&#x1F44B;&#128515;">&nbsp;&#128075;&#127998;</span></strong>
                 <p>My name is Farai Tanekha. I am a Software Developer with a keen vision to be one of the best.</p>
                 <br>
                 <strong>Welcome to my Portfolio.</strong>
