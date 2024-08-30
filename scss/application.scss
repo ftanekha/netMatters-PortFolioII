@@ -4,35 +4,32 @@
     "main-sections/index"
 ;
 
-html{
-    overflow-y: hidden;
-    body{
-        position: relative;
-        font: {
-            family: "PT Sans", sans-serif;
-            style: normal;
-            size: 16px;
-            weight: 400;
-        }
-        padding: 0;
-        overflow-x: hidden;
-        div#form-validation-messages-container{
-            display: none;
-            position: fixed;
-            top: 0;
-            z-index: $form-validation-messages-container_z-index;
-            width: 100%;
-            flex-direction: column;
-        }
-        button#hamburger-button{
-            @include hamburger-button;
-        }
-        div#main-content{
-            div.container{
-                background-color: white;
-                width: 80%;
-                margin: 0 auto;
-            }
+body{
+    position: relative;
+    font: {
+        family: "PT Sans", sans-serif;
+        style: normal;
+        size: 16px;
+        weight: 400;
+    }
+    padding: 0;
+    overflow-x: hidden;
+    div#form-validation-messages-container{
+        display: none;
+        position: fixed;
+        top: 0;
+        z-index: $form-validation-messages-container_z-index;
+        width: 100%;
+        flex-direction: column;
+    }
+    button#hamburger-button{
+        @include hamburger-button;
+    }
+    div#main-content{
+        div.container{
+            background-color: white;
+            width: 80%;
+            margin: 0 auto;
         }
     }
 }

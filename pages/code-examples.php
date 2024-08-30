@@ -17,7 +17,7 @@
             <a href="about-me.php#about-me-heading">About me</a>
         </li>
         <li>
-            <a href="../index.php#my-portfolio-heading">My Portfolio</a>
+            <a href="../index.php#my-portfolio">My Portfolio</a>
         </li>
         <li>
             <a href="#">Code Examples</a>
