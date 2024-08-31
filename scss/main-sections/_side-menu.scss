@@ -2,11 +2,18 @@ div#side-menu-support{
     display: none;
     position: fixed;
     top: 0;
-    right: 0;
+    right: calc( -1 * 100%);
     z-index: $side-menu_z-index;
     width: calc(100% - 270px);
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
+    &.slide-in{
+        display: block;
+        animation: side-menu-support-slide-in 1s ease-in-out;
+    }
+    &.slide-out{
+        animation: side-menu-support-slide-out 1s ease-in-out;
+    }
 }
 div#side-menu{
     display: none;
@@ -14,14 +21,20 @@ div#side-menu{
     filter: hue-rotate(10deg);
     position: fixed;
     top: 0;
-    left: 0;
+    left: -270px;
     z-index: $side-menu_z-index;
     flex-direction: column;
     gap: 5vh;
     width: 270px;
     height: 100vh;
     background-color: $main-red;
-    transition: 1s;
+    &.slide-in{   
+        display: block;
+        animation: side-menu-slide-in 1s ease-in-out;
+    }
+    &.slide-out{
+        animation: side-menu-slide-out 1s ease-in-out;
+    }
     a{
         display: block;
         div.my-initials{
@@ -123,5 +136,41 @@ div#side-menu{
                 color: $main-red;
             }
         }
+    }
+}
+
+@keyframes side-menu-slide-in{
+    0%{
+        left: -270px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes side-menu-slide-out{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -270px;
+    }
+}
+
+@keyframes side-menu-support-slide-in{
+    0%{
+        right: calc( -1 * 100%);
+    }
+    100%{
+        right: 0;
+    }
+}
+
+@keyframes side-menu-support-slide-out{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: calc( -1 * 100%);
     }
 }

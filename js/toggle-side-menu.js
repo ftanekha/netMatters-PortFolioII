@@ -49,12 +49,16 @@ $(
             ()=>{
                 if($sideMenu.css('display') === 'none'){
                     hamburgerToCross()
-                    $sideMenu.fadeToggle(500)
-                    $sideMenuSupport.css('display', 'block')
-                }else{
-                    $sideMenuSupport.css('display', 'none')
-                    crossToHamburger()
-                    $sideMenu.fadeToggle(500)  
+                    if($sideMenu.hasClass('slide-out')) $sideMenu.removeClass('slide-out')
+                    if($sideMenuSupport.hasClass('slide-out')) $sideMenuSupport.removeClass('slide-out')
+
+                    $sideMenu
+                    .addClass(' slide-in')
+                    .css('left', 0)
+
+                    $sideMenuSupport
+                    .addClass(' slide-in')
+                    .css('right', 0)
                 }
             }
         )
@@ -62,9 +66,15 @@ $(
         $sideMenuSupport.on(
             'click', 
             ()=> {
-                $sideMenuSupport.css('display', 'none')
                 crossToHamburger()
-                $sideMenu.fadeToggle(500)    
+
+                $sideMenuSupport
+                .removeClass('slide-in')
+                .addClass(' slide-out')
+
+                $sideMenu
+                .removeClass('slide-in')
+                .addClass(' slide-out')
             }
         )
     }
