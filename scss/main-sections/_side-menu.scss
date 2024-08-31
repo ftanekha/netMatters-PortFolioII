@@ -88,9 +88,8 @@ div#side-menu{
                     color: $main-red;
                     font-size: 1.15rem;
                     font-weight: 200;
-                    transition: .3s;
+                    transition: .5s;
                     &:hover{
-                        transform: scale(1.2);
                         font-weight: 600;
                     }
                 }

@@ -141,10 +141,9 @@ div#side-menu nav ul li a {
   color: #b84d50;
   font-size: 1.15rem;
   font-weight: 200;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 div#side-menu nav ul li a:hover {
-  transform: scale(1.2);
   font-weight: 600;
 }
 div#side-menu div#social-media-links {
