@@ -3,19 +3,20 @@
     filter: hue-rotate(10deg);
     display: block;
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 1px;
+    right: 5px;
     z-index: $hamburger-menu_z-index;
     width: 45px;
     height: 45px;
-    padding: 5px 15px;
-    border: double 5px $main-red;
+    padding: 5px 20px;
     outline: none;
+    border: none;
     color: $main-red;
     line-height: 46px;
     user-select: none;
-    appearance: button;
+    background-color: white;
     transition: .5s;
+    scale: (1.25);
     span.hamburger-box{
         display: block;
         width: 23px;
@@ -30,19 +31,22 @@
             position: absolute;
             top: 50%;
             left: -35%;
+            transition: .5s;
             transition-property: transform;
             background-color: $main-red;
             border-radius: 0;
             display: block;
             margin-top: -1.5px;
+            border-radius: 30%;
         }
     }
     &:hover{
-        background-color: lighten($main-red, 20%);
-        border: solid 5px $main-red;
+        border-radius: 50%;
         span.hamburger-box{
             span.hamburger-inner{
-                background-color: azure;
+                background-color: lighten($main-red, 20%);
+                scale: (1.25);
+                border-radius: 30%;
             }
         }
     }

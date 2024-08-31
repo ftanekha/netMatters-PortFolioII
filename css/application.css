@@ -933,19 +933,20 @@ body button#hamburger-button {
   filter: hue-rotate(10deg);
   display: block;
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 1px;
+  right: 5px;
   z-index: 5;
   width: 45px;
   height: 45px;
-  padding: 5px 15px;
-  border: double 5px #b84d50;
+  padding: 5px 20px;
   outline: none;
+  border: none;
   color: #b84d50;
   line-height: 46px;
   user-select: none;
-  appearance: button;
+  background-color: white;
   transition: 0.5s;
+  scale: 1.25;
 }
 body button#hamburger-button span.hamburger-box {
   display: block;
@@ -961,18 +962,21 @@ body button#hamburger-button span.hamburger-box span.hamburger-inner {
   position: absolute;
   top: 50%;
   left: -35%;
+  transition: 0.5s;
   transition-property: transform;
   background-color: #b84d50;
   border-radius: 0;
   display: block;
   margin-top: -1.5px;
+  border-radius: 30%;
 }
 body button#hamburger-button:hover {
-  background-color: #d59698;
-  border: solid 5px #b84d50;
+  border-radius: 50%;
 }
 body button#hamburger-button:hover span.hamburger-box span.hamburger-inner {
-  background-color: azure;
+  background-color: #d59698;
+  scale: 1.25;
+  border-radius: 30%;
 }
 body div#main-content div.container {
   background-color: white;
