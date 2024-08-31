@@ -938,7 +938,7 @@ body button#hamburger-button {
   z-index: 5;
   width: 45px;
   height: 45px;
-  padding: 5px 20px;
+  padding: 5px 18.5px;
   outline: none;
   border: none;
   color: #b84d50;
@@ -963,7 +963,6 @@ body button#hamburger-button span.hamburger-box span.hamburger-inner {
   top: 50%;
   left: -35%;
   transition: 0.5s;
-  transition-property: transform;
   background-color: #b84d50;
   border-radius: 0;
   display: block;
