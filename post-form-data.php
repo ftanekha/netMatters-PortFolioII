@@ -8,10 +8,10 @@ use PHPMailer\PHPMailer\PHPMailer;
 $mail = new PHPMailer();
 //configure an SMTP
 $mail->isSMTP();
-$mail->Host = "sandbox.smtp.mailtrap.io";
+$mail->Host = $_ENV["MAIL_Host"];
 $mail->SMTPAuth = true;
-$mail->Username = "81d23071798981";
-$mail->Password = "c1d16779a221e8";
+$mail->Username = $_ENV["MAIL_Username"];
+$mail->Password = $_ENV["MAIL_Password"];
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
