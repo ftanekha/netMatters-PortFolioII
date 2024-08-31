@@ -730,6 +730,7 @@ div#scs div.article footer a {
   gap: 1rem;
   box-shadow: inset rgb(210, 198, 198) 0px 0px 3rem;
   font-weight: 700;
+  transition: 0.5s;
 }
 div#scs div.article footer a:hover {
   box-shadow: inset rgb(72, 67, 67) 0px 0px 1.5rem;
@@ -740,6 +741,7 @@ div#scs div.article footer a:hover span {
 div#scs div.article footer a span {
   flex-grow: 1;
   color: rgb(115, 4, 4);
+  transition: 0.5s;
 }
 div#scs div.article footer a img {
   width: 1rem;
