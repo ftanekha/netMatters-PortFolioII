@@ -27,6 +27,8 @@ try
         "mysql:host=$host;dbname=$dbname;", 
         $username, $password
     );
+    #throw any exception raised by PDO
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } 
 catch(PDOException $pe) 
 {
