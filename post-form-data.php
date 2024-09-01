@@ -62,14 +62,14 @@ if(isset($data["first_name"])){
             # [1] check for empty fields/ missing form data
             # [2] ****SANITIZE & VALIDATE*****data
             $http_response_code406 = [];
-
+            ////////////////////////first name//////////////////////////////////
             if(empty($first_name)) {
                 $http_response_code406[] = "The first name is required.";
             }elseif(!preg_match("/^[a-zA-Z-' ]*$/",$first_name)) {
                 $http_response_code406[] = "The first name format is incorrect.";
             }else{
                 $first_name = format_form_data($first_name);
-            }
+            }///////////////////////last name///////////////////////////////////
             if(empty($last_name)){
                 #nullable
                 $last_name= null;
@@ -77,14 +77,14 @@ if(isset($data["first_name"])){
                 $http_response_code406[] = "The last name format is incorrect.";
             }else{
                 $last_name = format_form_data($last_name);
-            }
+            }/////////////////////////email//////////////////////////////////////
             if(empty($email)){
                 $http_response_code406[] = "The email is required.";
             }elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $http_response_code406[] = "The email format is incorrect.";
             }else{
                 $email = format_form_data($email);
-            }
+            }////////////////////////telephone///////////////////////////////////
             if(empty($telephone)){
                 $http_response_code406[] = "The telephone is required.";
             }elseif(!preg_match("/^[0-9]{7,15}+$/", $telephone)){
@@ -92,13 +92,14 @@ if(isset($data["first_name"])){
                 exit;
             }else{
                 $telephone = format_form_data($telephone);
-            }
+            }//////////////////////////message///////////////////////////////////
             if(empty($message)){
                 $http_response_code406[] = "The message is required.";
-            }elseif(strlen($message) < 3){
-                $http_response_code406[] = "Message too short.";
             }else{
                 $message = format_form_data($message);
+            }
+            if(strlen($message) < 3){
+                $http_response_code406[] = "Message too short.";
             }
         }
 
