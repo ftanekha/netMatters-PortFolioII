@@ -126,14 +126,13 @@ if(isset($data["first_name"])){
                     echo json_encode("Mailer Error: " . $mail->ErrorInfo);
                     exit;
                 }
-                
-                echo json_encode("Database updated successfully.\n Email sent!");
             }
             catch(Exception $e)
             {
                 echo json_encode($e);
                 exit;
             }
+            echo json_encode("Database updated successfully.\nEmail sent!");
         }
     } 
     else 
