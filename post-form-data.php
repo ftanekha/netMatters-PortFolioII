@@ -126,8 +126,7 @@ if(isset($data["first_name"])){
                 #send the message
                 if(!$mail->send()){
                     echo json_encode("Message could not be sent.");
-                    echo json_encode("Mailer Error: " . $mail->ErrorInfo);
-                    exit;
+                    throw new Exception("Mailer Error: " . $mail->ErrorInfo);
                 }
             }
             catch(Exception $e)
