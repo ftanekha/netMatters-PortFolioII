@@ -735,7 +735,7 @@ div#code-examples div#code-examples-main-container div#projects-container div.pa
 div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top:hover {
   background: black;
 }
-div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top p {
+div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top p.project-name {
   font-size: 0.6rem;
   font-weight: 600;
   color: #e4babc;
@@ -743,7 +743,7 @@ div#code-examples div#code-examples-main-container div#projects-container div.pa
   user-select: none;
   pointer-events: none;
 }
-div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top p:hover {
+div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top p.project-name:hover {
   color: #f2dfdf;
 }
 div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child {
@@ -764,7 +764,7 @@ div#code-examples div#code-examples-main-container div#projects-container div.pa
 div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child:hover {
   background: black;
 }
-div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child p {
+div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child p.project-name {
   margin-top: 0;
   padding: 0;
   user-select: none;
@@ -774,7 +774,7 @@ div#code-examples div#code-examples-main-container div#projects-container div.pa
   color: #e4babc;
   text-align: center;
 }
-div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child p:hover {
+div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child p.project-name:hover {
   color: #f2dfdf;
 }
 div#code-examples div#code-examples-main-container div#projects-container .front {
@@ -787,6 +787,9 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   margin: auto !important;
   border-radius: 5px !important;
   box-shadow: inset #c77174 2px 2px 5px, inset #c77174 -2px -2px 5px;
+}
+div#code-examples div#code-examples-main-container div#projects-container .front p.project-name {
+  display: none;
 }
 @media (min-width: 375px) {
   div#code-examples div#code-examples-main-container div#projects-container {
@@ -812,7 +815,7 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top {
     box-shadow: inset #963c3e 2px 2px 5px, inset #963c3e -2px -2px 5px;
   }
-  div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top p {
+  div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top p.project-name {
     font-size: 0.75rem;
   }
   div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child {
@@ -823,7 +826,7 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child:hover {
     background: black;
   }
-  div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child p {
+  div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child p.project-name {
     font-size: 0.75rem;
   }
   div#code-examples div#code-examples-main-container div#projects-container .front {
@@ -855,7 +858,7 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top {
     box-shadow: inset #963c3e 2px 2px 7.5px, inset #963c3e -2px -2px 7.5px;
   }
-  div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top p {
+  div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top p.project-name {
     font-size: 1rem;
   }
   div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child {
@@ -866,7 +869,7 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child:hover {
     background: black;
   }
-  div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child p {
+  div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child p.project-name {
     font-size: 1rem;
   }
   div#code-examples div#code-examples-main-container div#projects-container .front {
@@ -898,7 +901,7 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top {
     box-shadow: inset #963c3e 2px 2px 15px, inset #963c3e -2px -2px 15px;
   }
-  div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top p {
+  div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top p.project-name {
     font-size: 1.5rem;
   }
   div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child {
@@ -911,7 +914,7 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child:hover {
     background: black;
   }
-  div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child p {
+  div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child p.project-name {
     font-size: 1.5rem;
   }
   div#code-examples div#code-examples-main-container div#projects-container .front {
@@ -1222,7 +1225,7 @@ body button#hamburger-button {
   position: fixed;
   top: 1px;
   right: 5px;
-  z-index: 5;
+  z-index: 0;
   width: 45px;
   height: 45px;
   padding: 5px 18.5px;

@@ -101,7 +101,7 @@ div#code-examples{
                         &:hover{
                             background: darken($chestnut, 70%);
                         }
-                        p{
+                        p.project-name{
                             font-size: .6rem;
                             font-weight: 600;
                             color: lighten($chestnut, 30%);
@@ -132,7 +132,7 @@ div#code-examples{
                     &:hover{
                         background: darken($chestnut, 70%);
                     }
-                    p{
+                    p.project-name{
                         margin-top: 0;
                         padding: 0;
                         user-select: none;
@@ -157,6 +157,9 @@ div#code-examples{
                 margin: auto !important;
                 border-radius: 5px !important;
                 box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, inset lighten($chestnut, 10%) -2px -2px 5px;
+                p.project-name{
+                    display: none;
+                }
             }
             @media(min-width: 375px){
                 width: 305px;
@@ -180,7 +183,7 @@ div#code-examples{
                         &.top{
                             box-shadow: inset darken($chestnut, 10%) 2px 2px 5px, 
                                         inset darken($chestnut, 10%) -2px -2px 5px;
-                            p{
+                            p.project-name{
                                 font-size: .75rem;
                             }
                         }
@@ -193,7 +196,7 @@ div#code-examples{
                         &:hover{
                             background: darken($chestnut, 70%);
                         }
-                        p{
+                        p.project-name{
                             font-size: .75rem;
                         }
                     }
@@ -226,7 +229,7 @@ div#code-examples{
                         &.top{
                             box-shadow: inset darken($chestnut, 10%) 2px 2px 7.5px, 
                                         inset darken($chestnut, 10%) -2px -2px 7.5px;
-                            p{
+                            p.project-name{
                                 font-size: 1rem;
                             }
                         }
@@ -239,7 +242,7 @@ div#code-examples{
                         &:hover{
                             background: darken($chestnut, 70%);
                         }
-                        p{
+                        p.project-name{
                             font-size: 1rem;
                         }
                     }
@@ -272,7 +275,7 @@ div#code-examples{
                         &.top{
                             box-shadow: inset darken($chestnut, 10%) 2px 2px 15px, 
                                         inset darken($chestnut, 10%) -2px -2px 15px;
-                            p{
+                            p.project-name{
                                 font-size: 1.5rem;
                             }
                         }
@@ -287,7 +290,7 @@ div#code-examples{
                         &:hover{
                             background: darken($chestnut, 70%);
                         }
-                        p{
+                        p.project-name{
                             font-size: 1.5rem;
                         }
                     }

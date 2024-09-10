@@ -52,13 +52,13 @@
                 <div id="projects-container">
                     <div class="parent">
                         <div id="top-first-child" class="child top top-first" title="Click to expand. Double-Click to collapse.">
-                            <p>All4U website</p>
+                            <p class="project-name">All4U website</p>
                         </div>
                         <div id="top-second-child" class="child top top-second" title="Click to expand. Double-Click to collapse.">
-                            <p>Image Collector</p>
+                            <p class="project-name">Image Collector</p>
                         </div>
                         <div id="bottom-child" title="Click to expand. Double-Click to collapse.">
-                            <p>
+                            <p class="project-name">
                                 Netmatters Home <span class="ampersand">&amp;<span> Contact pages
                             </p>
                         </div>
