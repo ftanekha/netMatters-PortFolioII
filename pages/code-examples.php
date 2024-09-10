@@ -41,26 +41,44 @@
                         selected by the user by clicking on a tag from the list below.
                     </p>
                     <div id="solutions-tags-container">
-                        <span class="tag" title="HTML">html</span><span class="tag" title="CSS">css</span>
+                        <span class="tag" title="GitHub">gitHub</span><span class="tag" title="HTML">html</span>
+                        <span class="tag" title="CSS">css</span><span class="tag" title="SCSS">sass</span>
                         <span class="tag" title="JavaScript">js</span><span class="tag" title="jQUERY">jQuery</span>
-                        <span class="tag" title="C-sharp">c#</span><span class="tag" title="PHP">php</span>
-                        <span class="tag" title="SQL">sql</span><span class="tag" title="NEXT.js">next.js</span>
-                        <span class="tag" title="REACT.js">react</span><span class="tag" title="SCSS">sass</span>
-                        <span class="tag" title="GitHub">gitHub</span><span class="tag" title="PRISMA">prisma</span>
+                        <span class="tag" title="REACT.js">react</span><span class="tag" title="NEXT.js">next.js</span>
+                        <span class="tag" title="PRISMA">prisma</span><span class="tag" title="C-sharp">handlebars</span>
+                        <span class="tag" title="SQL">sql</span><span class="tag" title="PHP">php</span>
                     </div>
                 </div>
-                <div id="coming-soon-playlist-container">
+                <div id="projects-container">
+                    <div class="parent">
+                        <div id="top-first-child" class="child top top-first" title="Click to expand. Double-Click to collapse.">
+                            <p>All4U website</p>
+                        </div>
+                        <div id="top-second-child" class="child top top-second" title="Click to expand. Double-Click to collapse.">
+                            <p>Image Collector</p>
+                        </div>
+                        <div id="bottom-child" title="Click to expand. Double-Click to collapse.">
+                            <p>
+                                Netmatters Home <span class="ampersand">&amp;<span> Contact pages
+                            </p>
+                        </div>
+                        <!-- <div class="child hidden"></div> -->
+                        <!-- <div class="child hidden"></div> -->
+                    </div>
+                </div>
+                <!-- <div id="coming-soon-playlist-container">
                     <img src="../assets/images/comingsoon_01.gif" alt="Coming soon clipart" title="This section is currently under construction. Coming very soon!">
                     <audio controls preload="auto">
                         <source src="https://res.cloudinary.com/mindlibre3001/video/upload/v1711034534/Nujabes_Cisse_Star_-_Feathers.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/toggle-side-menu.js"></script>
     <script type="module" src="../main.js"></script>
+    <script src="../js/code-examples.js"></script>
 </body>
 </html>

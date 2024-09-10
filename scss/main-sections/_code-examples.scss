@@ -48,6 +48,257 @@ div#code-examples{
                 }
             }
         }
+        div#projects-container{
+            position: relative;
+            z-index: $background_z-index;
+            width: 275px;
+            height: 275px;
+            margin-top: 10px;
+            border: solid $chestnut 5px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lighten($chestnut, 20%);
+            box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, inset lighten($chestnut, 10%) -2px -2px 5px;
+            div.parent{
+                width: 275px;
+                height: 275px;
+                border-radius: 50%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                div.child{
+                    width: 45%;
+                    height: 50%; 
+                    background-color: $chestnut;
+                    display: inline-flex;
+                    color: lighten($chestnut, 60%);
+                    &:first-child{
+                        margin-right: 2%;
+                        border-top-left-radius: 100%;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                    }
+                    &:nth-child(2){
+                        border-top-right-radius: 100%;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                    &.top{
+                        width: 48%;
+                        height: 48%;
+                        position: relative;
+                        z-index: $foreground_z-index;
+                        justify-content: center;
+                        align-items: center;
+                        transition: .5s;
+                        cursor: pointer;
+                        box-shadow: inset darken($chestnut, 10%) 2px 2px 5px, 
+                                    inset darken($chestnut, 10%) -2px -2px 5px;
+                        &:hover{
+                            background: darken($chestnut, 70%);
+                        }
+                        p{
+                            font-size: .6rem;
+                            font-weight: 600;
+                            color: lighten($chestnut, 30%);
+                            text-align: center;
+                            user-select: none;
+                            pointer-events: none;
+                            &:hover{
+                                color: lighten($chestnut, 40%);
+                            }
+                        }
+                    }
+                }
+                div#bottom-child{
+                    border-radius: 0 0 calc(275px / 2) calc(275px / 2);
+                    width: 100%;
+                    height: calc(275px / 2);
+                    margin: auto;
+                    background-color: $chestnut;
+                    transition: .5s;
+                    color: lighten($chestnut, 60%);
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    box-shadow: inset darken($chestnut, 10%) 2px 2px 5px, 
+                                    inset darken($chestnut, 10%) -2px -2px 5px;
+                    &:hover{
+                        background: darken($chestnut, 70%);
+                    }
+                    p{
+                        margin-top: 0;
+                        padding: 0;
+                        user-select: none;
+                        pointer-events: none;
+                        font-size: .6rem;
+                        font-weight: 600;
+                        color: lighten($chestnut, 30%);
+                        text-align: center;
+                        &:hover{
+                            color: lighten($chestnut, 40%);
+                        }
+                    }
+                }
+            }
+            .front{
+                position: fixed !important;
+                top: 5%;
+                z-index: $overlay_z-index !important;
+                background-color: lighten(black, 10%) !important;
+                width: 80% !important;
+                height: 90% !important;
+                margin: auto !important;
+                border-radius: 5px !important;
+                box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, inset lighten($chestnut, 10%) -2px -2px 5px;
+            }
+            @media(min-width: 375px){
+                width: 305px;
+                height: 305px;
+                margin-top: 15px;
+                box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, inset lighten($chestnut, 10%) -2px -2px 5px;
+                div.parent{
+                    width: 305px;
+                    height: 305px;
+                    div.child{
+                        &:first-child{
+                            border-top-right-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                        }
+                        &:nth-child(2){
+                            border-top-left-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                        }
+                        &.top{
+                            box-shadow: inset darken($chestnut, 10%) 2px 2px 5px, 
+                                        inset darken($chestnut, 10%) -2px -2px 5px;
+                            p{
+                                font-size: .75rem;
+                            }
+                        }
+                    }
+                    div#bottom-child{
+                        border-radius: 0 0 calc(305px / 2) calc(305px / 2);
+                        height: calc(305px / 2) ;
+                        box-shadow: inset darken($chestnut, 10%) 2px 2px 5px, 
+                                    inset darken($chestnut, 10%) -2px -2px 5px;
+                        &:hover{
+                            background: darken($chestnut, 70%);
+                        }
+                        p{
+                            font-size: .75rem;
+                        }
+                    }
+                }
+                .front{
+                    border-radius: 5px !important;
+                    box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, 
+                                inset lighten($chestnut, 10%) -2px -2px 5px;
+                }
+            }
+            @media(min-width: 768px){
+                width: 457.5px;
+                height: 457.5px;
+                margin-top: 22.5px;
+                box-shadow: inset lighten($chestnut, 10%) 2px 2px 10px, inset lighten($chestnut, 10%) -2px -2px 10px;
+                div.parent{
+                    width: 457.5px;
+                    height: 457.5px;
+                    div.child{
+                        &:first-child{
+                            border-top-right-radius: 7.5px;
+                            border-bottom-right-radius: 7.5px;
+                            border-bottom-left-radius: 7.5px;
+                        }
+                        &:nth-child(2){
+                            border-top-left-radius: 7.5px;
+                            border-bottom-left-radius: 7.5px;
+                            border-bottom-right-radius: 7.5px;
+                        }
+                        &.top{
+                            box-shadow: inset darken($chestnut, 10%) 2px 2px 7.5px, 
+                                        inset darken($chestnut, 10%) -2px -2px 7.5px;
+                            p{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    div#bottom-child{
+                        border-radius: 0 0 calc(457.5px / 2) calc(457.5px / 2);
+                        height: calc(457.5px / 2);
+                        box-shadow: inset darken($chestnut, 10%) 2px 2px 7.5px, 
+                                    inset darken($chestnut, 10%) -2px -2px 7.5px;
+                        &:hover{
+                            background: darken($chestnut, 70%);
+                        }
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .front{
+                    border-radius: 7.5px !important;
+                    box-shadow: inset lighten($chestnut, 10%) 2px 2px 7.5px, 
+                                inset lighten($chestnut, 10%) -2px -2px 7.5px;
+                }
+            }
+            @media(min-width: 1220px){
+                width: 610px;
+                height: 610px;
+                margin-top: 30px;
+                box-shadow: inset lighten($chestnut, 10%) 2px 2px 15px, inset lighten($chestnut, 10%) -2px -2px 15px;
+                div.parent{
+                    width: 610px;
+                    height: 610px;
+                    div.child{
+                        &:first-child{
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                        }
+                        &:nth-child(2){
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                        }
+                        &.top{
+                            box-shadow: inset darken($chestnut, 10%) 2px 2px 15px, 
+                                        inset darken($chestnut, 10%) -2px -2px 15px;
+                            p{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                    div#bottom-child{
+                        border-radius: 0 0 305px 305px;
+                        height: 305px;
+                        border-top-right-radius: 10px;
+                        border-top-left-radius: 10px;
+                        box-shadow: inset darken($chestnut, 10%) 2px 2px 15px, 
+                                    inset darken($chestnut, 10%) -2px -2px 15px;
+                        &:hover{
+                            background: darken($chestnut, 70%);
+                        }
+                        p{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                
+                .front{
+                    border-radius: 10px !important;
+                    box-shadow: inset lighten($chestnut, 10%) 2px 2px 15px, inset lighten($chestnut, 10%) -2px -2px 15px;
+                }
+            }
+        }
         div#coming-soon-playlist-container{
             margin-top: 50px;
             width: 80%;
