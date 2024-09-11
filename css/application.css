@@ -862,16 +862,15 @@ div#code-examples div#code-examples-main-container div#projects-container .front
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li {
   margin-bottom: 15px;
 }
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li p, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li p {
-  color: azure;
-  cursor: none;
-}
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li a, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li a {
   text-decoration: none;
   color: azure;
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li a:hover, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li a:hover {
   text-decoration: underline;
+}
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li p, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li p {
+  color: azure;
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul {
   list-style-type: square;
@@ -880,9 +879,13 @@ div#code-examples div#code-examples-main-container div#projects-container .front
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul li, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul li {
   line-height: 10px;
+  color: azure;
 }
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li::marker, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li::marker {
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul li::marker, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul li::marker {
   color: #b84d50;
+}
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul li a, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul li a {
+  cursor: none;
 }
 @media (min-width: 375px) {
   div#code-examples div#code-examples-main-container div#projects-container {

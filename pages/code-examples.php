@@ -68,18 +68,14 @@
                                         <a class="examples-link" href="javascript:;">Flexbox & Media queries</a>
                                     </li>
                                     <li>
-                                        <p>Styling images in collection</p>
+                                        <p>
+                                            <a class="examples-link" href="javascript:;">Styling images in collection</a>
+                                        </p>
                                         <ul>
-                                            <li>
-                                                <a class="examples-link" href="javascript:;">border-radius</a>
-                                            </li>
-                                            <li>
-                                                <a class="examples-link" href="javascript:;">hover effects</a>
-                                            </li>
+                                            <li>border-radius</li>
+                                            <li>hover effects</li>
+                                            <li>Smooth transitions</li>
                                         </ul>
-                                    </li>
-                                    <li>
-                                        <a class="examples-link" href="javascript:;">Smooth transitions</a>
                                     </li>
                                 </ul>
                             </div>

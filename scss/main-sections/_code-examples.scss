@@ -192,10 +192,6 @@ div#code-examples{
                         padding: 0;
                         li{
                             margin-bottom: 15px;
-                            p{
-                                color: azure; 
-                                cursor: none;
-                            }
                             a{
                                 text-decoration: none;
                                 color: azure;
@@ -203,16 +199,23 @@ div#code-examples{
                                     text-decoration: underline;
                                 }
                             }
+                            p{
+                                color: azure;
+                            }
                             ul{
                                 list-style-type: square;
                                 margin-bottom: 0;
                                 padding: 10px 0 0 40px;
                                 li{
                                     line-height:10px;
+                                    color: azure; 
+                                    &::marker {
+                                        color: $chestnut;
+                                    }
+                                    a{
+                                        cursor: none;
+                                    }
                                 }
-                            }
-                            &::marker {
-                                color: $chestnut;
                             }
                         }
                     }
