@@ -20,6 +20,7 @@ document.addEventListener(
 
                                 if(btn.parentElement === parent){
                                     btn.style.display = 'inline-flex'
+                                    btn.title =  'close Examples modal'
                                     btn.addEventListener(
                                         'click', ()=>{
                                             children.forEach(
