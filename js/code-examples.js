@@ -8,28 +8,18 @@ document.addEventListener(
 
         [topFirstChild, topSecondChild, bottomChild].forEach(
             el => {
+                ///////////// OPEN EXAMPLES MODAL /////////////////////////////////////////////////
                 el.addEventListener(
-                    'click', ev => {
-                        ev.stopPropagation()
-                        
-                        children.forEach(
-                            child => {
-                                if(child !== ev.target) child.style.display = 'none'
-                            }
-                        )
-                        ev.target.classList.add('front')
-                        ev.target.title = 'Double-Click to collapse.'
-                        //implement 2 ways to collapse/ close modal
-                        //1] use button
+                    'dblclick', ({target})=> {
+                        target.classList.add('front')
+                        target.title = ''
+                        ///////////CLOSE/COLLAPSE EXAMPLES MODAL /////////////////////////
                         closeButtons.forEach(
                             btn => {
-                                ev.stopPropagation()
-
-                                const parent = ev.target
+                                const parent = target
 
                                 if(btn.parentElement === parent){
                                     btn.style.display = 'inline-flex'
-                                    
                                     btn.addEventListener(
                                         'click', ()=>{
                                             children.forEach(
@@ -39,26 +29,11 @@ document.addEventListener(
                                             )
                                 
                                             btn.style.display = 'none'
+                                            parent.title = 'Double-Click to expand.'
                                             parent.classList.remove('front')
-                                            parent.title = 'Click to expand. Double-Click to collapse.'
                                         }
                                     )
                                 }
-                            }
-                        )
-                        //2] use dblclick event on modal itself
-                        ev.target.addEventListener(
-                            'dblclick', ()=> {
-                                children.forEach(
-                                    child => child.style.display = 'inline-flex'
-                                )
-                                
-                                closeButtons.forEach(
-                                    btn => btn.style.display = 'none'
-                                )
-
-                                ev.target.classList.remove('front')
-                                ev.target.title = 'Click to expand. Double-Click to collapse.'
                             }
                         )
                     }
