@@ -112,9 +112,13 @@ div#code-examples{
                                 color: lighten($chestnut, 40%);
                             }
                         }
+                        span.close{
+                            @include close;
+                        }
                     }
                 }
                 div#bottom-child{
+                    position: relative;
                     border-radius: 0 0 calc(275px / 2) calc(275px / 2);
                     width: 100%;
                     height: calc(275px / 2);
@@ -145,6 +149,9 @@ div#code-examples{
                             color: lighten($chestnut, 40%);
                         }
                     }
+                    span.close{
+                        @include close;
+                    }
                 }
             }
             .front{
@@ -157,6 +164,9 @@ div#code-examples{
                 margin: auto !important;
                 border-radius: 5px !important;
                 box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, inset lighten($chestnut, 10%) -2px -2px 5px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: start;
                 p.project-name{
                     display: none;
                 }
