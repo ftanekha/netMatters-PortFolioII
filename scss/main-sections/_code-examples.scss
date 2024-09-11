@@ -115,7 +115,7 @@ div#code-examples{
                         span.close{
                             @include close;
                         }
-                        div.examples-container{
+                        div.examples-container, div.example{
                             display: none;
                         }
                     }
@@ -192,12 +192,8 @@ div#code-examples{
                         padding: 0;
                         li{
                             margin-bottom: 15px;
-                            a{
-                                text-decoration: none;
-                                color: azure;
-                                &:hover{
-                                    text-decoration: underline;
-                                }
+                            &:hover{
+                                text-decoration: underline;
                             }
                             p{
                                 color: azure;
@@ -211,14 +207,16 @@ div#code-examples{
                                     color: azure; 
                                     &::marker {
                                         color: $chestnut;
-                                    }
-                                    a{
                                         cursor: none;
                                     }
                                 }
                             }
                         }
                     }
+                }
+                div.example{
+                    width: 60% !important;
+                    margin: 30px auto 0 auto !important;
                 }
             }
             @media(min-width: 375px){

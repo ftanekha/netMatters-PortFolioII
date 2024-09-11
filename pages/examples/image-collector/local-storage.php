@@ -1,3 +1,3 @@
-<div id="fetch-api-example-container" class="example">
+<div id="local-storage-example-container" class="example">
     local storage example
 </div>

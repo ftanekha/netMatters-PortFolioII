@@ -5,6 +5,9 @@ document.addEventListener(
         const topSecondChild = document.querySelector('#top-second-child')
         const bottomChild = document.querySelector('#bottom-child')
         const closeButtons = document.querySelectorAll('.close');
+        const examplesLink = document.querySelectorAll('.examples-link')
+        const exampleContainers = document.querySelectorAll('.examples-container')
+        const examples = document.querySelectorAll('.example');
 
         [topFirstChild, topSecondChild, bottomChild].forEach(
             el => {
@@ -13,6 +16,34 @@ document.addEventListener(
                     'dblclick', ({target})=> {
                         target.classList.add('front')
                         target.title = ''
+                        //////show examples///////////////
+                        console.log(examplesLink)
+                        examplesLink.forEach(
+                            link => {
+                                link.addEventListener(
+                                    'click', ({target})=>{
+                                        examples.forEach(
+                                            example => example.style.display = 'none'
+                                        )
+
+                                        if(target.classList.contains('choosing-random-color')) document.querySelector('#choosing-random-color-example-container').style.display = 'block'
+                                        if(target.classList.contains('flexbox')) document.querySelector('#flexbox-example-container').style.display = 'block'
+                                        if(target.classList.contains('styling-images')) document.querySelector('#styling-images-in-collection-example-container').style.display = 'block'
+                                        if(target.classList.contains('import-export')) document.querySelector('#import-export-example-container').style.display = 'block'
+                                        if(target.classList.contains('fetch-api')) document.querySelector('#fetch-api-example-container').style.display = 'block'
+                                        if(target.classList.contains('local-storage')) document.querySelector('#local-storage-example-container').style.display = 'block'
+
+                                        exampleContainers.forEach(
+                                            examplesContainer => {
+                                                // examplesContainer.style.display = 'none !important'
+                                                examplesContainer.style.position = 'fixed'
+                                                examplesContainer.style.bottom = '-1000px'
+                                            }
+                                        )
+                                    }
+                                )
+                            }
+                        )
                         ///////////CLOSE/COLLAPSE EXAMPLES MODAL /////////////////////////
                         closeButtons.forEach(
                             btn => {
@@ -23,6 +54,18 @@ document.addEventListener(
                                     btn.title =  'close Examples modal'
                                     btn.addEventListener(
                                         'click', ()=>{
+                                            examples.forEach(
+                                                example => example.style.display = 'none'
+                                            )
+
+                                            exampleContainers.forEach(
+                                                examplesContainer => {
+                                                    // examplesContainer.style.display = 'none !important'
+                                                    examplesContainer.style.position = 'static'
+                                                    examplesContainer.style.bottom = ''
+                                                }
+                                            )
+
                                             children.forEach(
                                                 child => {
                                                     child.style.display = 'inline-flex'

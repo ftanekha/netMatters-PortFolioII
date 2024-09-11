@@ -767,7 +767,7 @@ div#code-examples div#code-examples-main-container div#projects-container div.pa
   transform: scale(1.2);
   padding-bottom: 0.2rem;
 }
-div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top div.examples-container {
+div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top div.examples-container, div#code-examples div#code-examples-main-container div#projects-container div.parent div.child.top div.example {
   display: none;
 }
 div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child {
@@ -862,11 +862,7 @@ div#code-examples div#code-examples-main-container div#projects-container .front
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li {
   margin-bottom: 15px;
 }
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li a, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li a {
-  text-decoration: none;
-  color: azure;
-}
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li a:hover, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li a:hover {
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li:hover, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li:hover {
   text-decoration: underline;
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li p, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li p {
@@ -883,9 +879,11 @@ div#code-examples div#code-examples-main-container div#projects-container .front
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul li::marker, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul li::marker {
   color: #b84d50;
-}
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul li a, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul li a {
   cursor: none;
+}
+div#code-examples div#code-examples-main-container div#projects-container .front div.example {
+  width: 60% !important;
+  margin: 30px auto 0 auto !important;
 }
 @media (min-width: 375px) {
   div#code-examples div#code-examples-main-container div#projects-container {

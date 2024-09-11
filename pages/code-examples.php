@@ -52,25 +52,19 @@
                 <div id="projects-container">
                     <div class="parent">
                         <div id="top-first-child" class="child top top-first" title="Double-Click to expand.">
-                            <p class="project-name">All4U website</p>
                             <span class="close">x</span>
+                            <p class="project-name">All4U website</p>
                         </div>
                         <div id="top-second-child" class="child top top-second" title="Double-Click to expand.">
-                            <p class="project-name">Image Collector</p>
                             <span class="close">x</span>
+                            <p class="project-name">Image Collector</p>
                             <div class="examples-container css-examples">
                                 <p class="h3">CSS</p>
                                 <ul class="css">
+                                    <li class="examples-link choosing-random-color">Choosing a random color theme</li>
+                                    <li class="examples-link flexbox">Flexbox & Media queries</li>
                                     <li>
-                                        <a class="examples-link" href="javascript:;">Choosing a random color theme</a>
-                                    </li>
-                                    <li>
-                                        <a class="examples-link" href="javascript:;">Flexbox & Media queries</a>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <a class="examples-link" href="javascript:;">Styling images in collection</a>
-                                        </p>
+                                        <p class="examples-link styling-images">Styling images in collection</p>
                                         <ul>
                                             <li>border-radius</li>
                                             <li>hover effects</li>
@@ -82,23 +76,18 @@
                             <div class="examples-container js-examples">
                                 <p class="h3">JS</p>
                                 <ul class="js">
-                                    <li>
-                                        <a class="examples-link" href="examples/import-export.html" target="_top">Import/Export</a>
-                                    </li>
-                                    <li>
-                                        <a class="examples-link" href="javascript:;">Fetch API</a>
-                                    </li>
-                                    <li>
-                                        <a class="examples-link" href="javascript:;">localStorage vs sessionStorage</a>
-                                    </li>
+                                    <li class="examples-link import-export">Import/Export</li>
+                                    <li class="examples-link fetch-api">Fetch API</li>
+                                    <li class="examples-link local-storage">localStorage vs sessionStorage</li>
                                 </ul>
                             </div>
+                            <?php include 'examples/image-collector/index.php' ?>
                         </div>
                         <div id="bottom-child" title="Double-Click to expand.">
+                            <span class="close">x</span>
                             <p class="project-name">
                                 Netmatters Home <span class="ampersand">&amp;<span> Contact pages
                             </p>
-                            <span class="close">x</span>
                         </div>
                         <!-- <div class="child hidden"></div> -->
                         <!-- <div class="child hidden"></div> -->
