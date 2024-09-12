@@ -17,7 +17,6 @@ document.addEventListener(
                         target.classList.add('front')
                         target.title = ''
                         //////show examples///////////////
-                        console.log(examplesLink)
                         examplesLink.forEach(
                             link => {
                                 link.addEventListener(
@@ -25,7 +24,7 @@ document.addEventListener(
                                         examples.forEach(
                                             example => example.style.display = 'none'
                                         )
-
+                                        //only display corresponding example
                                         if(target.classList.contains('choosing-random-color')) document.querySelector('#choosing-random-color-example-container').style.display = 'block'
                                         if(target.classList.contains('flexbox')) document.querySelector('#flexbox-example-container').style.display = 'block'
                                         if(target.classList.contains('styling-images')) document.querySelector('#styling-images-in-collection-example-container').style.display = 'block'
@@ -35,10 +34,25 @@ document.addEventListener(
 
                                         exampleContainers.forEach(
                                             examplesContainer => {
-                                                // examplesContainer.style.display = 'none !important'
+                                                //examplesContainer.style.display = 'none !important'
                                                 examplesContainer.style.position = 'fixed'
                                                 examplesContainer.style.bottom = '-1000px'
                                             }
+                                        )
+
+                                        //toggle images
+                                        const accordionControls = document.querySelectorAll('.accordion-control')
+                                        accordionControls.forEach(
+                                            accordionControl => accordionControl.addEventListener(
+                                                'click', ()=>{
+                                                    const accordion = accordionControl.parentElement.nextElementSibling
+                                                    if(accordion.style.display !== 'flex'){
+                                                        accordion.style.display = 'flex'
+                                                    }else{
+                                                        accordion.style.display = 'none'
+                                                    }
+                                                }
+                                            )
                                         )
                                     }
                                 )
@@ -60,7 +74,7 @@ document.addEventListener(
 
                                             exampleContainers.forEach(
                                                 examplesContainer => {
-                                                    // examplesContainer.style.display = 'none !important'
+                                                    //examplesContainer.style.display = 'none !important'
                                                     examplesContainer.style.position = 'static'
                                                     examplesContainer.style.bottom = ''
                                                 }
