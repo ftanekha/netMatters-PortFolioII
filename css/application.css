@@ -831,7 +831,7 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   z-index: 10 !important;
   background-color: #1a1a1a !important;
   width: 80% !important;
-  height: 90% !important;
+  height: 93% !important;
   margin: auto !important;
   border-radius: 5px !important;
   box-shadow: inset #c77174 2px 2px 5px, inset #c77174 -2px -2px 5px;
@@ -858,25 +858,22 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   list-style-type: none;
   padding: 0;
 }
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li {
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li.examples-link, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li.examples-link {
   margin-bottom: 15px;
 }
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li:not(.nested):hover, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li:not(.nested):hover {
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li.examples-link:hover, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li.examples-link:hover {
   text-decoration: underline;
 }
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul.nested, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul.nested {
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li.nested, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li.nested {
   list-style-type: square;
-  margin-bottom: 0;
-  padding: 10px 0 0 40px;
-}
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul.nested li, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul.nested li {
-  line-height: 10px;
+  list-style-position: inside;
+  line-height: 20px;
   color: azure;
   text-decoration: none;
-}
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul.nested li::marker, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul.nested li::marker {
-  color: #b84d50;
   cursor: none;
+}
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li.nested::marker, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li.nested::marker {
+  color: #b84d50;
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.example {
   width: 80%;

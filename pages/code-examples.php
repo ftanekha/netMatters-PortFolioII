@@ -64,11 +64,9 @@
                                     <li class="examples-link choosing-random-color">Choosing a random color theme</li>
                                     <li class="examples-link flexbox">Flexbox & Media queries</li>
                                     <li class="examples-link styling-images">Styling images in collection</li>
-                                    <ul class="nested">
-                                        <li class="nested">border-radius</li>
-                                        <li class="nested">hover effects</li>
-                                        <li class="nested">Smooth transitions</li>
-                                    </ul>
+                                    <li class="nested">border-radius</li>
+                                    <li class="nested">hover effects</li>
+                                    <li class="nested">smooth transitions</li>
                                 </ul>
                             </div>
                             <div class="examples-container js-examples">

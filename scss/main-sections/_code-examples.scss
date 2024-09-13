@@ -166,7 +166,7 @@ div#code-examples{
                 z-index: $overlay_z-index !important;
                 background-color: lighten(black, 10%) !important;
                 width: 80% !important;
-                height: 90% !important;
+                height: 93% !important;
                 margin: auto !important;
                 border-radius: 5px !important;
                 box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, inset lighten($chestnut, 10%) -2px -2px 5px;
@@ -190,26 +190,21 @@ div#code-examples{
                     ul.css, ul.js{
                         list-style-type: none;
                         padding: 0;
-                        li{
+                        li.examples-link{
                             margin-bottom: 15px;
-                            &:not(.nested){
-                                &:hover{
-                                    text-decoration: underline;
-                                }
+                            &:hover{
+                                text-decoration: underline;
                             }
-                            ul.nested{
-                                list-style-type: square;
-                                margin-bottom: 0;
-                                padding: 10px 0 0 40px;
-                                li{
-                                    line-height:10px;
-                                    color: azure; 
-                                    text-decoration: none;
-                                    &::marker {
-                                        color: $chestnut;
-                                        cursor: none;
-                                    }
-                                }
+                        }
+                        li.nested{
+                            list-style-type: square;
+                            list-style-position: inside;
+                            line-height:20px;
+                            color: azure; 
+                            text-decoration: none;
+                            cursor: none;
+                            &::marker {
+                                color: $chestnut;
                             }
                         }
                     }
