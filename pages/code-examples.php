@@ -51,12 +51,12 @@
                 </div>
                 <div id="projects-container">
                     <div class="parent">
-                        <div id="top-first-child" class="child top top-first" title="Double-Click to expand.">
+                        <div id="top-first-child" class="child top top-first project-all4u-website" title="Double-Click to expand.">
                             <span class="back">&lt;||</span>
                             <span class="close">x</span>
                             <p class="project-name">All4U website</p>
                         </div>
-                        <div id="top-second-child" class="child top top-second" title="Double-Click to expand.">
+                        <div id="top-second-child" class="child top top-second project-image-collector" title="Double-Click to expand.">
                             <span class="back">&lt;||</span>
                             <span class="close">x</span>
                             <p class="project-name">Image Collector</p>
@@ -81,7 +81,7 @@
                             </div>
                             <?php include 'examples/image-collector/index.php' ?>
                         </div>
-                        <div id="bottom-child" title="Double-Click to expand.">
+                        <div id="bottom-child" class="project-netmatters" title="Double-Click to expand.">
                             <span class="back">&lt;||</span>
                             <span class="close">x</span>
                             <p class="project-name">
