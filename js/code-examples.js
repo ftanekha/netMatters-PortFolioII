@@ -4,9 +4,10 @@ document.addEventListener(
         const topFirstChild = document.querySelector('#top-first-child')
         const topSecondChild = document.querySelector('#top-second-child')
         const bottomChild = document.querySelector('#bottom-child')
+        const goBackButtons = document.querySelectorAll('.back')
         const closeButtons = document.querySelectorAll('.close');
         const examplesLink = document.querySelectorAll('.examples-link')
-        const exampleContainers = document.querySelectorAll('.examples-container')
+        const examplesListContainers = document.querySelectorAll('.examples-list-container')
         const examples = document.querySelectorAll('.example');
 
         [topFirstChild, topSecondChild, bottomChild].forEach(
@@ -14,6 +15,8 @@ document.addEventListener(
                 ///////////// OPEN EXAMPLES MODAL /////////////////////////////////////////////////
                 el.addEventListener(
                     'dblclick', ({target})=> {
+                        let projectOnDisplayId = target.id
+                        //
                         target.classList.add('front')
                         target.title = ''
                         //////show examples///////////////
@@ -25,30 +28,63 @@ document.addEventListener(
                                             example => example.style.display = 'none'
                                         )
                                         //only display corresponding example
-                                        if(target.classList.contains('choosing-random-color')) document.querySelector('#choosing-random-color-example-container').style.display = 'block'
-                                        if(target.classList.contains('flexbox')) document.querySelector('#flexbox-example-container').style.display = 'block'
-                                        if(target.classList.contains('styling-images')) document.querySelector('#styling-images-in-collection-example-container').style.display = 'block'
-                                        if(target.classList.contains('import-export')) document.querySelector('#import-export-example-container').style.display = 'block'
-                                        if(target.classList.contains('fetch-api')) document.querySelector('#fetch-api-example-container').style.display = 'block'
-                                        if(target.classList.contains('local-storage')) document.querySelector('#local-storage-example-container').style.display = 'block'
-
-                                        exampleContainers.forEach(
-                                            examplesContainer => {
-                                                //examplesContainer.style.display = 'none !important'
-                                                examplesContainer.style.position = 'fixed'
-                                                examplesContainer.style.bottom = '-1000px'
+                                        const exampleClassNames = ['choosing-random-color', 'flexbox', 'styling-images-in-collection', 'import-export', 'fetch-api', 'local-storage']
+                                        let currentExampleClassName = ''
+                                        exampleClassNames.forEach(
+                                            exampleClassName => {
+                                                if(target.classList.contains(exampleClassName)) {
+                                                    document.querySelector(`#${exampleClassName}-example-container`).style.display = 'block'
+                                                    currentExampleClassName = exampleClassName
+                                                }
                                             }
                                         )
-
+                                        //
+                                        examplesListContainers.forEach(
+                                            examplesListContainer=> {
+                                                //examplesListContainer.style.display = 'none !important'
+                                                examplesListContainer.style.position = 'fixed'
+                                                examplesListContainer.style.bottom = '-1000px'
+                                            }
+                                        )
+                                        //display goBack button
+                                        goBackButtons.forEach(
+                                            button => {
+                                                button.style.display = 'flex'
+                                                button.title = 'go back'
+                                                button.addEventListener(
+                                                    'click', ()=>{
+                                                        //remove example from display
+                                                        document.querySelector(`#${currentExampleClassName}-example-container`).style.display = 'none'
+                                                        //hide goBack button
+                                                        goBackButtons.forEach(
+                                                            button => {
+                                                                button.title = ''
+                                                                button.style.display = 'none'
+                                                            }
+                                                        )
+                                                        //bring back example list container
+                                                        examplesListContainers.forEach(
+                                                            examplesListContainer=> {
+                                                                //examplesListContainer.style.display = 'none !important'
+                                                                examplesListContainer.style.position = 'static'
+                                                                examplesListContainer.style.bottom = ''
+                                                            }
+                                                        )
+                                                    }
+                                                )
+                                            }
+                                        )
                                         //toggle images
                                         const accordionControls = document.querySelectorAll('.accordion-control')
                                         accordionControls.forEach(
                                             accordionControl => accordionControl.addEventListener(
                                                 'click', ()=>{
                                                     const accordion = accordionControl.parentElement.nextElementSibling
-                                                    if(accordion.style.display !== 'flex'){
+
+                                                    let acd = accordion.style.display
+                                                    if(acd === '' || acd === 'none'){
                                                         accordion.style.display = 'flex'
-                                                    }else{
+                                                    }else if(acd === 'flex'){
                                                         accordion.style.display = 'none'
                                                     }
                                                 }
@@ -68,15 +104,22 @@ document.addEventListener(
                                     btn.title =  'close Examples modal'
                                     btn.addEventListener(
                                         'click', ()=>{
+                                            goBackButtons.forEach(
+                                                button => {
+                                                    button.style.display = 'none'
+                                                    button.title = ''
+                                                }
+                                            )
+
                                             examples.forEach(
                                                 example => example.style.display = 'none'
                                             )
 
-                                            exampleContainers.forEach(
-                                                examplesContainer => {
-                                                    //examplesContainer.style.display = 'none !important'
-                                                    examplesContainer.style.position = 'static'
-                                                    examplesContainer.style.bottom = ''
+                                            examplesListContainers.forEach(
+                                                examplesListContainer=> {
+                                                    //examplesListContainer.style.display = 'none !important'
+                                                    examplesListContainer.style.position = 'static'
+                                                    examplesListContainer.style.bottom = ''
                                                 }
                                             )
 

@@ -52,24 +52,26 @@
                 <div id="projects-container">
                     <div class="parent">
                         <div id="top-first-child" class="child top top-first" title="Double-Click to expand.">
+                            <span class="back">&lt;||</span>
                             <span class="close">x</span>
                             <p class="project-name">All4U website</p>
                         </div>
                         <div id="top-second-child" class="child top top-second" title="Double-Click to expand.">
+                            <span class="back">&lt;||</span>
                             <span class="close">x</span>
                             <p class="project-name">Image Collector</p>
-                            <div class="examples-container css-examples">
+                            <div class="examples-list-container css-examples">
                                 <p class="h3">CSS</p>
                                 <ul class="css">
                                     <li class="examples-link choosing-random-color">Choosing a random color theme</li>
                                     <li class="examples-link flexbox">Flexbox & Media queries</li>
-                                    <li class="examples-link styling-images">Styling images in collection</li>
+                                    <li class="examples-link styling-images-in-collection">Styling images in collection</li>
                                     <li class="nested">border-radius</li>
                                     <li class="nested">hover effects</li>
                                     <li class="nested">smooth transitions</li>
                                 </ul>
                             </div>
-                            <div class="examples-container js-examples">
+                            <div class="examples-list-container js-examples">
                                 <p class="h3">JS</p>
                                 <ul class="js">
                                     <li class="examples-link import-export">Import/Export</li>
@@ -80,13 +82,12 @@
                             <?php include 'examples/image-collector/index.php' ?>
                         </div>
                         <div id="bottom-child" title="Double-Click to expand.">
+                            <span class="back">&lt;||</span>
                             <span class="close">x</span>
                             <p class="project-name">
                                 Netmatters Home <span class="ampersand">&amp;<span> Contact pages
                             </p>
                         </div>
-                        <!-- <div class="child hidden"></div> -->
-                        <!-- <div class="child hidden"></div> -->
                     </div>
                 </div>
                 <!-- <div id="coming-soon-playlist-container">

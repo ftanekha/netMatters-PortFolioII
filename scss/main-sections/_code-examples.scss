@@ -60,7 +60,8 @@ div#code-examples{
             justify-content: center;
             align-items: center;
             background-color: lighten($chestnut, 20%);
-            box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, inset lighten($chestnut, 10%) -2px -2px 5px;
+            box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, 
+                        inset lighten($chestnut, 10%) -2px -2px 5px;
             div.parent{
                 width: 275px;
                 height: 275px;
@@ -112,10 +113,13 @@ div#code-examples{
                                 color: lighten($chestnut, 40%);
                             }
                         }
+                        span.back{
+                            @include back;
+                        }
                         span.close{
                             @include close;
                         }
-                        div.examples-container, div.example{
+                        div.examples-list-container, div.example{
                             display: none;
                         }
                     }
@@ -135,7 +139,7 @@ div#code-examples{
                     align-items: center;
                     cursor: pointer;
                     box-shadow: inset darken($chestnut, 10%) 2px 2px 5px, 
-                                    inset darken($chestnut, 10%) -2px -2px 5px;
+                                inset darken($chestnut, 10%) -2px -2px 5px;
                     &:hover{
                         background: darken($chestnut, 70%);
                     }
@@ -155,7 +159,7 @@ div#code-examples{
                     span.close{
                         @include close;
                     }
-                    div.examples-container{
+                    div.examples-list-container{
                         display: none;
                     }
                 }
@@ -169,13 +173,14 @@ div#code-examples{
                 height: 93% !important;
                 margin: auto !important;
                 border-radius: 5px !important;
-                box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, inset lighten($chestnut, 10%) -2px -2px 5px;
+                box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, 
+                            inset lighten($chestnut, 10%) -2px -2px 5px;
                 flex-direction: column !important;
                 justify-content: flex-start !important;
                 p.project-name{
                     display: none !important;
                 }
-                div.examples-container{
+                div.examples-list-container{
                     display: block !important;
                     width: 60%;
                     margin: 30px auto 0 auto;
@@ -236,10 +241,16 @@ div#code-examples{
                         align-items: center;
                         justify-content: center;
                         width: 90%;
-                        img[alt="overall page color theme"]{
+                        img{
                             max-width: 100%;
                             max-height: 100%;
                             margin: auto;
+                            margin-bottom: 60px;
+                            border-radius: 5px !important;
+                            border: solid lightgray 5px;
+                            &.chestnut{
+                                border: solid $chestnut 5px;
+                            }
                         }
                         @media(min-width: 768px){
                             // flex-direction: row !important;
@@ -251,7 +262,8 @@ div#code-examples{
                 width: 305px;
                 height: 305px;
                 margin-top: 15px;
-                box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, inset lighten($chestnut, 10%) -2px -2px 5px;
+                box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, 
+                            inset lighten($chestnut, 10%) -2px -2px 5px;
                 div.parent{
                     width: 305px;
                     height: 305px;
