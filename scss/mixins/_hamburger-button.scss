@@ -16,7 +16,7 @@
     user-select: none;
     background-color: white;
     transition: .5s;
-    scale: (1.25);
+    transform: scale(1.25);
     span.hamburger-box{
         display: block;
         width: 23px;
@@ -43,7 +43,7 @@
         span.hamburger-box{
             span.hamburger-inner{
                 background-color: lighten($main-red, 20%);
-                scale: (1.25);
+                transform: scale(1.25);
                 border-radius: 30%;
             }
         }

@@ -14,7 +14,6 @@ div.warning-message p {
   color: azure;
   font-size: 1.25rem;
   font-weight: 600;
-  letter-spacing: 1.2;
   line-height: 1.25rem;
 }
 div.warning-message p span.lead-sentence {
@@ -862,22 +861,20 @@ div#code-examples div#code-examples-main-container div#projects-container .front
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li {
   margin-bottom: 15px;
 }
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li:hover, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li:hover {
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li:not(.nested):hover, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li:not(.nested):hover {
   text-decoration: underline;
 }
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li p, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li p {
-  color: azure;
-}
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul {
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul.nested, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul.nested {
   list-style-type: square;
   margin-bottom: 0;
   padding: 10px 0 0 40px;
 }
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul li, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul li {
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul.nested li, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul.nested li {
   line-height: 10px;
   color: azure;
+  text-decoration: none;
 }
-div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul li::marker, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul li::marker {
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.css li ul.nested li::marker, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-container ul.js li ul.nested li::marker {
   color: #b84d50;
   cursor: none;
 }
@@ -1104,7 +1101,7 @@ div#scs div.article {
   margin: 1rem auto;
   text-align: justify;
   padding: 0.5rem;
-  font-font-weight: 300;
+  font-weight: 300;
   font-size: 0.8rem;
 }
 @media (min-width: 768px) {
@@ -1360,7 +1357,7 @@ body button#hamburger-button {
   user-select: none;
   background-color: white;
   transition: 0.5s;
-  scale: 1.25;
+  transform: scale(1.25);
 }
 body button#hamburger-button span.hamburger-box {
   display: block;
@@ -1385,7 +1382,7 @@ body button#hamburger-button span.hamburger-box span.hamburger-inner {
 }
 body button#hamburger-button:hover span.hamburger-box span.hamburger-inner {
   background-color: #d59698;
-  scale: 1.25;
+  transform: scale(1.25);
   border-radius: 30%;
 }
 body div#main-content div.container {

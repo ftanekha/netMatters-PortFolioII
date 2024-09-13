@@ -63,14 +63,12 @@
                                 <ul class="css">
                                     <li class="examples-link choosing-random-color">Choosing a random color theme</li>
                                     <li class="examples-link flexbox">Flexbox & Media queries</li>
-                                    <li>
-                                        <p class="examples-link styling-images">Styling images in collection</p>
-                                        <ul>
-                                            <li>border-radius</li>
-                                            <li>hover effects</li>
-                                            <li>Smooth transitions</li>
-                                        </ul>
-                                    </li>
+                                    <li class="examples-link styling-images">Styling images in collection</li>
+                                    <ul class="nested">
+                                        <li class="nested">border-radius</li>
+                                        <li class="nested">hover effects</li>
+                                        <li class="nested">Smooth transitions</li>
+                                    </ul>
                                 </ul>
                             </div>
                             <div class="examples-container js-examples">
