@@ -156,6 +156,9 @@ div#code-examples{
                             color: lighten($chestnut, 40%);
                         }
                     }
+                    span.back{
+                        @include back;
+                    }
                     span.close{
                         @include close;
                     }
@@ -177,6 +180,10 @@ div#code-examples{
                             inset lighten($chestnut, 10%) -2px -2px 5px;
                 flex-direction: column !important;
                 justify-content: flex-start !important;
+                overflow-y: auto;
+                scrollbar-color: $chestnut azure;
+                scrollbar-width: thin;
+                scroll-behavior: smooth;
                 p.project-name{
                     display: none !important;
                 }
@@ -192,7 +199,7 @@ div#code-examples{
                         pointer-events: none;
                         cursor: none !important;
                     }
-                    ul.css, ul.js{
+                    ul.css, ul.js, ul.php{
                         list-style-type: none;
                         padding: 0;
                         li.examples-link{
@@ -221,6 +228,7 @@ div#code-examples{
                     color: azure;
                     overflow-y: auto;
                     scrollbar-color: $chestnut azure;
+                    scrollbar-width: thin;
                     scroll-behavior: smooth;
                     p{
                         margin: 60px 0;
@@ -243,7 +251,7 @@ div#code-examples{
                         width: 90%;
                         img{
                             max-width: 100%;
-                            max-height: 100%;
+                            // max-height: 100%;
                             margin: auto;
                             margin-bottom: 60px;
                             border-radius: 5px !important;
@@ -251,9 +259,15 @@ div#code-examples{
                             &.chestnut{
                                 border: solid $chestnut 5px;
                             }
-                        }
-                        @media(min-width: 768px){
-                            // flex-direction: row !important;
+                            @media(min-width: 576px){
+                                max-width: 80%;
+                            }
+                            @media(min-width: 768px){
+                                max-width: 70%;
+                            }
+                            @media(min-width: 1220px){
+                                max-width: 50%;
+                            }
                         }
                     }
                 }

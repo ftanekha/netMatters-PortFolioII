@@ -25,6 +25,17 @@ document.addEventListener(
                         projectOnDisplay.classList.add('front')
                         projectOnDisplay .title = ''
                         //////show examples///////////////
+                        function displayListOfExamples(){
+                            examplesListContainers.forEach(
+                                examplesListContainer=> {
+                                    //examplesListContainer.style.display = 'none !important'
+                                    examplesListContainer.style.position = 'static'
+                                    examplesListContainer.style.bottom = ''
+                                    // examplesListContainer.removeEventListener('dblclick', displayModal)
+                                }
+                            )
+                        }
+                        
                         examplesLink.forEach(
                             link => {
                                 link.addEventListener(
@@ -41,7 +52,11 @@ document.addEventListener(
                                             }
                                         )
                                         //only display corresponding example
-                                        const exampleClassNames = ['choosing-random-color', 'flexbox', 'styling-images-in-collection', 'import-export', 'fetch-api', 'local-storage']
+                                        const exampleClassNames = [
+                                            'choosing-random-color', 'flexbox', 'styling-images-in-collection', 
+                                            'import-export', 'fetch-api', 'local-storage'
+                                        ]
+                                        
                                         let currentExampleClassName = ''
                                         exampleClassNames.forEach(
                                             exampleClassName => {
@@ -82,14 +97,7 @@ document.addEventListener(
                                                             btn.title = ''
                                                             btn.style.display = 'none'
                                                             //bring back example list container
-                                                            examplesListContainers.forEach(
-                                                                examplesListContainer=> {
-                                                                    //examplesListContainer.style.display = 'none !important'
-                                                                    examplesListContainer.style.position = 'static'
-                                                                    examplesListContainer.style.bottom = ''
-                                                                    // examplesListContainer.removeEventListener('dblclick', displayModal)
-                                                                }
-                                                            )
+                                                            displayListOfExamples()
                                                         }
                                                     )
                                                 }
@@ -123,15 +131,7 @@ document.addEventListener(
                                                 example => example.style.display = 'none'
                                             )
 
-                                            examplesListContainers.forEach(
-                                                examplesListContainer=> {
-                                                    console.log(examplesListContainer)
-                                                    //examplesListContainer.style.display = 'none !important'
-                                                    examplesListContainer.style.position = 'static'
-                                                    examplesListContainer.style.bottom = ''
-                                                    // examplesListContainer.removeEventListener('dblclick', displayModal)
-                                                }
-                                            )
+                                            displayListOfExamples()
 
                                             children.forEach(
                                                 child => {
