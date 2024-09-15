@@ -12,6 +12,23 @@ document.addEventListener(
         const accordions = document.querySelectorAll('.accordion')
         const accordionControls = document.querySelectorAll('.accordion-control')
 
+        const displayModal = (ev)=> {
+            //
+            projectOnDisplay = ev.currentTarget
+            projectOnDisplay.removeEventListener('dblclick', displayModal)
+            //
+            projectOnDisplay.classList.add('front')
+            projectOnDisplay .title = ''
+            ///////////CLOSE/COLLAPSE EXAMPLES MODAL///
+            closeButtons.forEach(
+                btn => {
+                    if(btn.parentElement === projectOnDisplay){
+                        btn.style.display = 'inline-flex'
+                        btn.title =  'close Examples modal'
+                    }
+                }
+            )
+        }
         let projectOnDisplay = ''
         let currentExampleClassName = '';
 
@@ -19,24 +36,7 @@ document.addEventListener(
             el => {
                 el.addEventListener(
                     /////////////OPEN EXAMPLES MODAL///
-                    'dblclick', displayModal = (ev)=> {
-                        ev.stopPropagation()
-                        //
-                        projectOnDisplay = ev.target
-                        projectOnDisplay.removeEventListener('dblclick', displayModal)
-                        //
-                        projectOnDisplay.classList.add('front')
-                        projectOnDisplay .title = ''
-                        ///////////CLOSE/COLLAPSE EXAMPLES MODAL///
-                        closeButtons.forEach(
-                            btn => {
-                                if(btn.parentElement === projectOnDisplay){
-                                    btn.style.display = 'inline-flex'
-                                    btn.title =  'close Examples modal'
-                                }
-                            }
-                        )
-                    }
+                    'dblclick', displayModal
                 )
             }
         )
