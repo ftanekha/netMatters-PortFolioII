@@ -57,7 +57,7 @@
                             <p class="project-name">All4U website</p>
                             <div class="examples-list-container html-examples">
                                 <p class="h3">HTML/Handlebars</p>
-                                <ul class="css">
+                                <ul class="html">
                                     <li class="examples-link">Using handlebars.js</li>
                                     <li class="nested">instantiating</li>
                                     <li class="nested">compiling</li>
@@ -100,6 +100,12 @@
                                     <li class="examples-link">Error handling</li>
                                 </ul>
                             </div>
+                            <div class="examples-list-container sql-examples">
+                                <p class="h3">SQL</p>
+                                <ul class="sql"> 
+                                    <li class="examples-link">Inserting form data into a database table</li>
+                                </ul>
+                            </div>
                         </div>
                         <div id="top-second-child" class="child top top-second project-image-collector" title="Double-Click to expand.">
                             <span class="back">&lt;||</span>
@@ -125,7 +131,7 @@
                                     <li class="examples-link local-storage">localStorage vs sessionStorage</li>
                                 </ul>
                             </div>
-                            <?php include '../includes/examples/image-collector/index.php' ?>
+                            <?php include '../includes/code-examples/image-collector/index.php' ?>
                         </div>
                         <div id="bottom-child" class="project-netmatters" title="Double-Click to expand.">
                             <span class="back">&lt;||</span>
