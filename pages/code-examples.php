@@ -127,7 +127,7 @@
                                 <p class="h3">JS</p>
                                 <ul class="js">
                                     <li class="examples-link import-export">Import/Export</li>
-                                    <li class="examples-link fetch-api">Fetch API</li>
+                                    <li class="examples-link fetch-api"><i style="color: gray">fetch</i> API</li>
                                     <li class="examples-link local-storage">localStorage vs sessionStorage</li>
                                 </ul>
                             </div>
@@ -147,7 +147,7 @@
                                     <li class="examples-link">Variables</li>
                                     <li class="examples-link">@if/@elseif@/@else block</li>
                                     <li class="examples-link">Functions</li>
-                                    <li class="examples-link">calc()</li>
+                                    <li class="examples-link"><i style="color: gray">calc()</i></li>
                                 </ul>
                             </div>
                             <div class="examples-list-container js-examples">
