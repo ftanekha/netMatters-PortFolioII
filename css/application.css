@@ -882,6 +882,9 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   width: 60%;
   margin: 30px auto 0 auto;
 }
+div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container:last-child {
+  margin-bottom: 60px;
+}
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container p.h3 {
   font-size: 1.5rem;
   font-weight: 500;

@@ -191,6 +191,9 @@ div#code-examples{
                     display: block !important;
                     width: 60%;
                     margin: 30px auto 0 auto;
+                    &:last-child{
+                        margin-bottom: 60px;
+                    }
                     p.h3{
                         font-size: 1.5rem;
                         font-weight: 500;

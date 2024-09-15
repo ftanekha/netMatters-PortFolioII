@@ -56,7 +56,7 @@
                             <span class="close">x</span>
                             <p class="project-name">All4U website</p>
                             <div class="examples-list-container html-examples">
-                                <p class="h3">HTML/Handlebars</p>
+                                <p class="h3">HTML<i style="color: gray">/</i>Handlebars</p>
                                 <ul class="html">
                                     <li class="examples-link">Using handlebars.js</li>
                                     <li class="nested">instantiating</li>
@@ -86,16 +86,20 @@
                                 <p class="h3">JS</p>
                                 <ul class="js">
                                     <li class="examples-link">Front-end form data validation</li>
-                                    <li class="examples-link">Generating and displaying success/error messages (depending on database/server responses)</li>
+                                    <li class="examples-link">Generating and displaying success
+                                        <i style="color: gray">/</i>error messages <i style="color: gray">(</i>
+                                        <span style="font-size: .8rem">depending on database<i style="color: gray">/</i>server responses</span>
+                                        <i style="color: gray">)</i>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="examples-list-container php-examples">
                                 <p class="h3">PHP</p>
                                 <ul class="php"> 
-                                    <li class="examples-link">Using <i style="color: gray">.include</i></li>
+                                    <li class="examples-link">Using <i style="color: gray">include</i></li>
                                     <li class="examples-link">Creating a database</li>
-                                    <li class="examples-link">Connecting to a database (using the <i style="color: gray">PDO</i>)</li>
-                                    <li class="examples-link">PHPMailer</li>
+                                    <li class="examples-link">Connecting to a database <i style="color: gray"><b>(</b></i>using the <i style="color: gray">PDO</i><i style="color: gray"><b>)</b></i></li>
+                                    <li class="examples-link"><i style="color: gray">PHPMailer</i></li>
                                     <li class="examples-link">The <i style="color: gray">.env</i> file</li>
                                     <li class="examples-link">Error handling</li>
                                 </ul>
@@ -116,7 +120,7 @@
                                 <ul class="css">
                                     <li class="examples-link choosing-random-color">Choosing a random color theme</li>
                                     <li class="nested">custom error messages</li>
-                                    <li class="examples-link flexbox" style="margin-top: 15px">Flexbox & Media queries</li>
+                                    <li class="examples-link flexbox" style="margin-top: 15px">Flexbox <i style="color: gray">&amp;</i> Media queries</li>
                                     <li class="examples-link styling-images-in-collection">Styling images in collection</li>
                                     <li class="nested">border-radius</li>
                                     <li class="nested">hover effects</li>
@@ -126,9 +130,9 @@
                             <div class="examples-list-container js-examples">
                                 <p class="h3">JS</p>
                                 <ul class="js">
-                                    <li class="examples-link import-export">Import/Export</li>
+                                    <li class="examples-link import-export">Import<i style="color: gray">/</i>Export</li>
                                     <li class="examples-link fetch-api"><i style="color: gray">fetch</i> API</li>
-                                    <li class="examples-link local-storage">localStorage vs sessionStorage</li>
+                                    <li class="examples-link local-storage">localStorage <i style="color: gray">vs</i> sessionStorage</li>
                                 </ul>
                             </div>
                             <?php include '../includes/code-examples/image-collector/index.php' ?>
@@ -143,30 +147,37 @@
                                 <p class="h3">SCSS</p>
                                 <ul class="css">
                                     <li class="examples-link">Ico-moon icons</li>
-                                    <li class="examples-link">Stick header</li>
+                                    <li class="examples-link">Sticky header</li>
                                     <li class="examples-link">Variables</li>
-                                    <li class="examples-link">@if/@elseif@/@else block</li>
+                                    <li class="examples-link">
+                                        <i style="color: gray">@</i>if<i style="color: gray">/</i>
+                                        <i style="color: gray">@</i>elseif<i style="color: gray">/</i>
+                                        <i style="color: gray">@</i>else block
+                                    </li>
                                     <li class="examples-link">Functions</li>
-                                    <li class="examples-link"><i style="color: gray">calc()</i></li>
+                                    <li class="examples-link"><i style="color: gray">calc(&nbsp;)</i></li>
                                 </ul>
                             </div>
                             <div class="examples-list-container js-examples">
-                                <p class="h3">JS/jQuery</p>
+                                <p class="h3">JS<i style="color: gray">/</i>jQuery</p>
                                 <ul class="js">
-                                    <li class="examples-link">Using jquery plugins e.g homepage carousels</li>
-                                    <li class="examples-link">Sticky header (uses scroll event heavily) with a smooth transition</li>
+                                    <li class="examples-link">Using jQuery plugins e.g. for carousels</li>
+                                    <li class="examples-link">Sticky header 
+                                        <i style="color: gray">(</i>
+                                        <span style="font-size: .8rem"> uses scroll event heavily</span>
+                                        <i style="color: gray">)</i> with a smooth transition</li>
                                     <li class="examples-link"><i>Sliding</i> side menu</li>
-                                    <li class="nested">hamburger menu icon, background filter</li>
+                                    <li class="nested">hamburger menu icon, page overlay filter</li>
                                     <li class="examples-link" style="margin-top: 15px">Creating and controlling an accordion </li>
                                 </ul>
                             </div>
                             <div class="examples-list-container php-examples">
                                 <p class="h3">PHP</p>
                                 <ul class="php">
-                                    <li class="examples-link">Using include</li>
+                                    <li class="examples-link">Using <i style="color: gray">include</i></li>
                                     <li class="examples-link">Loop over a database response to display images</li>
                                     <li class="examples-link">Recieving and decoding form data</li>
-                                    <li class="examples-link">Validatig & Sanitising form data</li>
+                                    <li class="examples-link">Validating & Sanitising form data</li>
                                     <li class="examples-link">Sending data to a database</li>
                                 </ul>
                             </div>
