@@ -181,7 +181,7 @@ div#code-examples{
                 flex-direction: column !important;
                 justify-content: flex-start !important;
                 overflow-y: auto;
-                scrollbar-color: $chestnut azure;
+                scrollbar-color: azure lighten(black, 10%);
                 scrollbar-width: thin;
                 scroll-behavior: smooth;
                 p.project-name{
@@ -199,7 +199,7 @@ div#code-examples{
                         pointer-events: none;
                         cursor: none !important;
                     }
-                    ul.css, ul.js, ul.php{
+                    ul.css, ul.html, ul.js, ul.php, ul.sql{
                         list-style-type: none;
                         padding: 0;
                         li.examples-link{
@@ -227,7 +227,7 @@ div#code-examples{
                     margin: 30px auto 0 auto;
                     color: azure;
                     overflow-y: auto;
-                    scrollbar-color: $chestnut azure;
+                    scrollbar-color: azure lighten(black, 10%);
                     scrollbar-width: thin;
                     scroll-behavior: smooth;
                     p{

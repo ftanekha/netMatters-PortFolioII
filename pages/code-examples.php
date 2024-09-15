@@ -55,17 +55,51 @@
                             <span class="back">&lt;||</span>
                             <span class="close">x</span>
                             <p class="project-name">All4U website</p>
-                            <!-- // -->
-                            <div class="examples-list-container css-examples">
-                                <div id="coming-soon-playlist-container">
-                                    <img src="../assets/images/comingsoon_01.gif" alt="Coming soon clipart" title="This section is currently under construction. Coming very soon!">
-                                    <audio controls preload="auto">
-                                        <source src="https://res.cloudinary.com/mindlibre3001/video/upload/v1711034534/Nujabes_Cisse_Star_-_Feathers.mp3" type="audio/mp3">
-                                        Your browser does not support the audio element.
-                                    </audio>
-                                </div>
+                            <div class="examples-list-container html-examples">
+                                <p class="h3">HTML/Handlebars</p>
+                                <ul class="css">
+                                    <li class="examples-link">Using handlebars.js</li>
+                                    <li class="nested">instantiating</li>
+                                    <li class="nested">compiling</li>
+                                    <li class="nested">looping</li>
+                                    <li class="examples-link" style="margin-top: 15px">Front-end form data validation</li>
+                                </ul>
                             </div>
-                            <!-- // -->
+                            <div class="examples-list-container css-examples">
+                                <p class="h3">BOOTSTRAP</p>
+                                <ul class="css">
+                                    <li class="examples-link"></li>
+                                </ul>
+                                <!-- // -->
+                                <div class="examples-list-container css-examples" style="margin: 0">
+                                    <div id="coming-soon-playlist-container" style="margin: 0">
+                                        <img src="../assets/images/comingsoon_01.gif" alt="Coming soon clipart" title="This section is currently under construction. Coming very soon!">
+                                        <audio controls preload="auto">
+                                            <source src="https://res.cloudinary.com/mindlibre3001/video/upload/v1711034534/Nujabes_Cisse_Star_-_Feathers.mp3" type="audio/mp3">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                </div>
+                                <!-- // -->
+                            </div>
+                            <div class="examples-list-container js-examples">
+                                <p class="h3">JS</p>
+                                <ul class="js">
+                                    <li class="examples-link">Front-end form data validation</li>
+                                    <li class="examples-link">Generating and displaying success/error messages (depending on database/server responses)</li>
+                                </ul>
+                            </div>
+                            <div class="examples-list-container php-examples">
+                                <p class="h3">PHP</p>
+                                <ul class="php"> 
+                                    <li class="examples-link">Using <i style="color: gray">.include</i></li>
+                                    <li class="examples-link">Creating a database</li>
+                                    <li class="examples-link">Connecting to a database (using the <i style="color: gray">PDO</i>)</li>
+                                    <li class="examples-link">PHPMailer</li>
+                                    <li class="examples-link">The <i style="color: gray">.env</i> file</li>
+                                    <li class="examples-link">Error handling</li>
+                                </ul>
+                            </div>
                         </div>
                         <div id="top-second-child" class="child top top-second project-image-collector" title="Double-Click to expand.">
                             <span class="back">&lt;||</span>
@@ -107,6 +141,7 @@
                                     <li class="examples-link">Variables</li>
                                     <li class="examples-link">@if/@elseif@/@else block</li>
                                     <li class="examples-link">Functions</li>
+                                    <li class="examples-link">calc()</li>
                                 </ul>
                             </div>
                             <div class="examples-list-container js-examples">
