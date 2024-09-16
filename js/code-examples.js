@@ -12,7 +12,70 @@ document.addEventListener(
         const accordions = document.querySelectorAll('.accordion')
         const accordionControls = document.querySelectorAll('.accordion-control')
 
-        const displayModal = (ev)=> {
+        const tags = document.querySelectorAll('.tag')
+        const projects = [topFirstChild, topSecondChild, bottomChild]
+        const chestnut = 'rgb(184, 77, 80)'
+        const gothamGreen = '#00573F'
+        
+        function promptClick(els){
+            const timer = setInterval(
+                ()=> {
+                    els.forEach(
+                        el => {
+                                el.style.backgroundColor = (el.style.backgroundColor === chestnut) ? gothamGreen : chestnut
+                            }
+                        )
+                }, 800
+            )
+
+            tags.forEach(
+                tag => {
+                    tag.addEventListener(
+                        'click', ()=> {
+                            els.forEach(
+                                el => el.style.backgroundColor = chestnut
+                            )
+                            clearInterval(timer)
+                        }
+                    )
+                }
+            )
+
+            els.forEach(
+                el => {
+                    el.addEventListener(
+                        'dblclick', ()=> {
+                            els.forEach(
+                                el => el.style.backgroundColor = chestnut
+                            )
+                            clearInterval(timer)
+                        }
+                    )
+                }
+            )  
+        }
+
+        tags.forEach(
+            tag => {
+                tag.addEventListener(
+                    'click', ({target})=>{
+                        const textContent = target.textContent.toLowerCase()
+                        const activeProjects = []
+                        projects.forEach(
+                            project => {
+                                if((project.getAttribute('data-tags')).includes(textContent)){
+                                    activeProjects.push(project)
+                                }
+                            }
+                        )
+                        promptClick(activeProjects)
+                    }
+                )
+            }
+        )
+
+        //MODAL
+        function displayModal(ev){
             //
             projectOnDisplay = ev.currentTarget
             projectOnDisplay.removeEventListener('dblclick', displayModal)
@@ -29,10 +92,11 @@ document.addEventListener(
                 }
             )
         }
+
         let projectOnDisplay = ''
         let currentExampleClassName = '';
-
-        [topFirstChild, topSecondChild, bottomChild].forEach(
+        
+        projects.forEach(
             el => {
                 el.addEventListener(
                     /////////////OPEN EXAMPLES MODAL///
