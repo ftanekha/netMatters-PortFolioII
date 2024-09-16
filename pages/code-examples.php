@@ -37,8 +37,9 @@
             <div id="code-examples-main-container">
                 <div id="problem-solution-selector">
                     <p>
-                        This section will offer solutions to problems based on the subject
-                        selected by the user by clicking on a tag from the list below.
+                        This section provides examples of code that utilises technologies indicated by the tags.<br>
+                        <em style="font-size: 1rem; font-weight: bold; text-decoratio: underline">Click</em> on a tag to find out which project has relevant examples of code.<br>
+                        To see examples, please <em style="font-size: 1rem; font-weight: bold; text-decoratio: underline">Double Click</em> on your project of choice.
                     </p>
                     <div id="solutions-tags-container">
                         <span class="tag" title="GitHub">gitHub</span><span class="tag" title="HTML">html</span>
