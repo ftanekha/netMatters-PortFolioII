@@ -58,11 +58,11 @@
                             <div class="examples-list-container html-examples">
                                 <p class="h3">HTML<i style="color: gray">/</i>Handlebars</p>
                                 <ul class="html">
-                                    <li class="examples-link">Using handlebars.js</li>
+                                    <li class="examples-link using-handlebars">Using handlebars.js</li>
                                     <li class="nested">instantiating</li>
                                     <li class="nested">compiling</li>
                                     <li class="nested">looping</li>
-                                    <li class="examples-link" style="margin-top: 15px">Front-end form data validation</li>
+                                    <li class="examples-link frontend-validation-html" style="margin-top: 15px">Front-end form data validation</li>
                                 </ul>
                             </div>
                             <div class="examples-list-container css-examples">
@@ -85,8 +85,8 @@
                             <div class="examples-list-container js-examples">
                                 <p class="h3">JS</p>
                                 <ul class="js">
-                                    <li class="examples-link">Front-end form data validation</li>
-                                    <li class="examples-link">Generating and displaying success
+                                    <li class="examples-link frontend-validation-js">Front-end form data validation</li>
+                                    <li class="examples-link generating-success-vs-error-messages">Generating and displaying success
                                         <i style="color: gray">/</i>error messages <i style="color: gray">(</i>
                                         <span style="font-size: .8rem">depending on database<i style="color: gray">/</i>server responses</span>
                                         <i style="color: gray">)</i>
@@ -95,21 +95,23 @@
                             </div>
                             <div class="examples-list-container php-examples">
                                 <p class="h3">PHP</p>
-                                <ul class="php"> 
-                                    <li class="examples-link">Using <i style="color: gray">include</i></li>
-                                    <li class="examples-link">Creating a database</li>
-                                    <li class="examples-link">Connecting to a database <i style="color: gray"><b>(</b></i>using the <i style="color: gray">PDO</i><i style="color: gray"><b>)</b></i></li>
-                                    <li class="examples-link"><i style="color: gray">PHPMailer</i></li>
-                                    <li class="examples-link">The <i style="color: gray">.env</i> file</li>
-                                    <li class="examples-link">Error handling</li>
+                                <ul class="php">
+                                    <li class="examples-link php-essentials">Essentials</li> 
+                                    <li class="nested">Using <i style="color: gray">include</i></li>
+                                    <li class="nested">Creating a database</li>
+                                    <li class="nested">Connecting to a database <i style="color: gray"><b>(</b></i>using the <i style="color: gray">PDO</i><i style="color: gray"><b>)</b></i></li>
+                                    <li class="nested"><i style="color: gray">PHPMailer</i></li>
+                                    <li class="nested">The <i style="color: gray">.env</i> file</li>
+                                    <li class="examples-link php-error-handling">Error handling</li>
                                 </ul>
                             </div>
                             <div class="examples-list-container sql-examples">
                                 <p class="h3">SQL</p>
                                 <ul class="sql"> 
-                                    <li class="examples-link">Inserting form data into a database table</li>
+                                    <li class="examples-link sql-query">Inserting form data into a database table</li>
                                 </ul>
                             </div>
+                            <?php include '../includes/code-examples/all4u/index.php' ?>
                         </div>
                         <div id="top-second-child" class="child top top-second project-image-collector" title="Double-Click to expand.">
                             <span class="back">&lt;||</span>

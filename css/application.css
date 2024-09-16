@@ -949,25 +949,14 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   margin: auto;
   margin-bottom: 60px;
   border-radius: 5px !important;
-  border: solid lightgray 5px;
+  border: solid lightgray 10px;
+  transition: 0.5s;
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.chestnut {
-  border: solid #b84d50 5px;
+  border-color: #b84d50;
 }
-@media (min-width: 576px) {
-  div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img {
-    max-width: 80%;
-  }
-}
-@media (min-width: 768px) {
-  div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img {
-    max-width: 70%;
-  }
-}
-@media (min-width: 1220px) {
-  div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img {
-    max-width: 50%;
-  }
+div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img:hover {
+  transform: scale(1.5);
 }
 @media (min-width: 375px) {
   div#code-examples div#code-examples-main-container div#projects-container {

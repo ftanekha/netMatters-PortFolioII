@@ -58,8 +58,8 @@ document.addEventListener(
                         )
                         //only display corresponding example
                         const exampleClassNames = [
-                            'choosing-random-color', 'flexbox', 'styling-images-in-collection', 
-                            'import-export', 'fetch-api', 'local-storage'
+                            'choosing-random-color', 'flexbox', 'styling-images-in-collection', 'import-export', 'fetch-api', 'local-storage',
+                            'using-handlebars', 'frontend-validation-html', 'frontend-validation-js', 'generating-success-vs-error-messages', 'php-essentials', 'php-error-handling', 'sql-query'
                         ]
                         
                         exampleClassNames.forEach(

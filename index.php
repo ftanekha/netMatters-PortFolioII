@@ -99,7 +99,7 @@
                     <figure>
                         <img src="assets/images/netmatters-homepage-replica.jpeg" alt="Netmatters homepage replica" title="Netmatters homepage replica">
                         <figcaption>
-                            My first <em title="Scion coalition Scheme">SCS</em> project, a work in progress
+                            My first complete <em title="Scion coalition Scheme">SCS</em> project, a work in progress
                             <span class="construction-cone">🚧</span>.
                             A full stack project that showcases intuitive use of SCSS, the Grid system, Flexbox, HTML, JavaScript & php.
                         </figcaption>
@@ -120,7 +120,7 @@
                             alt="JavaScript array assessement" title="JavaScript array assessement"
                         >
                         <figcaption>
-                            A lightweight application that uses the fetch API to fetch images and display random images.
+                            A lightweight application that uses the fetch API to fetch and display random images.
                             Users can create, store, retrieve and view one or more collections of images.
                         </figcaption>
                     </figure>
