@@ -653,6 +653,13 @@ div#code-examples div#code-examples-main-container div#problem-solution-selector
     text-align: center;
   }
 }
+div#code-examples div#code-examples-main-container div#problem-solution-selector p strong.info {
+  padding: 0 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: lightgray;
+  color: #1a1a1a;
+}
 div#code-examples div#code-examples-main-container div#problem-solution-selector div#solutions-tags-container {
   width: 80%;
   margin: auto;

@@ -37,9 +37,9 @@
             <div id="code-examples-main-container">
                 <div id="problem-solution-selector">
                     <p>
-                        This section provides examples of code that utilises technologies indicated by the tags.<br>
-                        <em style="font-size: 1rem; font-weight: bold; text-decoratio: underline">Click</em> on a tag to find out which project has relevant examples of code.<br>
-                        To see examples, please <em style="font-size: 1rem; font-weight: bold; text-decoratio: underline">Double Click</em> on your project of choice.
+                        This section provides examples of code that utilise technologies indicated by the tags.<br>
+                        <strong class="info">Click</strong> on a tag to find out which project has relevant examples of code.<br>
+                        To see examples, <strong class="info">Double Click</strong> on your project of choice.
                     </p>
                     <div id="solutions-tags-container">
                         <span class="tag" title="GitHub">gitHub</span><span class="tag" title="HTML">html</span>
@@ -102,7 +102,7 @@
                                     <li class="examples-link php-essentials">Essentials</li> 
                                     <li class="nested">Using <i style="color: gray">include</i></li>
                                     <li class="nested">Creating a database</li>
-                                    <li class="nested">Connecting to a database <i style="color: gray"><b>(</b></i>using the <i style="color: gray">PDO</i><i style="color: gray"><b>)</b></i></li>
+                                    <li class="nested">Connecting to a database <i style="color: gray"><b>(&nbsp;</b></i>using the <i style="color: gray">PDO</i><i style="color: gray"><b>&nbsp;)</b></i></li>
                                     <li class="nested"><i style="color: gray">PHPMailer</i></li>
                                     <li class="nested">The <i style="color: gray">.env</i> file</li>
                                     <li class="examples-link php-error-handling">Error handling</li>
@@ -164,7 +164,7 @@
                                         <i style="color: gray">@</i>else block
                                     </li>
                                     <li class="examples-link">Functions</li>
-                                    <li class="examples-link"><i style="color: gray">calc(&nbsp;)</i></li>
+                                    <li class="examples-link"><i style="color: gray">calc(&nbsp;&nbsp;)</i></li>
                                 </ul>
                             </div>
                             <div class="examples-list-container js-examples">

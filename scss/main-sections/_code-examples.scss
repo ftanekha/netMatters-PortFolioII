@@ -34,6 +34,13 @@ div#code-examples{
                 @media (min-width: 992px){
                     text-align: center;
                 }
+                strong.info{
+                    padding: 0 5px; 
+                    font-size: 1rem; 
+                    font-weight: 600; 
+                    background-color:lightgray; 
+                    color: lighten(black, 10%);
+                }
             }
             div#solutions-tags-container{
                 width: 80%;
