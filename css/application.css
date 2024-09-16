@@ -672,6 +672,7 @@ div#code-examples div#code-examples-main-container div#problem-solution-selector
   border-radius: 0.2rem;
   color: white;
   font-weight: 900;
+  cursor: pointer;
   transition: 0.5s;
 }
 div#code-examples div#code-examples-main-container div#problem-solution-selector div#solutions-tags-container span.tag:hover {
