@@ -155,41 +155,41 @@
                             <div class="examples-list-container css-examples">
                                 <p class="h3">SCSS</p>
                                 <ul class="css">
-                                    <li class="examples-link">Ico-moon icons</li>
-                                    <li class="examples-link">Sticky header</li>
-                                    <li class="examples-link">Variables</li>
-                                    <li class="examples-link">
+                                    <li class="examples-link ico-moon">Ico-moon icons</li>
+                                    <li class="examples-link sticky-header-scss">Sticky header</li>
+                                    <li class="examples-link scss-variables">Variables</li>
+                                    <li class="examples-link scss-functions">Functions&nbsp;&nbsp; &nbsp;<em style="color: #b84d50;">&amp;</em>&nbsp;&nbsp;&nbsp;
                                         <i style="color: gray">@</i>if<i style="color: gray">/</i>
                                         <i style="color: gray">@</i>elseif<i style="color: gray">/</i>
                                         <i style="color: gray">@</i>else block
                                     </li>
-                                    <li class="examples-link">Functions</li>
-                                    <li class="examples-link"><i style="color: gray">calc(&nbsp;&nbsp;)</i></li>
+                                    <li class="examples-link side-menu-and-calc"><i style="color: gray">calc(&nbsp;&nbsp;)</i></li>
                                 </ul>
                             </div>
                             <div class="examples-list-container js-examples">
                                 <p class="h3">JS<i style="color: gray">/</i>jQuery</p>
                                 <ul class="js">
-                                    <li class="examples-link">Using jQuery plugins e.g. for carousels</li>
-                                    <li class="examples-link">Sticky header 
+                                    <li class="examples-link using-jquery-plugins">Using jQuery plugins e.g. for carousels</li>
+                                    <li class="examples-link sticky-header-jquery">Sticky header 
                                         <i style="color: gray">(</i>
                                         <span style="font-size: .8rem"> uses scroll event heavily</span>
                                         <i style="color: gray">)</i> with a smooth transition</li>
-                                    <li class="examples-link"><i>Sliding</i> side menu</li>
+                                    <li class="examples-link side-menu-jquery"><i>Sliding</i> side menu</li>
                                     <li class="nested">hamburger menu icon, page overlay filter</li>
-                                    <li class="examples-link" style="margin-top: 15px">Creating and controlling an accordion </li>
+                                    <li class="examples-link accordion" style="margin-top: 15px">Creating and controlling an accordion </li>
                                 </ul>
                             </div>
                             <div class="examples-list-container php-examples">
                                 <p class="h3">PHP</p>
                                 <ul class="php">
-                                    <li class="examples-link">Using <i style="color: gray">include</i></li>
-                                    <li class="examples-link">Loop over a database response to display images</li>
-                                    <li class="examples-link">Recieving and decoding form data</li>
-                                    <li class="examples-link">Validating & Sanitising form data</li>
-                                    <li class="examples-link">Sending data to a database</li>
+                                    <li class="examples-link using-include">Using <i style="color: gray">include</i></li>
+                                    <li class="examples-link looping-over-database-response">Loop over a database response to display images</li>
+                                    <li class="examples-link receiving-and-decoding-form-data">Recieving and decoding form data</li>
+                                    <li class="examples-link validating-and-sanitising-form-data">Validating & Sanitising form data</li>
+                                    <li class="examples-link sending-data-to-database">Sending data to a database</li>
                                 </ul>
                             </div>
+                            <?php include '../includes/code-examples/netmatters/index.php' ?>
                         </div>
                     </div>
                 </div>

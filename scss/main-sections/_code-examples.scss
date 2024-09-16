@@ -169,7 +169,7 @@ div#code-examples{
                     span.close{
                         @include close;
                     }
-                    div.examples-list-container{
+                    div.examples-list-container, div.example{
                         display: none;
                     }
                 }
@@ -268,9 +268,6 @@ div#code-examples{
                             transition: .5s;
                             &.chestnut{
                                 border-color: $chestnut;
-                            }
-                            &:hover{
-                                transform: scale(1.5);
                             }
                         }
                     }

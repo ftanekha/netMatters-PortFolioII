@@ -123,7 +123,9 @@ document.addEventListener(
                         //only display corresponding example
                         const exampleClassNames = [
                             'choosing-random-color', 'flexbox', 'styling-images-in-collection', 'import-export', 'fetch-api', 'local-storage',
-                            'using-handlebars', 'frontend-validation-html', 'frontend-validation-js', 'generating-success-vs-error-messages', 'php-essentials', 'php-error-handling', 'sql-query'
+                            'using-handlebars', 'frontend-validation-html', 'frontend-validation-js', 'generating-success-vs-error-messages', 'php-essentials', 'php-error-handling', 'sql-query',
+                            'ico-moon', 'sticky-header-scss', 'scss-variables', 'scss-functions', 'side-menu-and-calc', 'using-jquery-plugins', 'sticky-header-jquery', 'side-menu-jquery',
+                            'accordion', 'using-include', 'looping-over-database-response', 'receiving-and-decoding-form-data', 'validating-and-sanitising-form-data', 'sending-data-to-database'
                         ]
                         
                         exampleClassNames.forEach(

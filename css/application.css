@@ -862,7 +862,7 @@ div#code-examples div#code-examples-main-container div#projects-container div.pa
   transform: scale(1.2);
   padding-bottom: 0.2rem;
 }
-div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child div.examples-list-container {
+div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child div.examples-list-container, div#code-examples div#code-examples-main-container div#projects-container div.parent div#bottom-child div.example {
   display: none;
 }
 div#code-examples div#code-examples-main-container div#projects-container .front {
@@ -962,9 +962,6 @@ div#code-examples div#code-examples-main-container div#projects-container .front
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.chestnut {
   border-color: #b84d50;
-}
-div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img:hover {
-  transform: scale(1.5);
 }
 @media (min-width: 375px) {
   div#code-examples div#code-examples-main-container div#projects-container {
