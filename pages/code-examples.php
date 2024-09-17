@@ -59,7 +59,7 @@
                             <span class="close">x</span>
                             <p class="project-name">All4U website</p>
                             <div class="examples-list-container html-examples">
-                                <p class="h3">HTML<i style="color: gray">/</i>Handlebars</p>
+                                <p class="h3">HTML<i style="color: gray">/</i>Handlebars.js</p>
                                 <ul class="html">
                                     <li class="examples-link using-handlebars">Using handlebars.js</li>
                                     <li class="nested">instantiating</li>
@@ -75,7 +75,7 @@
                                 </ul>
                                 <!-- // -->
                                 <div class="examples-list-container css-examples" style="margin: 0">
-                                    <div id="coming-soon-playlist-container" style="margin: 0">
+                                    <div class="coming-soon-playlist-container" style="margin: 0">
                                         <img src="../assets/images/comingsoon_01.gif" alt="Coming soon clipart" title="This section is currently under construction. Coming very soon!">
                                         <audio controls preload="auto">
                                             <source src="https://res.cloudinary.com/mindlibre3001/video/upload/v1711034534/Nujabes_Cisse_Star_-_Feathers.mp3" type="audio/mp3">
@@ -105,10 +105,10 @@
                                     <li class="nested">Connecting to a database <i style="color: gray"><b>(&nbsp;</b></i>using the <i style="color: gray">PDO</i><i style="color: gray"><b>&nbsp;)</b></i></li>
                                     <li class="nested"><i style="color: gray">PHPMailer</i></li>
                                     <li class="nested">The <i style="color: gray">.env</i> file</li>
-                                    <li class="examples-link php-error-handling">Error handling</li>
+                                    <li class="examples-link php-error-handling" style="margin-top: 15px">Error handling</li>
                                 </ul>
                             </div>
-                            <div class="examples-list-container sql-examples">
+                            <div class="examples-list-container sql-examples" style="margin-bottom: 60px">
                                 <p class="h3">SQL</p>
                                 <ul class="sql"> 
                                     <li class="examples-link sql-query">Inserting form data into a database table</li>
@@ -150,7 +150,7 @@
                             <span class="back">&lt;||</span>
                             <span class="close">x</span>
                             <p class="project-name">
-                                Netmatters Home <span class="ampersand">&amp;<span> Contact pages
+                                Netmatters Home <span class="ampersand">&amp;</span> Contact pages
                             </p>
                             <div class="examples-list-container css-examples">
                                 <p class="h3">SCSS</p>
@@ -179,7 +179,7 @@
                                     <li class="examples-link accordion" style="margin-top: 15px">Creating and controlling an accordion </li>
                                 </ul>
                             </div>
-                            <div class="examples-list-container php-examples">
+                            <div class="examples-list-container php-examples" style="margin-bottom: 60px">
                                 <p class="h3">PHP</p>
                                 <ul class="php">
                                     <li class="examples-link using-include">Using <i style="color: gray">include</i></li>

@@ -5,12 +5,12 @@
     <div class="ico-moon accordion">
         <!-- // -->
         <div class="examples-list-container css-examples" style="margin: 0">
-            <div id="coming-soon-playlist-container" style="margin: 0">
-                <img src="../assets/images/comingsoon_01.gif" alt="Coming soon clipart" title="This section is currently under construction. Coming very soon!">
+            <div class="coming-soon" style="margin: 0">
+                <!-- <img src="../assets/images/comingsoon_01.gif" alt="Coming soon clipart" title="This section is currently under construction. Coming very soon!">
                 <audio controls preload="auto">
                     <source src="https://res.cloudinary.com/mindlibre3001/video/upload/v1711034534/Nujabes_Cisse_Star_-_Feathers.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
-                </audio>
+                </audio> -->hi
             </div>
         </div>
         <!-- // -->

@@ -269,6 +269,11 @@ div#code-examples{
                             &.chestnut{
                                 border-color: $chestnut;
                             }
+                            &.small{
+                                @media (min-width: 768px){
+                                    max-width: 50%;
+                                }
+                            }
                         }
                     }
                 }
@@ -415,7 +420,7 @@ div#code-examples{
                 }
             }
         }
-        div#coming-soon-playlist-container{
+        div.coming-soon-playlist-container{
             margin-top: 50px;
             width: 80%;
             display: flex;

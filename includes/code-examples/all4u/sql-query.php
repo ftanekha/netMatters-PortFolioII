@@ -4,7 +4,7 @@
     </p>
     <div class="sql-query accordion">
         <img src="../assets/images/code-examples/all4u/sql-query.png" 
-            alt="Inserting form data into a database tree" title="Inserting form data into a database tree"" 
+            alt="Inserting form data into a database tree" title="Inserting form data into a database tree"
         >
     </div>
 </div>

@@ -23,10 +23,10 @@
     </p>
     <div class="choosing-the-color-theme-with-code accordion">
         <img src="../assets/images/code-examples/image-collector/choosing-random-color-theme-using-bulma-danger.png" 
-            alt="using Bulma's danger color" title="using Bulma's danger color" 
+            alt="using Bulma's danger color" title="using Bulma's danger color" class="small"
         >
-        <img src="../assets/images/code-examples/image-collector/choosing-random-color-theme-using-sass-lighten-function.png" 
-            alt="using the SCSS lighten function" title="SCSS lighten function example" 
+        <img src="../assets/images/code-examples/image-collector/choosing-random-color-theme-using-scss-lighten-function.png" 
+            alt="using the SCSS lighten function" title="SCSS lighten function example" class="small"
         >
     </div>
 </div>

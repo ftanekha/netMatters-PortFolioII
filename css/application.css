@@ -963,6 +963,11 @@ div#code-examples div#code-examples-main-container div#projects-container .front
 div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.chestnut {
   border-color: #b84d50;
 }
+@media (min-width: 768px) {
+  div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.small {
+    max-width: 50%;
+  }
+}
 @media (min-width: 375px) {
   div#code-examples div#code-examples-main-container div#projects-container {
     width: 305px;
@@ -1094,20 +1099,20 @@ div#code-examples div#code-examples-main-container div#projects-container .front
     box-shadow: inset #c77174 2px 2px 15px, inset #c77174 -2px -2px 15px;
   }
 }
-div#code-examples div#code-examples-main-container div#coming-soon-playlist-container {
+div#code-examples div#code-examples-main-container div.coming-soon-playlist-container {
   margin-top: 50px;
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-div#code-examples div#code-examples-main-container div#coming-soon-playlist-container img, div#code-examples div#code-examples-main-container div#coming-soon-playlist-container audio {
+div#code-examples div#code-examples-main-container div.coming-soon-playlist-container img, div#code-examples div#code-examples-main-container div.coming-soon-playlist-container audio {
   max-width: 100%;
 }
-div#code-examples div#code-examples-main-container div#coming-soon-playlist-container img {
+div#code-examples div#code-examples-main-container div.coming-soon-playlist-container img {
   margin: 1rem auto;
 }
-div#code-examples div#code-examples-main-container div#coming-soon-playlist-container audio {
+div#code-examples div#code-examples-main-container div.coming-soon-playlist-container audio {
   height: 1rem;
 }
 

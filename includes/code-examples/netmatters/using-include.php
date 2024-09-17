@@ -3,7 +3,7 @@
         <a href="javascript:;" class="accordion-control">Click here to toggle image</a>
     </p>
     <div class="using-include accordion">
-        <img src="../assets/images/code-examples/netmatters/using-include.png" 
+        <img src="../assets/images/code-examples/netmatters/using-include.png" class="small"
             alt="Using php include example" title="Using php include example" 
         >
     </div>
