@@ -135,7 +135,13 @@ document.addEventListener(
                         exampleClassNames.forEach(
                             exampleClassName => {
                                 if(target.classList.contains(exampleClassName)) {
-                                    document.querySelector(`#${exampleClassName}-example-container`).style.display = 'block'
+                                    const classContainer = document.querySelector(`#${exampleClassName}-example-container`)
+                                    if(exampleClassName === 'ico-moon' || exampleClassName === 'side-menu-and-calc'){
+                                        classContainer.style.display = 'flex'
+                                    }else{
+                                        classContainer.style.display = 'block'
+                                    }
+                                    
                                     currentExampleClassName = exampleClassName
                                 }
                             }

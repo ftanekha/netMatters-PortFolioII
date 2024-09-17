@@ -89,7 +89,7 @@
                                 <p class="h3">JS</p>
                                 <ul class="js">
                                     <li class="examples-link frontend-validation-js">Front-end form data validation</li>
-                                    <li class="examples-link generating-success-vs-error-messages">Generating and displaying success
+                                    <li class="examples-link generating-success-vs-error-messages">Generating <em style="color: gray;">&amp;</em> displaying success
                                         <i style="color: gray">/</i>error messages <i style="color: gray">(</i>
                                         <span style="font-size: .8rem">depending on database<i style="color: gray">/</i>server responses</span>
                                         <i style="color: gray">)</i>
@@ -150,7 +150,7 @@
                             <span class="back">&lt;||</span>
                             <span class="close">x</span>
                             <p class="project-name">
-                                Netmatters Home <span class="ampersand">&amp;</span> Contact pages
+                                Netmatters Home <em style="color: gray;">&amp;</em> Contact pages
                             </p>
                             <div class="examples-list-container css-examples">
                                 <p class="h3">SCSS</p>
@@ -158,7 +158,7 @@
                                     <li class="examples-link ico-moon">Ico-moon icons</li>
                                     <li class="examples-link sticky-header-scss">Sticky header</li>
                                     <li class="examples-link scss-variables">Variables</li>
-                                    <li class="examples-link scss-functions">Functions&nbsp;&nbsp; &nbsp;<em style="color: #b84d50;">&amp;</em>&nbsp;&nbsp;&nbsp;
+                                    <li class="examples-link scss-functions">Functions&nbsp;&nbsp;<em style="color: gray;">&amp;</em>&nbsp;&nbsp;
                                         <i style="color: gray">@</i>if<i style="color: gray">/</i>
                                         <i style="color: gray">@</i>elseif<i style="color: gray">/</i>
                                         <i style="color: gray">@</i>else block
@@ -169,12 +169,12 @@
                             <div class="examples-list-container js-examples">
                                 <p class="h3">JS<i style="color: gray">/</i>jQuery</p>
                                 <ul class="js">
-                                    <li class="examples-link using-jquery-plugins">Using jQuery plugins e.g. for carousels</li>
+                                    <li class="examples-link using-jquery-plugins">Using jQuery plugins <em style="color: gray;">e.g.</em> for carousels</li>
                                     <li class="examples-link sticky-header-jquery">Sticky header 
                                         <i style="color: gray">(</i>
                                         <span style="font-size: .8rem"> uses scroll event heavily</span>
                                         <i style="color: gray">)</i> with a smooth transition</li>
-                                    <li class="examples-link side-menu-jquery"><i>Sliding</i> side menu</li>
+                                    <li class="examples-link side-menu-jquery"><em style="color: gray;">Sliding</em> side menu</li>
                                     <li class="nested">hamburger menu icon, page overlay filter</li>
                                     <li class="examples-link accordion" style="margin-top: 15px">Creating and controlling an accordion </li>
                                 </ul>
@@ -184,8 +184,8 @@
                                 <ul class="php">
                                     <li class="examples-link using-include">Using <i style="color: gray">include</i></li>
                                     <li class="examples-link looping-over-database-response">Loop over a database response to display images</li>
-                                    <li class="examples-link receiving-and-decoding-form-data">Recieving and decoding form data</li>
-                                    <li class="examples-link validating-and-sanitising-form-data">Validating & Sanitising form data</li>
+                                    <li class="examples-link receiving-and-decoding-form-data">Recieving <em style="color: gray;">&amp;</em> decoding form data</li>
+                                    <li class="examples-link validating-and-sanitising-form-data">Validating <em style="color: gray;">&amp;</em> Sanitising form data</li>
                                     <li class="examples-link sending-data-to-database">Sending data to a database</li>
                                 </ul>
                             </div>
