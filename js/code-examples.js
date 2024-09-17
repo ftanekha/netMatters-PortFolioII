@@ -109,7 +109,7 @@ document.addEventListener(
         examplesLink.forEach(
             link => {
                 link.addEventListener(
-                    'click', ({target})=>{
+                    'click', ({currentTarget})=>{
                         //store current scrollTop
                         previousScrollTop = projectOnDisplay.scrollTop
                         //
@@ -134,7 +134,7 @@ document.addEventListener(
                         
                         exampleClassNames.forEach(
                             exampleClassName => {
-                                if(target.classList.contains(exampleClassName)) {
+                                if(currentTarget.classList.contains(exampleClassName)) {
                                     const classContainer = document.querySelector(`#${exampleClassName}-example-container`)
                                     if(exampleClassName === 'ico-moon' || exampleClassName === 'side-menu-and-calc'){
                                         classContainer.style.display = 'flex'
