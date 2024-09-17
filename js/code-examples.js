@@ -74,6 +74,7 @@ document.addEventListener(
             }
         )
 
+        let projectOnDisplay = ''
         //MODAL
         function displayModal(ev){
             //
@@ -93,9 +94,9 @@ document.addEventListener(
             )
         }
 
-        let projectOnDisplay = ''
-        let currentExampleClassName = '';
-        
+        let currentExampleClassName = ''
+        let previousScrollTop = 0
+
         projects.forEach(
             el => {
                 el.addEventListener(
@@ -109,6 +110,9 @@ document.addEventListener(
             link => {
                 link.addEventListener(
                     'click', ({target})=>{
+                        //store current scrollTop
+                        previousScrollTop = projectOnDisplay.scrollTop
+                        //
                         examples.forEach(
                             example => example.style.display = 'none'
                         )
@@ -153,12 +157,12 @@ document.addEventListener(
         function displayListOfExamples(){
             examplesListContainers.forEach(
                 examplesListContainer=> {
-                    //examplesListContainer.style.display = 'none !important'
                     examplesListContainer.style.position = 'static'
                     examplesListContainer.style.bottom = ''
-                    // examplesListContainer.removeEventListener('dblclick', displayModal)
                 }
             )
+            //restore scrollTop
+            projectOnDisplay.scrollTop = previousScrollTop
         }
         
         goBackButtons.forEach(
