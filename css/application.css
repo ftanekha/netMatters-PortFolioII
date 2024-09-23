@@ -888,6 +888,7 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   display: block !important;
   width: 60%;
   margin: 30px auto 0 auto;
+  cursor: auto;
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container:last-child {
   margin-bottom: 60px;
@@ -906,6 +907,7 @@ div#code-examples div#code-examples-main-container div#projects-container .front
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.html li.examples-link, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.css li.examples-link, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.js li.examples-link, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.php li.examples-link, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.sql li.examples-link {
   margin-bottom: 15px;
+  cursor: pointer;
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.html li.examples-link:hover, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.css li.examples-link:hover, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.js li.examples-link:hover, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.php li.examples-link:hover, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.sql li.examples-link:hover {
   text-decoration: underline;
@@ -916,7 +918,7 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   line-height: 20px;
   color: azure;
   text-decoration: none;
-  cursor: none;
+  cursor: auto;
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.html li.nested::marker, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.css li.nested::marker, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.js li.nested::marker, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.php li.nested::marker, div#code-examples div#code-examples-main-container div#projects-container .front div.examples-list-container ul.sql li.nested::marker {
   color: #b84d50;

@@ -197,6 +197,7 @@ div#code-examples{
                     display: block !important;
                     width: 60%;
                     margin: 30px auto 0 auto;
+                    cursor: auto;
                     &:last-child{
                         margin-bottom: 60px;
                     }
@@ -213,6 +214,7 @@ div#code-examples{
                         padding: 0;
                         li.examples-link{
                             margin-bottom: 15px;
+                            cursor: pointer;
                             &:hover{
                                 text-decoration: underline;
                             }
@@ -223,7 +225,7 @@ div#code-examples{
                             line-height:20px;
                             color: azure; 
                             text-decoration: none;
-                            cursor: none;
+                            cursor: auto;
                             &::marker {
                                 color: $chestnut;
                             }
