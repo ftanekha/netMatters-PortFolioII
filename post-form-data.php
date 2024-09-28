@@ -25,7 +25,11 @@ $dbPort = DATABASE_PORT || 3306;
 #instantiate connection to database
 try
 {
-    $conn = new PDO("mysql://$username:$password@$host:$dbPort/$dbname");
+    $conn = new PDO(
+        "mysql:host=$host;dbname=$dbname;", 
+        $username, $password
+    );
+    // $conn = new PDO("mysql://$username:$password@$host:$dbPort/$dbname");
     #throw any exception raised by PDO
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } 
