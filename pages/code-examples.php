@@ -53,7 +53,7 @@
                 <div id="projects-container">
                     <div class="parent">
                         <div id="top-first-child" class="child top top-first project-all4u-website" title="Double-Click to expand."
-                            data-tags="html css scss bootstrap js handlebars php sql"
+                            data-tags="github html css scss bootstrap js handlebars php sql"
                             >
                             <span class="back">&lt;||</span>
                             <span class="close">x</span>
@@ -117,7 +117,7 @@
                             <?php include '../includes/code-examples/all4u/index.php' ?>
                         </div>
                         <div id="top-second-child" class="child top top-second project-image-collector" title="Double-Click to expand."
-                            data-tags="html css scss js jquery"
+                            data-tags="github html css scss js jquery"
                             >
                             <span class="back">&lt;||</span>
                             <span class="close">x</span>
@@ -145,7 +145,7 @@
                             <?php include '../includes/code-examples/image-collector/index.php' ?>
                         </div>
                         <div id="bottom-child" class="project-netmatters" title="Double-Click to expand."
-                            data-tags="html css scss js jquery php sql"
+                            data-tags="github html css scss js jquery php sql"
                             >
                             <span class="back">&lt;||</span>
                             <span class="close">x</span>
