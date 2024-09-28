@@ -8,25 +8,24 @@ use PHPMailer\PHPMailer\PHPMailer;
 $mail = new PHPMailer();
 //configure an SMTP
 $mail->isSMTP();
-$mail->Host = $_ENV["MAIL_Host"];
+$mail->Host = MAIL_Host;
 $mail->SMTPAuth = true;
-$mail->Username = $_ENV["MAIL_Username"];
-$mail->Password = $_ENV["MAIL_Password"];
+$mail->Username = MAIL_Username;
+$mail->Password = MAIL_Password;
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
 #get form data
-$host = $_ENV["DB_HOST_NAME"];
-$dbname = $_ENV["DB_NAME"];
-$username = $_ENV["DB_USER_NAME"];
-$password = $_ENV["DB_PASSWORD"];
+
+$host = DATABASE_HOST;
+$dbname = DATABASE_NAME;
+$username = DATABASE_USERNAME;
+$password = DATABASE_PASSWORD;
+$dbPort = DATABASE_PORT || 3306;
 #instantiate connection to database
 try
 {
-    $conn = new PDO(
-        "mysql:host=$host;dbname=$dbname;", 
-        $username, $password
-    );
+    $conn = new PDO("mysql://$username:$password@$host:$dbPort/$dbname");
     #throw any exception raised by PDO
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } 
