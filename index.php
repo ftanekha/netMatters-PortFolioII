@@ -110,7 +110,7 @@
                         <img src="assets/images/all4u-homepage.jpeg" alt="All4U Healthcare Solutions website" title="All4U Healthcare Solutions website">
                         <figcaption>
                             This application was made using <code>jQuery, Handlebars.js, Bootstrap & HTML</code> 
-                            to produce a simple app with a streamlined look and easy navigation.
+                            to produce a simple app with a streamlined look and easy navigation, and PHP on the back-end.
                         </figcaption>
                     </figure>
                 </a>
@@ -120,7 +120,7 @@
                             alt="JavaScript array assessement" title="JavaScript array assessement"
                         >
                         <figcaption>
-                            A lightweight application that uses the fetch API to fetch and display random images.
+                            A lightweight application that uses the JavaScript fetch API to display random images, and Flebox for layout.
                             Users can create, store, retrieve and view one or more collections of images.
                         </figcaption>
                     </figure>
