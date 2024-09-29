@@ -17,13 +17,12 @@ $mail->Port = 587;
 
 #get form data
 
-$host = DATABASE_HOST;
+$host = 'srv-captain--gtjlxiqeps';
 $dbname = DATABASE_NAME;
 $username = DATABASE_USERNAME;
 $password = DATABASE_PASSWORD;
 $dbPort = DATABASE_PORT || 3306;
 #instantiate connection to database
-print_r($host, $dbname, $username, $password, $dbPort);
 try
 {
     $conn = new PDO(
@@ -31,7 +30,6 @@ try
         $username, $password
     );
     // $conn = new PDO("mysql://$username:$password@$host:$dbPort/$dbname");
-    echo "mysql://$username:$password@$host:$dbPort/$dbname";
     #throw any exception raised by PDO
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } 
