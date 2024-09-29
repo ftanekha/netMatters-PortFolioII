@@ -17,7 +17,7 @@ $mail->Port = 587;
 
 #get form data
 
-$host = 'srv-captain--gtjlxiqeps';
+$host = 'srv-captain--dclhofrauw-mysql-80x:3306';
 $dbname = DATABASE_NAME;
 $username = DATABASE_USERNAME;
 $password = DATABASE_PASSWORD;

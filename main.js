@@ -25,7 +25,7 @@ document.addEventListener(
                     }else{
                         // POST data & display success message
                         fetch(
-                            'post-form-data.php', 
+                            'http://srv-captain--dclhofrauw:8080/post-form-data.php', 
                             {
                                 method: 'POST',
                                 'Content-Type': 'application/json',
