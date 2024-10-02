@@ -8,21 +8,31 @@ use PHPMailer\PHPMailer\PHPMailer;
 $mail = new PHPMailer();
 //configure an SMTP
 $mail->isSMTP();
-$mail->Host = MAIL_Host;
+$mail->Host = getenv('MAIL_Host');
 $mail->SMTPAuth = true;
-$mail->Username = MAIL_Username;
-$mail->Password = MAIL_Password;
+$mail->Username =  getenv('MAIL_Username');
+$mail->Password =  getenv('MAIL_Password');
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
 #get form data
 
-$host = 'srv-captain--dclhofrauw-mysql-80x:3306';
-$dbname = DATABASE_NAME;
-$username = DATABASE_USERNAME;
-$password = DATABASE_PASSWORD;
-$dbPort = DATABASE_PORT || 3306;
+#$host = DATABASE_HOST;
+#$dbname = DATABASE_NAME;
+#$username = DATABASE_USERNAME;
+#$password = DATABASE_PASSWORD;
+#$dbPort = DATABASE_PORT;
 #instantiate connection to database
+##
+// $host = 'localhost';
+// $username = 'root';
+// $password = '';
+// $dbname = 'netmatters';
+##
+$host = 'srv-captain--dclhofrauw-mysql-80x';
+$username = 'ft-portfolio-database';
+$password = 'z9SpQyutIR5m';
+$dbname = 'ft-portfolio-database';
 try
 {
     $conn = new PDO(
@@ -44,6 +54,7 @@ $jsonData = file_get_contents("php://input");
 $data = json_decode($jsonData, true);
 #check if decoding was successful
 if(isset($data["first_name"])){
+    echo json_encode('hey bro');
     if($data !== null) 
     {
         #access the data and perform operations
@@ -128,13 +139,12 @@ if(isset($data["first_name"])){
                 $mail->AltBody = $message;
                 #send the message
                 if(!$mail->send()){
-                    echo json_encode("Message could not be sent.");
                     throw new Exception("Mailer Error: " . $mail->ErrorInfo);
                 }
             }
             catch(Exception $e)
             {
-                echo json_encode($e);
+                echo json_encode(array($e->getMessage()));
                 exit;
             }
             echo json_encode("Database updated successfully.\nEmail sent!");
