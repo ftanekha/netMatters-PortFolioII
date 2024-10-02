@@ -35,11 +35,11 @@ $password = 'z9SpQyutIR5m';
 $dbname = 'ft-portfolio-database';
 try
 {
-    $conn = new PDO(
-        "mysql:host=$host;dbname=$dbname;", 
-        $username, $password
-    );
-    // $conn = new PDO("mysql://$username:$password@$host:$dbPort/$dbname");
+    // $conn = new PDO(
+    //     "mysql:host=$host;dbname=$dbname;", 
+    //     $username, $password
+    // );
+    $conn = new PDO("mysql://$username:$password@$host:8080/$dbname");
     #throw any exception raised by PDO
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } 
