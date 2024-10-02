@@ -24,7 +24,7 @@ document.addEventListener(
                         return displayInfoMessage(errors)
                     }else{
                         // POST data & display success message
-                        const url = './post-form-data.php'
+                        const url = 'http://dclhofrauw.us14.qoddiapp.com/post-form-data.php'
                         console.log('URL:', url)
                         fetch(
                             url, 
