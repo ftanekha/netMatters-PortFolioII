@@ -35,16 +35,15 @@ try
     //     "mysql:host=$host;dbname=$dbname;port:$dbPort", 
     //     $username, $password
     // );
-    $conn = new PDO(
-        "mysql://$username:$password@$host:$dbPort/$dbname"
-    );
+    $dsn = "mysql://$username:$password@$host:$dbPort/$dbname";
+    $conn = new PDO($dsn);
     mysql://ft-portfolio-user:z9SpQyutIR5m@srv-captain--dclhofrauw-mysql-80x:3306/ft-portfolio-database
     #throw any exception raised by PDO
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } 
 catch(PDOException $pe) 
 {
-    die("Could not connect to the database $dbname :" . $pe->getMessage());
+    die("Could not connect to the database..$dsn..$dbname:" . $pe->getMessage());
 }
 
 #retrieve the raw POST data
