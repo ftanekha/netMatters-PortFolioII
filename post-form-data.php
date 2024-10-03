@@ -7,7 +7,8 @@ ini_set("error_log", "/tmp/php-error.log");
 // include "loadenv.php";
 #set up PHPMailer
 #Start with PHPMailer class
-use PHPMailer\PHPMailer\PHPMailer;
+require("PHPMailer.php");
+require("SMTP.php");
 //create a new object
 $mail = new PHPMailer();
 //configure an SMTP
