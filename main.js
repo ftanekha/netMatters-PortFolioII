@@ -33,7 +33,7 @@ document.addEventListener(
                                 body: JSON.stringify(userData)
                             }
                         )
-                        .then(res =>  res.text())
+                        .then(res =>  res.json())
                         .then(
                             data => {
                                 //display error messages from server
@@ -49,7 +49,6 @@ document.addEventListener(
                                     displayInfoMessage(`Thank you ${userData['first_name']} ${userData['last_name']} for leaving a message!\nI'll be in touch very soon.😎`)
                                     contactMeForm.reset()
                                 }
-                            console.log(data)
                             }
                         )
                         .catch(err => {
