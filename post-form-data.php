@@ -10,7 +10,7 @@ ini_set("error_log", "/tmp/php-error.log");
 require("PHPMailer.php");
 require("SMTP.php");
 //create a new object
-$mail = new PHPMailer();
+$mail = new PHPMailer\PHPMailer\PHPMailer();
 //configure an SMTP
 $mail->isSMTP();
 $mail->Host = MAIL_Host;
