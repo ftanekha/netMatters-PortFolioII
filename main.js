@@ -24,8 +24,7 @@ document.addEventListener(
                         return displayInfoMessage(errors)
                     }else{
                         // POST data & display success message
-                        const url = 'http://dclhofrauw.us14.qoddiapp.com/post-form-data.php'
-                        console.log('URL:', url)
+                        const url = './post-form-data.php'
                         fetch(
                             url, 
                             {
@@ -34,10 +33,10 @@ document.addEventListener(
                                 body: JSON.stringify(userData)
                             }
                         )
-                        .then(res =>  res.json())
+                        .then(res =>  res.text())
                         .then(
                             data => {
-                                // display error messages from server
+                                //display error messages from server
                                 if(Array.isArray(data)){
                                     console.error(`${data.length} Error/s detected:`)                                
                                     data.forEach( error => {
@@ -50,6 +49,7 @@ document.addEventListener(
                                     displayInfoMessage(`Thank you ${userData['first_name']} ${userData['last_name']} for leaving a message!\nI'll be in touch very soon.😎`)
                                     contactMeForm.reset()
                                 }
+                            console.log(data)
                             }
                         )
                         .catch(err => {
