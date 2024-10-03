@@ -35,8 +35,9 @@ try
     //     "mysql:host=$host;dbname=$dbname;port:$dbPort", 
     //     $username, $password
     // );
-    $dsn = "mysql://$username:$password@$host:$dbPort/$dbname";
-    $conn = new PDO($dsn);
+    // $dsn = "mysql://$username:$password@$host:$dbPort/$dbname";
+    $dsn = "mysql:host=$host;dbname=$dbname;port:$dbPort";
+    $conn = new PDO($dsn, $username, $password);
     mysql://ft-portfolio-user:z9SpQyutIR5m@srv-captain--dclhofrauw-mysql-80x:3306/ft-portfolio-database
     #throw any exception raised by PDO
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -45,7 +46,6 @@ catch(PDOException $pe)
 {
     die("Could not connect to the database..$dsn..$dbname:" . $pe->getMessage());
 }
-
 #retrieve the raw POST data
 $jsonData = file_get_contents("php://input");
 #decode the JSON data into a PHP associative array
