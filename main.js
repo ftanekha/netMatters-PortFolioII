@@ -33,7 +33,11 @@ document.addEventListener(
                                 body: JSON.stringify(userData)
                             }
                         )
-                        .then(res =>  res.json())
+                        .then(res => {
+                            if(typeof text !== 'string') return res.text()
+                            if(JSON.parse(text)) return res.json()
+                            return res
+                        })
                         .then(
                             data => {
                                 //display error messages from server
