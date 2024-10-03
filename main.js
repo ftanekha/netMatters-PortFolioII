@@ -25,7 +25,7 @@ document.addEventListener(
                     }else{
                         // POST data & display success message
                         fetch(
-                            'http://dclhofrauw.us14.qoddiapp.com/post-form-data.php', 
+                            './post-form-data.php', 
                             {
                                 method: 'POST',
                                 'Content-Type': 'application/json',

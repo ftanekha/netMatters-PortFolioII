@@ -21,16 +21,15 @@ $host = getenv(DATABASE_HOST);
 $dbname = getenv(DATABASE_NAME);
 $username = getenv(DATABASE_USERNAME);
 $password = getenv(DATABASE_PASSWORD);
-$dbPort = DATABASE_PORT;
+$dbPort = getenv(DATABASE_PORT);
 
 #instantiate connection to database
 try
 {
     $conn = new PDO(
-        "mysql:host=$host;dbname=$dbname;", 
+        "mysql:host=$host;dbname=$dbname;port:$dbPort", 
         $username, $password
     );
-    // $conn = new PDO("mysql://$username:$password@$host:8080/$dbname");
     #throw any exception raised by PDO
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } 
