@@ -30,10 +30,14 @@ $dbPort = DATABASE_PORT;
 #instantiate connection to database
 try
 {
+    // $conn = new PDO(
+    //     "mysql:host=$host;dbname=$dbname;port:$dbPort", 
+    //     $username, $password
+    // );
     $conn = new PDO(
-        "mysql:host=$host;dbname=$dbname;port:$dbPort", 
-        $username, $password
+        "mysql://$username:$password@$host:$dbPort/$dbname"
     );
+    mysql://ft-portfolio-user:z9SpQyutIR5m@srv-captain--dclhofrauw-mysql-80x:3306/ft-portfolio-database
     #throw any exception raised by PDO
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } 
@@ -125,7 +129,7 @@ if(isset($data["first_name"])){
                 
                 #configure email
                 $mail->setFrom($email, "Client");
-                $mail->addAddress("farai.tanekha@netmatters-scs.com", "Farai Tanekha");
+                $mail->addAddress("farai.tanekha@gmail.com", "Farai Tanekha");
                 $mail->Subject = "Software Development Portfolio enquiry";
                 #set HTML 
                 $mail->isHTML(TRUE);
