@@ -13,20 +13,20 @@ require("SMTP.php");
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 //configure an SMTP
 $mail->isSMTP();
-$mail->Host = MAIL_Host;
+$mail->Host = getenv("MAIL_Host");
 $mail->SMTPAuth = true;
-$mail->Username = MAIL_Username;
-$mail->Password = MAIL_Password;
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Username = getenv("MAIL_Username");
+$mail->Password = getenv("MAIL_Password");
+$mail->SMTPSecure = getenv("PHPMailer::ENCRYPTION_STARTTLS");
 $mail->Port = 587;
 
 #get form data
 
-$host = DATABASE_HOST;
-$dbname = DATABASE_NAME;
-$username = DATABASE_USERNAME;
-$password = DATABASE_PASSWORD;
-$dbPort = DATABASE_PORT;
+$host = getenv("DATABASE_HOST");
+$dbname = getenv("DATABASE_NAME");
+$username = getenv("DATABASE_USERNAME");
+$password = getenv("DATABASE_PASSWORD");
+$dbPort = getenv("DATABASE_PORT");
 
 #instantiate connection to database
 try
