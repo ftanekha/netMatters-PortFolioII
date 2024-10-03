@@ -4,7 +4,7 @@ ini_set("display_errors", "1"); // shows all errors
 ini_set("log_errors", 1);
 ini_set("error_log", "/tmp/php-error.log");
 
-include "loadenv.php";
+// include "loadenv.php";
 #set up PHPMailer
 #Start with PHPMailer class
 use PHPMailer\PHPMailer\PHPMailer;
@@ -12,20 +12,20 @@ use PHPMailer\PHPMailer\PHPMailer;
 $mail = new PHPMailer();
 //configure an SMTP
 $mail->isSMTP();
-$mail->Host = getenv('MAIL_Host');
+$mail->Host = MAIL_Host;
 $mail->SMTPAuth = true;
-$mail->Username = getenv('MAIL_Username');
-$mail->Password = getenv('MAIL_Password');
+$mail->Username = MAIL_Username;
+$mail->Password = MAIL_Password;
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
 #get form data
 
-$host = getenv(DATABASE_HOST);
-$dbname = getenv(DATABASE_NAME);
-$username = getenv(DATABASE_USERNAME);
-$password = getenv(DATABASE_PASSWORD);
-$dbPort = getenv(DATABASE_PORT);
+$host = DATABASE_HOST;
+$dbname = DATABASE_NAME;
+$username = DATABASE_USERNAME;
+$password = DATABASE_PASSWORD;
+$dbPort = DATABASE_PORT;
 
 #instantiate connection to database
 try
