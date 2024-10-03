@@ -1,15 +1,12 @@
 <?php
-error_reporting(-1); // reports all errors
-ini_set("display_errors", "1"); // shows all errors
+error_reporting(-1);//report all errors
+ini_set("display_errors", "1");//shows all errors
 ini_set("log_errors", 1);
 ini_set("error_log", "/tmp/php-error.log");
-
-// include "loadenv.php";
-#set up PHPMailer
-#Start with PHPMailer class
+#set up PHPMailer and SMTP
 require("PHPMailer.php");
 require("SMTP.php");
-//create a new object
+//instantiate PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 //configure an SMTP
 $mail->isSMTP();
@@ -19,26 +16,17 @@ $mail->Username = getenv("MAIL_Username");
 $mail->Password = getenv("MAIL_Password");
 $mail->SMTPSecure = getenv("PHPMailer::ENCRYPTION_STARTTLS");
 $mail->Port = 587;
-
-#get form data
-
+#get env variables
 $host = getenv("DATABASE_HOST");
 $dbname = getenv("DATABASE_NAME");
 $username = getenv("DATABASE_USERNAME");
 $password = getenv("DATABASE_PASSWORD");
 $dbPort = getenv("DATABASE_PORT");
-
+$dsn = "mysql:host=$host;dbname=$dbname;port:$dbPort";
 #instantiate connection to database
 try
 {
-    // $conn = new PDO(
-    //     "mysql:host=$host;dbname=$dbname;port:$dbPort", 
-    //     $username, $password
-    // );
-    // $dsn = "mysql://$username:$password@$host:$dbPort/$dbname";
-    $dsn = "mysql:host=$host;dbname=$dbname;port:$dbPort";
     $conn = new PDO($dsn, $username, $password);
-    mysql://ft-portfolio-user:z9SpQyutIR5m@srv-captain--dclhofrauw-mysql-80x:3306/ft-portfolio-database
     #throw any exception raised by PDO
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } 
@@ -46,7 +34,7 @@ catch(PDOException $pe)
 {
     die("Could not connect to the database..$dsn..$dbname:" . $pe->getMessage());
 }
-#retrieve the raw POST data
+#retrieve the raw POST request data
 $jsonData = file_get_contents("php://input");
 #decode the JSON data into a PHP associative array
 $data = json_decode($jsonData, true);
@@ -126,7 +114,6 @@ if(isset($data["first_name"])){
             try
             {
                 $result = $conn->query($query);
-                
                 #configure email
                 $mail->setFrom($email, "Client");
                 $mail->addAddress("farai.tanekha@gmail.com", "Farai Tanekha");
