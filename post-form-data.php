@@ -3,26 +3,13 @@ error_reporting(-1);//report all errors
 ini_set("display_errors", "1");//shows all errors
 ini_set("log_errors", 1);
 ini_set("error_log", "/tmp/php-error.log");
-#set up PHPMailer and SMTP
-require("PHPMailer.php");
-require("SMTP.php");
-//instantiate PHPMailer
-$mail = new PHPMailer\PHPMailer\PHPMailer();
-//configure an SMTP
-$mail->isSMTP();
-$mail->Host = getenv("MAIL_Host");
-$mail->SMTPAuth = true;
-$mail->Username = getenv("MAIL_Username");
-$mail->Password = getenv("MAIL_Password");
-$mail->SMTPSecure = getenv("PHPMailer::ENCRYPTION_STARTTLS");
-$mail->Port = 587;
 #get env variables
-$host = getenv("DATABASE_HOST");
-$dbname = getenv("DATABASE_NAME");
-$username = getenv("DATABASE_USERNAME");
-$password = getenv("DATABASE_PASSWORD");
+$host = "localhost";
+$dbname = "netmatters";
+$username = "root";
+$password = "";
 $dbPort = getenv("DATABASE_PORT");
-$dsn = "mysql:host=$host;dbname=$dbname;port:$dbPort";
+$dsn = "mysql:host=$host;dbname=$dbname";
 #instantiate connection to database
 try
 {
@@ -114,25 +101,13 @@ if(isset($data["first_name"])){
             try
             {
                 $result = $conn->query($query);
-                #configure email
-                $mail->setFrom($email, "Client");
-                $mail->addAddress("farai.tanekha@gmail.com", "Farai Tanekha");
-                $mail->Subject = "Software Development Portfolio enquiry";
-                #set HTML 
-                $mail->isHTML(TRUE);
-                $mail->Body = "<html>$message</html>";
-                $mail->AltBody = $message;
-                #send the message
-                if(!$mail->send()){
-                    throw new Exception("Mailer Error: " . $mail->ErrorInfo);
-                }
+                echo json_encode("Database updated successfully.");
             }
             catch(Exception $e)
             {
                 echo json_encode(array($e->getMessage()));
                 exit;
             }
-            echo json_encode("Database updated successfully.");
         }
     } 
     else 
