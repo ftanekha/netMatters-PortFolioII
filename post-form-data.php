@@ -8,7 +8,6 @@ $host = "localhost";
 $dbname = "netmatters";
 $username = "root";
 $password = "";
-$dbPort = getenv("DATABASE_PORT");
 $dsn = "mysql:host=$host;dbname=$dbname";
 #instantiate connection to database
 try
