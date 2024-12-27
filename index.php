@@ -95,7 +95,7 @@
                 </dd>
             </dl>
             <div id="portfolio-list-of-projects">
-                <a href="../homepageII/index.php" target="_blank">
+                <a href="homepageII/index.php" target="_blank">
                     <figure>
                         <img src="assets/images/netmatters-homepage-replica.jpeg" alt="Netmatters homepage replica" title="Netmatters homepage replica">
                         <figcaption>
