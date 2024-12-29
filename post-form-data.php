@@ -4,11 +4,12 @@ ini_set("display_errors", "1");//shows all errors
 ini_set("log_errors", 1);
 ini_set("error_log", "/tmp/php-error.log");
 #get env variables
-$host = "localhost";
-$dbname = "netmatters";
-$username = "root";
-$password = "";
-$dsn = "mysql:host=$host;dbname=$dbname";
+$host = getenv("DATABASE_HOST");
+$dbname = getenv("DATABASE_NAME");
+$username = getenv("DATABASE_USERNAME");
+$password = getenv("DATABASE_PASSWORD");
+$dbPort = getenv("DATABASE_PORT");
+$dsn = "mysql:host=$host;dbname=$dbname;port:$dbPort";
 #instantiate connection to database
 try
 {
