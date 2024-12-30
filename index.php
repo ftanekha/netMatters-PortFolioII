@@ -95,7 +95,7 @@
                 </dd>
             </dl>
             <div id="portfolio-list-of-projects">
-                <a href="https://aubdfpicjs.eupar01.qoddiapp.com" target="_blank">
+                <a href="hhttp://eksyijuznv.eupar01.qoddiapp.com" target="_blank">
                     <figure>
                         <img src="assets/images/netmatters-homepage-replica.jpeg" alt="Netmatters homepage replica" title="Netmatters homepage replica">
                         <figcaption>
