@@ -94,6 +94,7 @@ if(isset($data["first_name"])){
                 echo json_encode(array($e->getMessage()));
                 exit;
             }
+            $conn = null;
         }
     } 
     else 
