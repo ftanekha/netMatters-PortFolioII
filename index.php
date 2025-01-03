@@ -46,8 +46,14 @@
     <div id="main-content">
         <!-- section#banner -->
         <div id="banner">
-            <b id="my-name">Farai Tanekha</b>
-            <strong id="my-title">Software Developer</strong>
+            <b id="my-name">
+                <span class="blink-light">Farai</span>&nbsp;
+                <span class="blink-light">Tanekha</span>
+            </b>
+            <strong id="my-title">
+                <span class="blink-dark">Software</span>&nbsp; 
+                <span class="blink-dark">Developer</span>
+            </strong>
             <div id="scroll-down">
                 <a href="#my-portfolio">
                     <span class="glyphicon glyphicon-circle-arrow-down"></span>

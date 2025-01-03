@@ -34,6 +34,20 @@ div#banner{
         text-shadow: -1px -1px 2px white,
                     1px 1px 2px darken($main-red, 80%);
     }
+    b, strong{
+        span.blink-light{
+            transition: .3s;
+            &:hover{
+                color: lighten($main-red, 5%);
+            }
+        }
+        span.blink-dark{
+            transition: .3s;
+            &:hover{
+                color: darken($main-red, 10%);
+            }
+        }
+    }
     div#scroll-down{
         position: relative;
         height: 30vh;

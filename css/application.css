@@ -254,6 +254,18 @@ div#banner strong {
   transition: 0.3s;
   text-shadow: -1px -1px 2px white, 1px 1px 2px black;
 }
+div#banner b span.blink-light, div#banner strong span.blink-light {
+  transition: 0.3s;
+}
+div#banner b span.blink-light:hover, div#banner strong span.blink-light:hover {
+  color: #bf6062;
+}
+div#banner b span.blink-dark, div#banner strong span.blink-dark {
+  transition: 0.3s;
+}
+div#banner b span.blink-dark:hover, div#banner strong span.blink-dark:hover {
+  color: #963c3e;
+}
 div#banner div#scroll-down {
   position: relative;
   height: 30vh;
