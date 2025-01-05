@@ -111,7 +111,7 @@
                         </figcaption>
                     </figure>
                 </a>
-                <a href="https://all4uhealthcare.co.uk/" target="_blank">
+                <a href="https://kwiqjmcgst.eupar02.qoddiapp.com" target="_blank">
                     <figure>
                         <img src="assets/images/all4u-homepage.jpeg" alt="All4U Healthcare Solutions website" title="All4U Healthcare Solutions website">
                         <figcaption>
