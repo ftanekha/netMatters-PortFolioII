@@ -64,6 +64,9 @@
                     <a href="https://www.freecodecamp.org/ftanekha"  rel="noopener noreferrer" target="_blank">
                         <img src="../assets/images/icons/fcc.png" alt="freecodecamp icon" title="FreeCodeCamp Certification">
                     </a>
+                    <a href="netmatters-certificate.php"  rel="noopener noreferrer" target="_blank">
+                        <img src="../assets/images/icons/certificate-icon.png" alt="certificate icon" title="NetMatters SCS Certificate, 2023">
+                    </a>
                 </div>
             </article>
         </div>
