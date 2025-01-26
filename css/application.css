@@ -552,11 +552,11 @@ div#my-portfolio div#portfolio-list-of-projects {
   div#my-portfolio div#portfolio-list-of-projects {
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 5%;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
   div#my-portfolio div#portfolio-list-of-projects a {
-    width: 700px;
-    height: 300px;
+    width: 45%;
   }
 }
 div#my-portfolio div#portfolio-list-of-projects a {
@@ -577,6 +577,7 @@ div#my-portfolio div#portfolio-list-of-projects a figure {
 }
 div#my-portfolio div#portfolio-list-of-projects a figure img {
   max-width: 100%;
+  min-height: 100%;
   padding-bottom: 20px;
 }
 div#my-portfolio div#portfolio-list-of-projects a figure figcaption {

@@ -123,11 +123,22 @@
                 <a href="https://ftanekha.github.io/netMatters-JS-Array-Assessment/?#" target="_blank">
                     <figure>
                         <img src="assets/images/js-array-assessment-resized.jpeg" 
-                            alt="JavaScript array assessement" title="JavaScript array assessement"
+                            alt="Random image collector" title="Random image collector"
                         >
                         <figcaption>
                             A lightweight application that uses the JavaScript fetch API to display random images, and Flebox for layout.
                             Users can create, store, retrieve and view one or more collections of images.
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="https://nzgovqjyek.eupar04.qoddiapp.com" target="_blank">
+                    <figure>
+                        <img src="assets/images/qoddi-react-emailer-fullpage.jpeg" class="stretch"
+                            alt="React.js email application emulator" title="React.js email application emulator"
+                        >
+                        <figcaption>
+                         This React.js app mimicks the outwardly observable behavior of a web-email application.
+                         The app uses an Express.js server to receive and send back composed emails, without connecting to a database.
                         </figcaption>
                     </figure>
                 </a>
