@@ -4,7 +4,7 @@
     </p>
     <div class="styling-images accordion">
         <img src="../assets/images/code-examples/image-collector/smooth-transition-scalingUP.png" 
-            alt="hover-effect: scaling-up" title="hover-effect: scaling-up" class="chestnut"
+            alt="hover-effect: scaling-up" title="hover-effect: scaling-up" class="graphic medium"
         >
     </div>
 </div>

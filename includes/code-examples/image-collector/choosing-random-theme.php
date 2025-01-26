@@ -3,7 +3,7 @@
         <a href="javascript:;" class="accordion-control">Click here to toggle image</a>
     </p>
     <div class="overal-page-color-theme accordion">
-        <img src="../assets/images/code-examples/image-collector/choosing-random-color-theme.jpeg" class="graphic"
+        <img src="../assets/images/code-examples/image-collector/choosing-random-color-theme.jpeg" class="graphic medium"
             alt="overall page color theme" title="the overall page color theme"
         >
     </div>
@@ -11,10 +11,10 @@
         <a href="javascript:;" class="accordion-control">Click here to toggle images</a>
     </p>
     <div class="choosing-the-color-theme-with-code accordion">
-        <img src="../assets/images/code-examples/image-collector/custom-error-message.jpeg" class="graphic"
+        <img src="../assets/images/code-examples/image-collector/custom-error-message.jpeg" class="graphic medium"
             alt="custom error message example" title="custom error message example"
         >
-        <img src="../assets/images/code-examples/image-collector/custom-error-message-vs-js-alert.png" class="graphic"
+        <img src="../assets/images/code-examples/image-collector/custom-error-message-vs-js-alert.png" class="graphic medium"
             alt="custom error message vs JavaScript alert" title="custom error message vs JavaScript alert"
         >
     </div>
