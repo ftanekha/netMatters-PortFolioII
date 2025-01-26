@@ -76,7 +76,7 @@
                 <dd>
                     <a class="clickable-tech-link" href="pages/scs.html" target="_blank" style="margin-left: -.2rem;">Scion Coalition Scheme tech</a>
                 </dd>
-                <dd>These will include C#, PHP, and SQL.</dd>
+                <dd>I most often use C#, PHP, and SQL, and</dd>
                 <dd style="margin-top: 1rem; margin-left: -.2rem;">
                     <a class="clickable-tech-link" href="https://nodejs.org/api/modules.html#core-modules" target="_blank">Node.js</a>
                 </dd>
