@@ -975,6 +975,9 @@ div#code-examples div#code-examples-main-container div#projects-container .front
 div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.graphic {
   box-shadow: 5px 5px 3px 3px #8f7171;
 }
+div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.no-box-shadow {
+  box-shadow: none;
+}
 @media (min-width: 768px) {
   div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.small {
     max-width: 50%;
@@ -988,7 +991,18 @@ div#code-examples div#code-examples-main-container div#projects-container .front
 @media (min-width: 768px) {
   div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.large {
     width: 90%;
+    height: 100%;
   }
+}
+@media (min-width: 768px) {
+  div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.short {
+    max-height: 15rem;
+  }
+}
+div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion audio {
+  height: 1.25rem;
+  border-radius: 0;
+  background-color: darkgray;
 }
 @media (min-width: 375px) {
   div#code-examples div#code-examples-main-container div#projects-container {

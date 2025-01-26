@@ -5,6 +5,7 @@
     <div class="sending-data-to-database accordion">
         <img src="../assets/images/code-examples/netmatters/sending-data-to-database.png" 
             alt="Sending data to a database example" title="Sending data to a database example" 
+            class="medium"
         >
     </div>
 </div>

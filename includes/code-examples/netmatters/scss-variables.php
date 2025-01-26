@@ -5,6 +5,7 @@
     <div class="scss-variables accordion">
         <img src="../assets/images/code-examples/netmatters/scss-variables.png" 
             alt="SCSS variables example" title="SCSS variables example" 
+            class="medium"
         >
     </div>
 </div>

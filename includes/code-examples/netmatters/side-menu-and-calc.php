@@ -5,6 +5,7 @@
     <div class="side-menu-and-calc accordion">
         <img src="../assets/images/code-examples/netmatters/side-menu-and-calc.png" 
             alt="Side menu and SCSS calc function example" title="Side menu and SCSS calc function  example" 
+            class="medium"
         >
     </div>
 </div>

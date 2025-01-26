@@ -269,6 +269,9 @@ div#code-examples{
                             &.graphic{
                                 box-shadow: 5px 5px 3px 3px darken($off-white, 30%);
                             }
+                            &.no-box-shadow{
+                                box-shadow: none;
+                            }
                             &.small{
                                 @media (min-width: 768px){
                                     max-width: 50%;
@@ -282,8 +285,19 @@ div#code-examples{
                             &.large{
                                 @media (min-width: 768px) {
                                     width: 90%;
+                                    height: 100%;
                                 }
                             }
+                            &.short{
+                                @media (min-width: 768px){
+                                    max-height: 15rem;
+                                }
+                            }
+                        }
+                        audio{
+                            height: 1.25rem; 
+                            border-radius: 0; 
+                            background-color: darkgray;
                         }
                     }
                 }

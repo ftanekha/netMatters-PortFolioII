@@ -5,6 +5,7 @@
     <div class="receiving-and-decoding-form-data accordion">
         <img src="../assets/images/code-examples/netmatters/receiving-and-decoding-form-data.png" 
             alt="Receiving and decoding form data example" title="Receiving and decoding form data example" 
+            class="medium"
         >
     </div>
 </div>

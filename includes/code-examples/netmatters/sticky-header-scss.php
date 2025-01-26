@@ -5,6 +5,7 @@
     <div class="sticky-header-scss accordion">
         <img src="../assets/images/code-examples/netmatters/sticky-header-scss.png" 
             alt="Sticky header SCSS example" title="Sticky header SCSS example" 
+            class="medium"
         >
     </div>
 </div>

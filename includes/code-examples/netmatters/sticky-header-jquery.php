@@ -5,6 +5,7 @@
     <div class="sticky-header-jquery accordion">
         <img src="../assets/images/code-examples/netmatters/sticky-header-jquery.png" 
             alt="Sticky header example" title="Sticky header example" 
+            class="medium"
         >
     </div>
 </div>

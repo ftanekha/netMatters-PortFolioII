@@ -5,6 +5,7 @@
     <div class="scss-functions accordion">
         <img src="../assets/images/code-examples/netmatters/scss-functions.png" 
             alt="SCSS functions example" title="SCSS functions example" 
+            class="medium"
         >
     </div>
 </div>
