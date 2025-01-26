@@ -950,7 +950,7 @@ div#code-examples div#code-examples-main-container div#projects-container .front
 }
 div#code-examples div#code-examples-main-container div#projects-container .front div.example p a.accordion-control, div#code-examples div#code-examples-main-container div#projects-container .front div.example p span.glyphicon {
   text-decoration: none;
-  color: azure;
+  color: rgb(210, 198, 198);
   font-weight: 600;
   transition: 0.5s;
 }
@@ -969,12 +969,9 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   max-width: 100%;
   margin: auto;
   margin-bottom: 60px;
-  border-radius: 5px !important;
-  border: solid lightgray 10px;
   transition: 0.5s;
-}
-div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.chestnut {
-  border-color: #b84d50;
+  box-shadow: -5px 5px 3px 5px rgb(210, 198, 198);
+  box-shadow: 5px -5px 3px 5px #b84d50;
 }
 @media (min-width: 768px) {
   div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.small {
