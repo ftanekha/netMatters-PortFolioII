@@ -265,9 +265,9 @@ div#code-examples{
                             margin: auto;
                             margin-bottom: 60px;
                             transition: .5s;
-                            box-shadow: -5px 5px 3px 5px $off-white;
                             box-shadow: 5px -5px 3px 5px $chestnut;
-                            &.chestnut{
+                            &.graphic{
+                                box-shadow: 5px 5px 3px 3px darken($off-white, 30%);
                             }
                             &.small{
                                 @media (min-width: 768px){

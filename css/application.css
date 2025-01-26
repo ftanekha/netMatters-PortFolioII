@@ -970,8 +970,10 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   margin: auto;
   margin-bottom: 60px;
   transition: 0.5s;
-  box-shadow: -5px 5px 3px 5px rgb(210, 198, 198);
   box-shadow: 5px -5px 3px 5px #b84d50;
+}
+div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.graphic {
+  box-shadow: 5px 5px 3px 3px #8f7171;
 }
 @media (min-width: 768px) {
   div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.small {
