@@ -879,11 +879,11 @@ div#code-examples div#code-examples-main-container div#projects-container div.pa
 }
 div#code-examples div#code-examples-main-container div#projects-container .front {
   position: fixed !important;
-  top: 5%;
+  top: 0%;
   z-index: 10 !important;
   background-color: #1a1a1a !important;
-  width: 80% !important;
-  height: 93% !important;
+  width: 100% !important;
+  height: 100% !important;
   margin: auto !important;
   border-radius: 5px !important;
   box-shadow: inset #c77174 2px 2px 5px, inset #c77174 -2px -2px 5px;
@@ -1004,6 +1004,13 @@ div#code-examples div#code-examples-main-container div#projects-container .front
   height: 1.25rem;
   border-radius: 0;
   background-color: darkgray;
+}
+@media (min-width: 992px) {
+  div#code-examples div#code-examples-main-container div#projects-container .front {
+    top: 5%;
+    width: 80% !important;
+    height: 93% !important;
+  }
 }
 @media (min-width: 375px) {
   div#code-examples div#code-examples-main-container div#projects-container {

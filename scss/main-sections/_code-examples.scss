@@ -175,11 +175,11 @@ div#code-examples{
             }
             .front{
                 position: fixed !important;
-                top: 5%;
+                top: 0%;
                 z-index: $overlay_z-index !important;
                 background-color: lighten(black, 10%) !important;
-                width: 80% !important;
-                height: 93% !important;
+                width: 100% !important;
+                height: 100% !important;
                 margin: auto !important;
                 border-radius: 5px !important;
                 box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, 
@@ -300,6 +300,11 @@ div#code-examples{
                             background-color: darkgray;
                         }
                     }
+                }
+                @media (min-width: 992px){
+                    top: 5%;
+                    width: 80% !important;
+                    height: 93% !important;
                 }
             }
             @media(min-width: 375px){
