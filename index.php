@@ -74,7 +74,7 @@
                 <!-- back-end -->
                 <dt>Back-end</dt>
                 <dd>
-                    <a class="clickable-tech-link" href="pages/scs.html" target="_blank" style="margin-left: -.2rem;">Scion Coalition Scheme tech</a>
+                    <a class="clickable-tech-link" href="pages/scs.php" target="_blank" style="margin-left: -.2rem;">Scion Coalition Scheme tech</a>
                 </dd>
                 <dd>I most often use C#, PHP, and SQL, and</dd>
                 <dd style="margin-top: 1rem; margin-left: -.2rem;">
