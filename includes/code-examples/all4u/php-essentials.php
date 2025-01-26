@@ -4,7 +4,7 @@
     </p>
     <div class="php-essentials accordion">
         <img src="../assets/images/code-examples/all4u/php-essentials.png" 
-            alt="php essentials" title="php essentials" 
+            alt="php essentials" title="php essentials" class="medium"
         >
     </div>
 </div>

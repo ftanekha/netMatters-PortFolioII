@@ -978,6 +978,16 @@ div#code-examples div#code-examples-main-container div#projects-container .front
     max-width: 50%;
   }
 }
+@media (min-width: 768px) {
+  div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.medium {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  div#code-examples div#code-examples-main-container div#projects-container .front div.example div.accordion img.large {
+    width: 90%;
+  }
+}
 @media (min-width: 375px) {
   div#code-examples div#code-examples-main-container div#projects-container {
     width: 305px;

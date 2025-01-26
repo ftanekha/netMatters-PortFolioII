@@ -5,6 +5,7 @@
     <div class="php-error-handling accordion">
         <img src="../assets/images/code-examples/all4u/php-error-handling.png" 
             alt="php error handling example" title="php error handling example" 
+            class="large"
         >
     </div>
 </div>
