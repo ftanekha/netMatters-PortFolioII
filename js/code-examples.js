@@ -84,7 +84,7 @@ document.addEventListener(
             projectOnDisplay.removeEventListener('dblclick', displayModal)
             //
             projectOnDisplay.classList.add('front')
-            projectOnDisplay .title = ''
+            projectOnDisplay.title = ''
             ///////////CLOSE/COLLAPSE EXAMPLES MODAL///
             closeButtons.forEach(
                 btn => {

@@ -459,6 +459,7 @@ div#code-examples{
             div.react-y{
                 width: 40%;
                 height: 40%;
+                outline: solid .1rem lighten($chestnut, 10%);
                 border-radius: 20%;
                 background-color: $chestnut;
                 box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, 
