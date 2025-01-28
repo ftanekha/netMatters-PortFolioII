@@ -11,9 +11,11 @@ document.addEventListener(
         const examples = document.querySelectorAll('.example')
         const accordions = document.querySelectorAll('.accordion')
         const accordionControls = document.querySelectorAll('.accordion-control')
+        const reactExamples = document.querySelectorAll('.react-y')
 
         const tags = document.querySelectorAll('.tag')
-        const projects = [topFirstChild, topSecondChild, bottomChild]
+        const projects = [topFirstChild, topSecondChild, bottomChild, ...reactExamples]
+        console.log(projects)
         const chestnut = 'rgb(184, 77, 80)'
         const gothamGreen = '#00573F'
         

@@ -44,16 +44,17 @@
                     <div id="solutions-tags-container">
                         <span class="tag" title="GitHub">gitHub</span><span class="tag" title="HTML">html</span>
                         <span class="tag" title="CSS">css</span><span class="tag" title="SCSS">scss</span>
-                        <span class="tag" title="JavaScript">js</span><span class="tag" title="jQUERY">jQuery</span>
-                        <span class="tag" title="REACT.js">react</span><span class="tag" title="NEXT.js">next.js</span>
-                        <span class="tag" title="PRISMA">prisma</span><span class="tag" title="C-sharp">handlebars</span>
+                        <span class="tag" title="TailwindCss">tailwind</span><span class="tag" title="JavaScript">js</span>
+                        <span class="tag" title="jQUERY">jQuery</span><span class="tag" title="REACT.js">react</span>
+                        <span class="tag" title="Express.js">express</span><span class="tag" title="NEXT.js">next</span>
+                        <span class="tag" title="PRISMA">prisma</span><span class="tag" title="Handlebars.js">handlebars</span>
                         <span class="tag" title="SQL">sql</span><span class="tag" title="PHP">php</span>
                     </div>
                 </div>
-                <div id="projects-container">
+                <div id="scs-projects-examples-container">
                     <div class="parent">
                         <div id="top-first-child" class="child top top-first project-all4u-website" title="Double-Click to expand."
-                            data-tags="github html css scss bootstrap js handlebars php sql"
+                            data-tags="github html scss bootstrap js handlebars php sql"
                             >
                             <span class="back">&lt;||</span>
                             <span class="close">x</span>
@@ -117,7 +118,7 @@
                             <?php include '../includes/code-examples/all4u/index.php' ?>
                         </div>
                         <div id="top-second-child" class="child top top-second project-image-collector" title="Double-Click to expand."
-                            data-tags="github html css scss js jquery"
+                            data-tags="github html scss js jquery"
                             >
                             <span class="back">&lt;||</span>
                             <span class="close">x</span>
@@ -145,7 +146,7 @@
                             <?php include '../includes/code-examples/image-collector/index.php' ?>
                         </div>
                         <div id="bottom-child" class="project-netmatters" title="Double-Click to expand."
-                            data-tags="github html css scss js jquery php sql"
+                            data-tags="github html scss js jquery php sql"
                             >
                             <span class="back">&lt;||</span>
                             <span class="close">x</span>
@@ -192,6 +193,11 @@
                             <?php include '../includes/code-examples/netmatters/index.php' ?>
                         </div>
                     </div>
+                </div>
+                <!-- react & next project examples -->
+                <div id="react-next-examples-container">
+                    <div class="react-example react-y" data-tags="github html scss js react express" title="Double-Click to expand.">Emailer</div>
+                    <div class="next-example react-y" data-tags="github html tailwind react next prisma" title="Double-Click to expand.">Next pro</div>
                 </div>
             </div>
         </div>
