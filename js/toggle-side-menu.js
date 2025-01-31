@@ -1,6 +1,5 @@
 $(
     ()=>{
-        //////////////////////////////////////////////////
         const $hamburgerMenuIcon = $('#hamburger-button')
         const $sideMenu = $('#side-menu')
         const $sideMenuSupport = $('#side-menu-support')

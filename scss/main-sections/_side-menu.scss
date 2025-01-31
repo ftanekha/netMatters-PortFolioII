@@ -6,13 +6,68 @@ div#side-menu-support{
     z-index: $side-menu_z-index;
     width: calc(100% - 270px);
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
     &.slide-in{
         display: block;
         animation: side-menu-support-slide-in 1s ease-in-out;
     }
     &.slide-out{
         animation: side-menu-support-slide-out 1s ease-in-out;
+    }
+    &.side-menu-support-normal{
+        background-color: rgba(0, 0, 0, 0.4);
+        div#employer-prompt-message{
+            display: none;
+        }
+    }
+    &.side-menu-support-display-employer-prompt{
+        background-color: darken($main-red, 45%);
+        div#employer-prompt-message{
+            display: flex;
+        }
+    }
+    div#employer-prompt-message{
+        margin: 25vh auto;
+        justify-content: center;
+        pre{
+            font-weight: lighter;
+            font-size: 1.25rem;
+            color: $chestnut;
+            opacity: .7;
+            span{
+                &.black{
+                    color: $netmatters-black;
+                    font-weight: 200;
+                }
+                &.construct{
+                    color: $netmatters-black;
+                    font-weight: 900;
+                }
+                &.keyword{
+                    color: $netmatters-black;
+                    font-weight: 900;
+                }
+                &.identifier{
+                    color: darken($off-white, 10%);
+                }
+                &.identifier-for-link{
+                    color: darken($bulma-success, 20%);
+                }
+                &.link-parameter{
+                    color:lighten($netmatters-black, 10%);
+                    font-weight: bold;
+                }
+            }
+            a#employer-link-to-code-examples-page{
+                cursor: pointer;
+                text-decoration: none;
+                color:lighten($netmatters-black, 10%);
+                font-weight: bold;
+                transition: .5s;
+                &:hover{
+                    color: lighten(lighten($netmatters-black, 10%), 30%);
+                }
+            }
+        }
     }
 }
 div#side-menu{
