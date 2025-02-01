@@ -26,11 +26,33 @@ div#side-menu-support{
         }
     }
     div#employer-prompt-message{
-        margin: 25vh auto;
-        justify-content: center;
+        @media (min-width: 768px) {
+            margin: 30vh auto;
+            justify-content: flex-end;   
+            padding-right: 30px;
+            line-height: 1.15rem;
+            pre{
+                font-size: .8rem;
+                font-weight: 600;
+            }
+        }
+        @media (min-width: 900px) {
+            margin: 25vh auto;
+            justify-content: space-around;   
+            line-height: 1.15rem;
+            pre{
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+        @media (min-width: 1200px) {
+            pre{
+                font-size: 1.25rem;
+                font-weight: 400;
+                line-height: 1.75rem;
+            }
+        }
         pre{
-            font-weight: lighter;
-            font-size: 1.25rem;
             color: $chestnut;
             opacity: .7;
             span{

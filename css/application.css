@@ -75,13 +75,37 @@ div#side-menu-support.side-menu-support-display-employer-prompt {
 div#side-menu-support.side-menu-support-display-employer-prompt div#employer-prompt-message {
   display: flex;
 }
-div#side-menu-support div#employer-prompt-message {
-  margin: 25vh auto;
-  justify-content: center;
+@media (min-width: 768px) {
+  div#side-menu-support div#employer-prompt-message {
+    margin: 30vh auto;
+    justify-content: flex-end;
+    padding-right: 30px;
+    line-height: 1.15rem;
+  }
+  div#side-menu-support div#employer-prompt-message pre {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 900px) {
+  div#side-menu-support div#employer-prompt-message {
+    margin: 25vh auto;
+    justify-content: space-around;
+    line-height: 1.15rem;
+  }
+  div#side-menu-support div#employer-prompt-message pre {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  div#side-menu-support div#employer-prompt-message pre {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+  }
 }
 div#side-menu-support div#employer-prompt-message pre {
-  font-weight: lighter;
-  font-size: 1.25rem;
   color: #b84d50;
   opacity: 0.7;
 }

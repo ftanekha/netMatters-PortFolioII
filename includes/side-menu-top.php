@@ -1,7 +1,7 @@
 <div id="side-menu-support" class="side-menu-support-normal">
     <div id="employer-prompt-message">
         <pre title="prompt for potential employer to visit code examples page">
-            <span class="keyword">function</span><span class="identifier"> messageToPotentialEmployer</span><span class="black">(</span><span class="link-parameter">link</span> <span class="black">=</span> "link to code examples page"<span class="black">){</span>
+            <span class="keyword">function</span><span class="identifier"> messageToPotentialEmployer</span><span class="black">(</span><span class="link-parameter"> linkToCodeExamplesPage </span><span class="black">){</span>
                 <span class="keyword">const</span> 
                 <span class="identifier">greeting</span> <span class="black">=</span> "Hello, Potential Employer"<span class="black">,</span>
                 <span class="identifier">facialExpression</span> <span class="black">=</span> "smile"<span class="black">,</span>
