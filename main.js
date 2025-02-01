@@ -2,8 +2,9 @@ import {shouldPostData, displayInfoMessage} from './js/utilities.js'
 
 document.addEventListener(
     'DOMContentLoaded', ()=>{
-        //toggle side menu employer prompt (only show it omce per session)
+        //toggle side menu employer prompt (only show it omce per session) 
         const sideMenuSupport = document.querySelector('#side-menu-support')
+        const mQuery = window.matchMedia('(min-width: 768px)')
 
         if(
             !window.document.URL.includes('about-me')
@@ -11,15 +12,16 @@ document.addEventListener(
             && !window.document.URL.includes('code-examples')
             && !window.document.URL.includes('scs')
             && !window.document.URL.includes('contact-me')
+            && mQuery.matches
         ){
+            sideMenuSupport.classList.remove('side-menu-support-normal')
             sideMenuSupport.classList.add('side-menu-support-display-employer-prompt')
-        }else{
-            sideMenuSupport.classList.add('side-menu-support-normal')
         }
 
         sideMenuSupport.addEventListener(
             'click', ()=>{
-                if(sideMenuSupport.classList.contains('side-menu-support-display-employer-prompt')){
+                const viewportWidth = window.innerWidth
+                if(sideMenuSupport.classList.contains('side-menu-support-display-employer-prompt') && viewportWidth >= 768){
                     sideMenuSupport.classList.remove('side-menu-support-display-employer-prompt')
                     sideMenuSupport.classList.add('side-menu-support-normal')
                 }

@@ -1,4 +1,4 @@
-<div id="side-menu-support" class="">
+<div id="side-menu-support" class="side-menu-support-normal">
     <div id="employer-prompt-message">
         <pre title="prompt for potential employer to visit code examples page">
             <span class="keyword">function</span><span class="identifier"> messageToPotentialEmployer</span><span class="black">(</span><span class="link-parameter">link</span> <span class="black">=</span> "link to code examples page"<span class="black">){</span>
