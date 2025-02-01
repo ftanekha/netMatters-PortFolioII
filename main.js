@@ -2,14 +2,21 @@ import {shouldPostData, displayInfoMessage} from './js/utilities.js'
 
 document.addEventListener(
     'DOMContentLoaded', ()=>{
-        //toggle side menu employer prompt
+        //toggle side menu employer prompt (only show it omce per session)
         const sideMenuSupport = document.querySelector('#side-menu-support')
 
-        if(window.document.URL.includes('index.php') && !window.document.URL.includes('contact')){
+        if(
+            !window.document.URL.includes('about-me')
+            && !window.document.URL.includes('my-portfolio')
+            && !window.document.URL.includes('code-examples')
+            && !window.document.URL.includes('scs')
+            && !window.document.URL.includes('contact-me')
+        ){
             sideMenuSupport.classList.add('side-menu-support-display-employer-prompt')
         }else{
             sideMenuSupport.classList.add('side-menu-support-normal')
         }
+
         sideMenuSupport.addEventListener(
             'click', ()=>{
                 if(sideMenuSupport.classList.contains('side-menu-support-display-employer-prompt')){
@@ -21,7 +28,10 @@ document.addEventListener(
         //
         const employerLinkToCodeExamplesPage = document.querySelector('#employer-link-to-code-examples-page')
         employerLinkToCodeExamplesPage.addEventListener(
-            'click', ()=> window.location.assign( 'http://localhost/projects/netmatters/portfolioII/pages/code-examples.php')
+            'click', ()=> {
+                // window.location.assign( 'http://localhost/projects/netmatters/portfolioII/pages/code-examples.php')
+                window.location.assign( 'https://pbuwcsvdof.eupar01.qoddiapp.com/pages/code-examples.php')
+            }
         )
         //validate contact-me form data
         if(document.querySelector('form#contact-me-form')){
