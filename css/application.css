@@ -79,7 +79,7 @@ div#side-menu-support.side-menu-support-display-employer-prompt div#employer-pro
   div#side-menu-support div#employer-prompt-message {
     margin: 30vh auto;
     justify-content: flex-end;
-    padding-right: 10px;
+    padding-right: 5px;
     line-height: 1.15rem;
   }
   div#side-menu-support div#employer-prompt-message pre {
