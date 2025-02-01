@@ -29,7 +29,7 @@ div#side-menu-support{
         @media (min-width: 768px) {
             margin: 30vh auto;
             justify-content: flex-end;   
-            padding-right: 30px;
+            padding-right: 10px;
             line-height: 1.15rem;
             pre{
                 font-size: .8rem;
@@ -38,7 +38,8 @@ div#side-menu-support{
         }
         @media (min-width: 900px) {
             margin: 25vh auto;
-            justify-content: space-around;   
+            justify-content: space-around;  
+            padding-right: 30px; 
             line-height: 1.15rem;
             pre{
                 font-size: 1rem;
