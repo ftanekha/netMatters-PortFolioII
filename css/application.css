@@ -1231,10 +1231,8 @@ div#code-examples div#code-examples-main-container div#react-next-examples-conta
 div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y {
   width: 40%;
   height: 40%;
-  outline: solid 0.1rem #c77174;
+  outline: solid 0.2rem #c77174;
   border-radius: 20%;
-  background-color: #b84d50;
-  box-shadow: inset #c77174 2px 2px 5px, inset #c77174 -2px -2px 5px;
   user-select: none;
   font-size: 0.8rem;
   font-weight: 600;
@@ -1252,6 +1250,7 @@ div#code-examples div#code-examples-main-container div#react-next-examples-conta
   div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y {
     font-size: 1rem;
     border-radius: 30%;
+    outline: solid 0.4rem #c77174;
   }
 }
 @media (min-width: 1220px) {

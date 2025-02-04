@@ -9,7 +9,7 @@
 
                 <span class="construct">if</span><span class="black">(</span> You <span class="black">===</span> "Potential employer" <span class="black">){</span>
                     <span class="identifier">alert</span><span class="black">(</span> greeting <span class="black">+</span> facialExpression <span class="black">);</span>
-                    <span class="identifier-for-link">clickLinkToCodeExamples</span><span class="black">(</span><a title="link to code examples page" id="employer-link-to-code-examples-page"> link </a><span class="black">);</span>
+                    <span class="identifier-for-link">clickLinkToCodeExamples</span><span class="black">(</span><a title="link to code examples page" id="employer-link-to-code-examples-page"> linkToCodeExamplesPage </a><span class="black">);</span>
                 <span class="black">}</span><span class="construct">else</span><span class="black">{</span>
                     <span class="identifier">alert</span><span class="black">(</span> happyBrowsingMessage <span class="black">)<span class="black">;
                 }</span>

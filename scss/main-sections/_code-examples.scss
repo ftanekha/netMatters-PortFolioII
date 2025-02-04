@@ -459,11 +459,11 @@ div#code-examples{
             div.react-y{
                 width: 40%;
                 height: 40%;
-                outline: solid .1rem lighten($chestnut, 10%);
+                outline: solid .2rem lighten($chestnut, 10%);
                 border-radius: 20%;
-                background-color: $chestnut;
-                box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, 
-                        inset lighten($chestnut, 10%) -2px -2px 5px;
+                // background-color: $chestnut;
+                // box-shadow: inset lighten($chestnut, 10%) 2px 2px 5px, 
+                //         inset lighten($chestnut, 10%) -2px -2px 5px;
                 user-select: none;
                 font-size: .8rem;
                 font-weight: 600;
@@ -479,6 +479,7 @@ div#code-examples{
                 @media (min-width: 768px) {
                     font-size: 1rem;
                     border-radius: 30%;
+                    outline: solid .4rem lighten($chestnut, 10%);
                 }
                 @media (min-width: 1220px) {
                     font-size: 1.5rem;
