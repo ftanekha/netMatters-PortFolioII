@@ -474,7 +474,20 @@ div#code-examples{
                 transition: .5s;
                 cursor: pointer;
                 &:hover{
-                    background: darken($chestnut, 70%);
+                    &.react-example{
+                        background-color: darken(azure, 30%);
+                        a{
+                            color: lighten(azure, 70%);
+                        }
+                    }
+                    &.next-example{
+                        background-color: darken(azure, 5%);
+                        a{
+                            color: darken(slategrey, 10%);
+                        }
+                    }
+                    // background: darken($chestnut, 70%);
+                    
                 }
                 @media (min-width: 768px) {
                     font-size: 1rem;
@@ -483,6 +496,12 @@ div#code-examples{
                 }
                 @media (min-width: 1220px) {
                     font-size: 1.5rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: $chestnut;
+                    display: block;
+                    text-align: center;
                 }
             }
         }

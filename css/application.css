@@ -1243,8 +1243,17 @@ div#code-examples div#code-examples-main-container div#react-next-examples-conta
   transition: 0.5s;
   cursor: pointer;
 }
-div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y:hover {
-  background: black;
+div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y:hover.react-example {
+  background-color: #57ffff;
+}
+div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y:hover.react-example a {
+  color: white;
+}
+div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y:hover.next-example {
+  background-color: #d7ffff;
+}
+div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y:hover.next-example a {
+  color: #5a6773;
 }
 @media (min-width: 768px) {
   div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y {
@@ -1257,6 +1266,12 @@ div#code-examples div#code-examples-main-container div#react-next-examples-conta
   div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y {
     font-size: 1.5rem;
   }
+}
+div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y a {
+  text-decoration: none;
+  color: #b84d50;
+  display: block;
+  text-align: center;
 }
 div#code-examples div#code-examples-main-container div.coming-soon-playlist-container {
   margin-top: 50px;
