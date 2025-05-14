@@ -58,7 +58,7 @@ document.addEventListener(
                     }else{
                         // POST data & display success message
                         fetch(
-                            './post-form-data.php', 
+                            '/post-form-data.php', 
                             {
                                 method: 'POST',
                                 headers: {'Content-Type': 'application/json'},

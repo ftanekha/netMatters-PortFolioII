@@ -1,12 +1,20 @@
 <?php
 require 'connect.php';
+##########set-up for Render web service########################
+$host = "0.0.0.0"; // Listen on all interfaces
+$port = getenv("PORT") ?: 10000; // Use Render's PORT environment variable, default to 10000 if not set
 
+// Specify the directory where the server should start
+$documentRoot = __DIR__; // The root folder, or use the folder containing your PHP files
+
+// Start PHP's built-in server on the specified host and port
+echo "Starting server on port $port\n";
+exec("php -S $host:$port -t $documentRoot index.php");
+##################################################
 error_reporting(-1);//report all errors
 ini_set("display_errors", "1");//shows all errors
 ini_set("log_errors", 1);
 ini_set("error_log", "/tmp/php-error.log");
-#instantiate connection to database
-$conn = connect();
 #retrieve the raw POST request data
 $jsonData = file_get_contents("php://input");
 #decode the JSON data into a PHP associative array
@@ -80,6 +88,13 @@ if(isset($data["first_name"])){
             echo json_encode($http_response_code406);
             exit;
         }else{
+            #instantiate connection to database
+            $conn = connect();
+            if(!$conn) {
+                $http_response_code406[] = "Database connection failed.";
+                echo json_encode($http_response_code406);
+                exit;
+            }
             #query database table with new data
             $query = "INSERT INTO portfolio_form_data (first_name, last_name, email, telephone, message)
             VALUES (\"$first_name\", \"$last_name\", \"$email\", \"$telephone\", \"$message\")";
