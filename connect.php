@@ -18,9 +18,7 @@ function connect(){
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo 'Connection established!';
         return $conn;
-    } catch(PDOException $pe) {
+    }catch(PDOException $pe){
         die("Could not connect to the database: " . $pe->getMessage());
     }
 }
-
-connect();
