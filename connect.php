@@ -5,13 +5,13 @@ Dotenv\Dotenv::createImmutable(__DIR__)->load();
 
 function connect(){
     // Get environment variables
-    $host = $_ENV["DATABASE_HOST"];
-    $port = $_ENV["DATABASE_PORT"];
-    $dbname = $_ENV["DATABASE_NAME"];
+    $db_host = $_ENV["DATABASE_HOST"];
+    $db_port = $_ENV["DATABASE_PORT"];
+    $db_name = $_ENV["DATABASE_NAME"];
     $username = $_ENV["DATABASE_USERNAME"];
     $password = $_ENV["DATABASE_PASSWORD"];
     // Construct the DSN (Data Source Name) for PDO
-    $dsn = "mysql:host=$host;dbname=$dbname;port=$port";
+    $dsn = "mysql:host=$db_host;dbname=$db_name;port=$db_port";
     // Instantiate connection to the database
     try {
         $conn = new PDO($dsn, $username, $password);
