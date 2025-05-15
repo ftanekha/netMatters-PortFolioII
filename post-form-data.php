@@ -6,9 +6,6 @@ $port = $_ENV["PORT"] ?: 10000; // Use Render's PORT environment variable, defau
 
 // Specify the directory where the server should start
 $documentRoot = __DIR__; // The root folder, or use the folder containing your PHP files
-
-// Start PHP's built-in server on the specified host and port
-echo "Starting server on port $port\n";
 ##################################################
 error_reporting(-1);//report all errors
 ini_set("display_errors", "1");//shows all errors
@@ -20,7 +17,6 @@ $jsonData = file_get_contents("php://input");
 $data = json_decode($jsonData, true);
 #check if decoding was successful
 if(isset($data["first_name"])){
-    print_r($data);
     #access the data and perform operations
     $first_name = $data["first_name"];
     $last_name = $data["last_name"];
