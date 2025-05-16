@@ -3,7 +3,6 @@ require 'connect.php';
 ##########set-up for Render web service########################
 $host = "0.0.0.0"; // Listen on all interfaces
 $port = $_ENV["PORT"] ?: 10000; // Use Render's PORT environment variable, default to 10000 if not set
-
 // Specify the directory where the server should start
 $documentRoot = __DIR__; // The root folder, or use the folder containing your PHP files
 ##################################################
