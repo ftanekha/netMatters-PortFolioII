@@ -105,18 +105,18 @@
                     <figure>
                         <img src="assets/images/netmatters-homepage-replica.jpeg" alt="Netmatters homepage replica" title="Netmatters homepage replica">
                         <figcaption>
-                            My first complete <em title="Scion coalition Scheme">SCS</em> project, a work in progress
+                            <b style="font-weight: 900">FULL-STACK:</b> My first complete <em title="Scion coalition Scheme">SCS</em> project, a work in progress
                             <span class="construction-cone">🚧</span>.
-                            A full stack project that showcases intuitive use of SCSS, the Grid system, Flexbox, HTML, JavaScript & php.
+                            A full stack project that showcases intuitive use of SCSS, the Grid system, Flexbox, HTML, JavaScript & PHP.
                         </figcaption>
                     </figure>
                 </a>
-                <a href="https://kwiqjmcgst.eupar02.qoddiapp.com" target="_blank">
+                <a href="https://render-all4uwebsite.onrender.com/" target="_blank">
                     <figure>
                         <img src="assets/images/all4u-homepage.jpeg" alt="All4U Healthcare Solutions website" title="All4U Healthcare Solutions website">
                         <figcaption>
-                            This application was made using <code>jQuery, Handlebars.js, Bootstrap & HTML</code> 
-                            to produce a simple app with a streamlined look and easy navigation, and PHP on the back-end.
+                            <b style="font-weight: 900">FULL-STACK:</b> This application was made using <code>jQuery, Handlebars.js, Bootstrap & HTML</code> 
+                            to produce a simple app with a streamlined look and easy navigation.The app leverages a PHP server & MySQL database on the back-end.
                         </figcaption>
                     </figure>
                 </a>
@@ -126,19 +126,20 @@
                             alt="Random image collector" title="Random image collector"
                         >
                         <figcaption>
-                            A lightweight application that uses the JavaScript fetch API to display random images, and Flebox for layout.
+                            <b style="font-weight: 900">FRONT-END:</b> A lightweight application that uses the JavaScript fetch API to display random images, and Flebox for layout.
                             Users can create, store, retrieve and view one or more collections of images.
                         </figcaption>
                     </figure>
                 </a>
-                <a href="https://nzgovqjyek.eupar04.qoddiapp.com" target="_blank">
+                <a href="https://nextjs-data-delivery-log-app.vercel.app/" target="_blank">
                     <figure>
-                        <img src="assets/images/qoddi-react-emailer-fullpage.jpeg" class="stretch"
-                            alt="React.js email application emulator" title="React.js email application emulator"
+                        <img src="assets/images/nextjs-data-delivery-log.jpeg" class="stretch"
+                            alt="Next.js Delivery log app" title="Next.js Delivery log app"
+                            style="margin-bottom: .75rem"
                         >
                         <figcaption>
-                         This React.js app mimicks the outwardly observable behavior of a web-email application.
-                         The app uses an Express.js server to receive and send back composed emails, without connecting to a database.
+                            <b style="font-weight: 900">FULL-STACK:</b> This app was built with Next.js on the front-end, and uses Express.js, PRISMA(ORM) & PostgreSQL on the back-end.
+                            Other features include data validation, file uploads via Cloudinary, and Google Maps integration.
                         </figcaption>
                     </figure>
                 </a>
