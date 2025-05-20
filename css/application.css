@@ -731,7 +731,6 @@ div#code-examples div#code-examples-main-container div#problem-solution-selector
 }
 div#code-examples div#code-examples-main-container div#problem-solution-selector p {
   font-size: 1rem;
-  text-align: justify;
   width: 80%;
   margin-top: -3rem;
   margin-bottom: 2rem;
@@ -1220,58 +1219,6 @@ div#code-examples div#code-examples-main-container div#scs-projects-examples-con
     border-radius: 10px !important;
     box-shadow: inset #c77174 2px 2px 15px, inset #c77174 -2px -2px 15px;
   }
-}
-div#code-examples div#code-examples-main-container div#react-next-examples-container {
-  width: 100%;
-  height: 10rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y {
-  width: 40%;
-  height: 40%;
-  outline: solid 0.2rem #c77174;
-  border-radius: 20%;
-  user-select: none;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #e4babc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  cursor: pointer;
-}
-div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y:hover.react-example {
-  background-color: #57ffff;
-}
-div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y:hover.react-example a {
-  color: white;
-}
-div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y:hover.next-example {
-  background-color: #d7ffff;
-}
-div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y:hover.next-example a {
-  color: #5a6773;
-}
-@media (min-width: 768px) {
-  div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y {
-    font-size: 1rem;
-    border-radius: 30%;
-    outline: solid 0.4rem #c77174;
-  }
-}
-@media (min-width: 1220px) {
-  div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y {
-    font-size: 1.5rem;
-  }
-}
-div#code-examples div#code-examples-main-container div#react-next-examples-container div.react-y a {
-  text-decoration: none;
-  color: #b84d50;
-  display: block;
-  text-align: center;
 }
 div#code-examples div#code-examples-main-container div.coming-soon-playlist-container {
   margin-top: 50px;

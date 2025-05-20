@@ -6,6 +6,38 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/favicons/favicon-red.ico">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/application.css">
+    <style>
+        body{
+            padding-bottom: 5rem;
+        }
+        h3{
+            margin-top: 4rem;
+            text-align: center;
+            color: hsl(0, 0%, 21%);
+        }
+        h3 span{
+            color: hsl(0, 0%, 46%);
+            font-weight: 600;
+        }
+        div#react-next-examples-container{
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-even;
+            gap: 1rem;
+        }
+        div#react-next-examples-container a{
+            text-decoration: none;
+            font-weight: 600;
+            color: #b84d50;
+            padding: 4px;
+            border-radius: 5px;
+            width: 70px;
+            text-align: center;
+        }
+        div#react-next-examples-container a:hover{
+            color:  hsl(0, 0%, 21%);
+        }
+    </style>
     <title>Code Examples</title>
 </head>
 <body>
@@ -39,8 +71,9 @@
                     <p>
                         This section provides examples of code that utilise technologies indicated by the tags.<br>
                         <strong class="info">Click</strong> on a tag to find out which project has relevant examples of code.<br>
-                        To see examples, <strong class="info">Double Click</strong> on your project of choice.
+                        <strong class="info">Double Click</strong> on your project of choice, to see the examples.
                     </p>
+                    <!-- tags -->
                     <div id="solutions-tags-container">
                         <span class="tag" title="GitHub">gitHub</span><span class="tag" title="HTML">html</span>
                         <span class="tag" title="CSS">css</span><span class="tag" title="SCSS">scss</span>
@@ -51,6 +84,8 @@
                         <span class="tag" title="SQL">sql</span><span class="tag" title="PHP">php</span>
                     </div>
                 </div>
+                <h3>SCS projects</h3>
+                <!-- projects -->
                 <div id="scs-projects-examples-container">
                     <div class="parent">
                         <div id="top-first-child" class="child top top-first project-all4u-website" title="Double-Click to expand."
@@ -193,6 +228,20 @@
                             <?php include '../includes/code-examples/netmatters/index.php' ?>
                         </div>
                     </div>
+                </div>
+                <h3><span>Links</span> to other projects</h3>
+                 <!-- react & next project examples -->
+                <div id="react-next-examples-container">
+                    <a 
+                        class="react-example-link react-y"  data-tags="github html scss js react express" 
+                        href="https://nzgovqjyek.eupar04.qoddiapp.com" target="_blank"
+                        title="React.js Email service application simulator"
+                    >Emailer</a>
+                    <a 
+                        class="next-example-link react-y" data-tags="github html css tailwind js react next prisma express" 
+                        href="https://nextjs-data-delivery-log-app.vercel.app/" target="_blank"
+                        title="Next.js Delivery log application"
+                    >Delivery log</a>
                 </div>
             </div>
         </div>

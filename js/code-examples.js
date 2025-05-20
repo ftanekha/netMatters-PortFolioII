@@ -23,9 +23,14 @@ document.addEventListener(
                 ()=> {
                     els.forEach(
                         el => {
-                                el.style.backgroundColor = (el.style.backgroundColor === chestnut) ? gothamGreen : chestnut
+                            if(el.style.backgroundColor === chestnut){
+                                el.style.backgroundColor = gothamGreen
+                                el.style.color = 'azure'
+                            }else{
+                                el.style.backgroundColor = chestnut
                             }
-                        )
+                        }
+                    )
                 }, 800
             )
 
@@ -64,8 +69,10 @@ document.addEventListener(
                         const activeProjects = []
                         projects.forEach(
                             project => {
-                                if((project.getAttribute('data-tags')).includes(textContent)){
-                                    activeProjects.push(project)
+                                const attr = project.getAttribute('data-tags')
+                                if(attr && typeof attr === 'string'){
+                                    // 
+                                    attr.includes(textContent) && activeProjects.push(project)
                                 }
                             }
                         )
