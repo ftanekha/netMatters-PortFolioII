@@ -235,7 +235,7 @@
                     <a 
                         class="react-example-link react-y"  data-tags="github html scss js react express" 
                         href="https://nzgovqjyek.eupar04.qoddiapp.com" target="_blank"
-                        title="React.js Email service application simulator"
+                        title="React.js Email Client simulator"
                     >Emailer</a>
                     <a 
                         class="next-example-link react-y" data-tags="github html css tailwind js react next prisma express" 
