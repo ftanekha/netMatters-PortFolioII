@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/application.css">
+    <style>
+        @media (min-width: 1200px) {
+            img.nextjs-data-delivery-log{
+                margin-bottom: .75rem;
+            }
+        }
+    </style>
     <title>Farai Tanekha's Portfolio</title>
 </head>
 <body>
@@ -74,16 +81,16 @@
                 <!-- back-end -->
                 <dt>Back-end</dt>
                 <dd>
-                    <a class="clickable-tech-link" href="pages/scs.php" target="_blank" style="margin-left: -.2rem;">Scion Coalition Scheme tech</a>
+                    <a class="clickable-tech-link" href="pages/scs.php" target="_blank" style="margin-left: -.2rem;">Scion Coalition Scheme</a>
                 </dd>
-                <dd>I most often use C#, PHP, and SQL, and</dd>
+                <dd>During my time on the Scion Coalition Scheme, I worked on projects using PHP and SQL on the server-side.</dd>
                 <dd style="margin-top: 1rem; margin-left: -.2rem;">
                     <a class="clickable-tech-link" href="https://nodejs.org/api/modules.html#core-modules" target="_blank">Node.js</a>
                 </dd>
                 <dd> Node.js is a server-side JS runtime.</dd>
                 <dd>
                     Some of my favourite modules are the Node.js core modules and
-                    <a class="clickable-tech-link" href="https://expressjs.com/" target="_blank">Express.js</a>.
+                    <a class="clickable-tech-link" href="https://expressjs.com/" target="_blank">Express.js</a>. However, I've been exposed to several useful modules including Cloudinary, Multer and Streamifier.
                 </dd>
                 <!-- fullstack -->
                 <dt>Full-stack</dt>
@@ -93,7 +100,7 @@
                     <a class="clickable-tech-link" href="https://railway.app/" target="_blank">Railway</a>
                 </dd>
                 <dd>Next.js is a React framework for building full-stack web applications.</dd>
-                <dd>With the aid of page & API routing, Next.js can be used to build interactive, dynamic, and fast React applications.</dd>
+                <dd>With the aid of API & page routing (using the APP Router), Next.js can be used to build interactive, dynamic, and fast React applications.</dd>
                 <dd>
                     Prisma is a great tool for interacting with a 
                     <span title="Database Management System">DBM</span> such as 
@@ -133,9 +140,8 @@
                 </a>
                 <a href="https://nextjs-data-delivery-log-app.vercel.app/" target="_blank">
                     <figure>
-                        <img src="assets/images/nextjs-data-delivery-log.jpeg" class="stretch"
+                        <img src="assets/images/nextjs-data-delivery-log.jpeg" class="stretch nextjs-data-delivery-log"
                             alt="Next.js Delivery log app" title="Next.js Delivery log app"
-                            style="margin-bottom: .75rem"
                         >
                         <figcaption>
                             <b style="font-weight: 900">FULL-STACK:</b> This app was built with Next.js on the front-end, and uses Express.js, PRISMA(ORM) & PostgreSQL on the back-end.

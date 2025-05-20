@@ -31,8 +31,7 @@ document.addEventListener(
         const employerLinkToCodeExamplesPage = document.querySelector('#employer-link-to-code-examples-page')
         employerLinkToCodeExamplesPage.addEventListener(
             'click', ()=> {
-                // window.location.assign( 'http://localhost/projects/netmatters/portfolioII/pages/code-examples.php')
-                window.location.assign( 'https://pbuwcsvdof.eupar01.qoddiapp.com/pages/code-examples.php')
+                window.location.assign( '/pages/code-examples.php')
             }
         )
         //validate contact-me form data

@@ -194,15 +194,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- react & next project examples -->
-                <div id="react-next-examples-container">
-                    <div class="react-example react-y" data-tags="github html scss js react express" title="Double-Click to expand.">
-                        <a class="react-example-link" href="https://nzgovqjyek.eupar04.qoddiapp.com" target="_blank">React Emailer</a>
-                    </div>
-                    <div class="next-example react-y" data-tags="github html css tailwind js react next prisma express" title="Double-Click to expand.">
-                        <a class="next-example-link" href="https://nextjs-data-delivery-log-app.vercel.app/" target="_blank">Next.js Delivery log</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
