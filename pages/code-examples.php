@@ -234,7 +234,7 @@
                 <div id="react-next-examples-container">
                     <a 
                         class="react-example-link react-y"  data-tags="github html scss js react express" 
-                        href="https://nzgovqjyek.eupar04.qoddiapp.com" target="_blank"
+                        href="https://reactjs-emailer-app.vercel.app/" target="_blank"
                         title="React.js Email Client simulator"
                     >Emailer</a>
                     <a 
