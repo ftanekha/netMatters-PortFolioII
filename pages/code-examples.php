@@ -208,7 +208,7 @@
                                     <li class="examples-link using-jquery-plugins">Using jQuery plugins <em style="color: gray;">e.g.</em> for carousels</li>
                                     <li class="examples-link sticky-header-jquery">Sticky header 
                                         <i style="color: gray">(</i>
-                                        <span style="font-size: .8rem"> uses scroll event heavily</span>
+                                        <span style="font-size: .8rem"> uses the scroll event heavily</span>
                                         <i style="color: gray">)</i> with a smooth transition</li>
                                     <li class="examples-link side-menu-jquery"><em style="color: gray;">Sliding</em> side menu</li>
                                     <li class="nested">hamburger menu icon, page overlay filter</li>
@@ -219,8 +219,8 @@
                                 <p class="h3">PHP</p>
                                 <ul class="php">
                                     <li class="examples-link using-include">Using <i style="color: gray">include</i></li>
-                                    <li class="examples-link looping-over-database-response">Loop over a database response to display images</li>
-                                    <li class="examples-link receiving-and-decoding-form-data">Recieving <em style="color: gray;">&amp;</em> decoding form data</li>
+                                    <li class="examples-link looping-over-database-response">Looping over a database response to display images</li>
+                                    <li class="examples-link receiving-and-decoding-form-data">Receiving <em style="color: gray;">&amp;</em> decoding form data</li>
                                     <li class="examples-link validating-and-sanitising-form-data">Validating <em style="color: gray;">&amp;</em> Sanitising form data</li>
                                     <li class="examples-link sending-data-to-database">Sending data to a database</li>
                                 </ul>

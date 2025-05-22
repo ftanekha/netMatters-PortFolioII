@@ -30,7 +30,8 @@ document.addEventListener(
         //
         const employerLinkToCodeExamplesPage = document.querySelector('#employer-link-to-code-examples-page')
         employerLinkToCodeExamplesPage.addEventListener(
-            'click', ()=> {
+            'click', (ev)=> {
+                ev.stopPropagation()
                 window.location.assign( '/pages/code-examples.php')
             }
         )

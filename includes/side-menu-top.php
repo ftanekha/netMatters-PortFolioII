@@ -16,7 +16,7 @@
             <span class="black">}</span>
 
             <span class="identifier">messageToPotentialEmployer</span>("/code-examples.php");<span>
-        <pre>
+        </pre>
     </div>
 </div>
 <div id="side-menu">
