@@ -151,13 +151,23 @@
                 </a>
                 <a href="https://react-explorer-j6o7fnl7x-ftanekhas-projects.vercel.app/" target="_blank">
                     <figure>
-                        <img src="assets/images/react-explorer.png" class="stretch react-explorer"
+                        <img src="assets/images/react-explorer.jpeg" class="stretch react-explorer"
                             alt="React.js Explorer app" title="React.js Explorer app"
                         >
                         <figcaption>
                             <b style="font-weight: 900">FULL-STACK:</b> This app simulates the behaviour of the Windows file explorer. 
                             It's simple, light-weight, uses <em>React.js</em> front-end UI, styled with <em>TailwindCss</em>. 
                             The back-end leverages system-level <em>Node.js</em> modules like <code>node:os</code>, <code>node:fs</code> & <code>node:path</code>, with an <em>Express.js</em> server running on the <em>Railway</em> platform.
+                    </figure>
+                </a>
+                <a href="https://reactjs-emailer-app.vercel.app/" target="_blank">
+                    <figure>
+                        <img src="assets/images/react-emailer.jpeg" class="stretch react-explorer"
+                            alt="React.js Emailer" title="React.js Emailer"
+                        >
+                        <figcaption>
+                            <b style="font-weight: 900">FULL-STACK:</b> The React.js Emailer is a simulation of an email client, built with <em>React.js</em> on the front-end and <em>Express.js</em> on the back-end. 
+                            It features a login system, multiple mailboxes, and form validation to simulate an email experience.
                     </figure>
                 </a>
             </div>
