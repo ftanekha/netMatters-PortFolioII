@@ -33,20 +33,20 @@
     <?php include 'includes/hamburger-button.php' ?>
     <!-- side menu/ main navigation-->
     <?php include 'includes/side-menu-top.php' ?>
-                <li>
-                    <a href="pages/about-me.php">About me</a>
-                </li>
-                <li>
-                    <a href="#my-portfolio">My Portfolio</a>
-                </li>
-                <li>
-                    <a href="pages/code-examples.php">Code Examples</a>
-                </li>
-                <li>
-                    <a href="pages/scs.php">SCS Scheme</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact me</a>
+        <li>
+            <a href="pages/about-me.php">About me</a>
+        </li>
+        <li>
+            <a href="#my-portfolio">My Portfolio</a>
+        </li>
+        <li>
+            <a href="pages/code-examples.php">Code Examples</a>
+        </li>
+        <li>
+            <a href="pages/scs.php">SCS Scheme</a>
+        </li>
+        <li>
+            <a href="#contact-me">Contact me</a>
                 </li>
     <?php include 'includes/side-menu-bottom.php' ?>       
     <!-- main page content -->
