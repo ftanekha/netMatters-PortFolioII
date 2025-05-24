@@ -149,6 +149,17 @@
                         </figcaption>
                     </figure>
                 </a>
+                <a href="https://react-explorer-j6o7fnl7x-ftanekhas-projects.vercel.app/" target="_blank">
+                    <figure>
+                        <img src="assets/images/react-explorer.png" class="stretch react-explorer"
+                            alt="React.js Explorer app" title="React.js Explorer app"
+                        >
+                        <figcaption>
+                            <b style="font-weight: 900">FULL-STACK:</b> This app simulates the behaviour of the Windows file explorer. 
+                            It's simple, light-weight, uses <em>React.js</em> front-end UI, styled with <em>TailwindCss</em>. 
+                            The back-end leverages system-level <em>Node.js</em> modules like <code>node:os</code>, <code>node:fs</code> & <code>node:path</code>, with an <em>Express.js</em> server running on the <em>Railway</em> platform.
+                    </figure>
+                </a>
             </div>
         </div>
         <!-- section#contact-me -->
