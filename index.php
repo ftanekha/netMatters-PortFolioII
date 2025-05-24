@@ -15,7 +15,7 @@
             }
         }
     </style>
-    <title>Farai Tanekha's Portfolio</title>
+    <title>FT: Portfolio</title>
 </head>
 <body>
     <!-- form data validation message -->

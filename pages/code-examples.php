@@ -238,6 +238,11 @@
                         title="React.js Email Client simulator"
                     >Emailer</a>
                     <a 
+                        class="react-example-link react-y" data-tags="github html css tailwind js react express" 
+                        href="https://react-explorer-j6o7fnl7x-ftanekhas-projects.vercel.app/" target="_blank"
+                        title="React.js file Explorer"
+                    >Explorer</a>
+                    <a 
                         class="next-example-link react-y" data-tags="github html css tailwind js react next prisma express" 
                         href="https://nextjs-data-delivery-log-app.vercel.app/" target="_blank"
                         title="Next.js Delivery log application"
