@@ -150,7 +150,7 @@
                         </figcaption>
                     </figure>
                 </a>
-                <a href="https://react-explorer-j6o7fnl7x-ftanekhas-projects.vercel.app/" target="_blank">
+                <a href="https://react-explorer-two.vercel.app/" target="_blank">
                     <figure>
                         <img src="assets/images/react-explorer.jpeg" class="stretch react-explorer"
                             alt="React.js Explorer app" title="React.js Explorer app"
